@@ -14,12 +14,21 @@ function App() {
   const [isCategoryModalOpen, setIsCategoryModalOpen] = useState(false);
   const [editingCategoryImage, setEditingCategoryImage] = useState(null);
   const [editingCategoryValue, setEditingCategoryValue] = useState('');
+  // 植物详情状态
+  const [selectedPlantId, setSelectedPlantId] = useState(null);
+  const [plantDetails, setPlantDetails] = useState({
+    description: '',
+    detailImages: [],
+    tabs: []
+  });
+  const [isDetailsModalOpen, setIsDetailsModalOpen] = useState(false);
+  const [isEditing, setIsEditing] = useState(false);
   
   // 加载图片数据
   useEffect(() => {
     const loadImages = async () => {
       try {
-        const response = await fetch('/image-links.json');
+        const response = await fetch('/data/image-links.json');
         const data = await response.json();
         // 为没有分类的图片添加默认分类
         const imagesWithCategory = data.map(image => ({
@@ -33,6 +42,45 @@ function App() {
     };
     loadImages();
   }, []);
+  
+  // 加载植物详情
+  const loadPlantDetails = async (id) => {
+    try {
+      // 先尝试从localStorage加载，优先使用本地保存的数据
+      const storedData = localStorage.getItem(`plantDetails_${id}`);
+      if (storedData) {
+        return JSON.parse(storedData);
+      }
+      
+      // 如果localStorage中没有，再从服务器加载
+      const response = await fetch(`/data/details/${id}.json`);
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('加载植物详情失败:', error);
+      return {
+        description: '',
+        detailImages: [],
+        tabs: []
+      };
+    }
+  };
+  
+  // 保存植物详情
+  const savePlantDetails = async (id, details) => {
+    try {
+      // 使用localStorage作为临时存储解决方案
+      localStorage.setItem(`plantDetails_${id}`, JSON.stringify(details));
+      
+      console.log('保存植物详情成功:', id, details);
+      alert('植物详情保存成功！');
+      return true;
+    } catch (error) {
+      console.error('保存植物详情失败:', error);
+      alert('保存失败，请重试！');
+      return false;
+    }
+  };
 
   // 加载分类配置
   useEffect(() => {
@@ -171,6 +219,72 @@ function App() {
     saveImages(newImages);
     setIsCategoryModalOpen(false);
   };
+  
+  // 打开植物详情模态框
+  const openDetailsModal = async (plantId) => {
+    setSelectedPlantId(plantId);
+    const details = await loadPlantDetails(plantId);
+    setPlantDetails(details);
+    setIsDetailsModalOpen(true);
+    setIsEditing(false);
+  };
+  
+  // 切换编辑模式
+  const toggleEditMode = () => {
+    setIsEditing(!isEditing);
+  };
+  
+  // 保存植物详情
+  const handleSaveDetails = () => {
+    if (!selectedPlantId) return;
+    savePlantDetails(selectedPlantId, plantDetails);
+    setIsEditing(false);
+  };
+  
+  // 更新详情字段
+  const updateDetailsField = (field, value) => {
+    setPlantDetails(prev => ({
+      ...prev,
+      [field]: value
+    }));
+  };
+  
+  // 更新tab内容
+  const updateTabContent = (tabIndex, contentIndex, field, value) => {
+    const newTabs = [...plantDetails.tabs];
+    const newContent = [...newTabs[tabIndex].content];
+    newContent[contentIndex][field] = value;
+    newTabs[tabIndex].content = newContent;
+    setPlantDetails(prev => ({
+      ...prev,
+      tabs: newTabs
+    }));
+  };
+  
+  // 添加新的tab
+  const addNewTab = () => {
+    const newTabs = [...plantDetails.tabs];
+    newTabs.push({
+      title: '新标签页',
+      content: []
+    });
+    setPlantDetails(prev => ({
+      ...prev,
+      tabs: newTabs
+    }));
+  };
+  
+  // 添加新的内容项
+  const addContentItem = (tabIndex, type) => {
+    const newTabs = [...plantDetails.tabs];
+    const newContent = [...newTabs[tabIndex].content];
+    newContent.push(type === 'text' ? { type: 'text', value: '' } : { type: 'image', src: '' });
+    newTabs[tabIndex].content = newContent;
+    setPlantDetails(prev => ({
+      ...prev,
+      tabs: newTabs
+    }));
+  };
 
   return (
     <div className="app">
@@ -230,6 +344,9 @@ function App() {
                 <button className="rename-button" onClick={() => openRenameModal(index)}>
                   重命名
                 </button>
+                <button className="details-button" onClick={() => openDetailsModal(image.id)}>
+                  详情
+                </button>
                 <button className="delete-button" onClick={() => deleteImage(index)}>
                   删除
                 </button>
@@ -276,6 +393,162 @@ function App() {
             <div className="modal-actions">
               <button onClick={() => setIsCategoryModalOpen(false)}>取消</button>
               <button onClick={saveCategory}>保存</button>
+            </div>
+          </div>
+        </div>
+      )}
+      
+      {/* 植物详情模态框 */}
+      {isDetailsModalOpen && (
+        <div className="modal-overlay">
+          <div className="modal details-modal">
+            <div className="modal-header">
+              <h2>植物详情</h2>
+              <div className="modal-actions">
+                {isEditing ? (
+                  <>
+                    <button onClick={toggleEditMode}>取消编辑</button>
+                    <button onClick={handleSaveDetails} className="save-button">保存</button>
+                  </>
+                ) : (
+                  <button onClick={toggleEditMode}>编辑</button>
+                )}
+                <button onClick={() => setIsDetailsModalOpen(false)}>关闭</button>
+              </div>
+            </div>
+            
+            {/* 描述部分 */}
+            <div className="details-section">
+              <h3>描述</h3>
+              {isEditing ? (
+                <textarea
+                  className="details-textarea"
+                  value={plantDetails.description}
+                  onChange={(e) => updateDetailsField('description', e.target.value)}
+                  placeholder="输入植物描述"
+                />
+              ) : (
+                <p>{plantDetails.description || '暂无描述'}</p>
+              )}
+            </div>
+            
+            {/* 详情图片部分 */}
+            <div className="details-section">
+              <h3>详情图片</h3>
+              <div className="detail-images-grid">
+                {plantDetails.detailImages.map((image, index) => (
+                  <div key={index} className="detail-image-item">
+                    {isEditing ? (
+                      <input
+                        type="text"
+                        className="detail-image-input"
+                        value={image}
+                        onChange={(e) => {
+                          const newImages = [...plantDetails.detailImages];
+                          newImages[index] = e.target.value;
+                          updateDetailsField('detailImages', newImages);
+                        }}
+                        placeholder="图片URL"
+                      />
+                    ) : (
+                      <img src={image} alt={`详情图片${index + 1}`} />
+                    )}
+                  </div>
+                ))}
+                {isEditing && (
+                  <button
+                    className="add-image-button"
+                    onClick={() => {
+                      const newImages = [...plantDetails.detailImages, ''];
+                      updateDetailsField('detailImages', newImages);
+                    }}
+                  >
+                    + 添加图片
+                  </button>
+                )}
+              </div>
+            </div>
+            
+            {/* Tab页部分 */}
+            <div className="details-section">
+              <h3>
+                Tab页内容
+                {isEditing && (
+                  <button
+                    className="add-tab-button"
+                    onClick={addNewTab}
+                  >
+                    + 添加Tab
+                  </button>
+                )}
+              </h3>
+              {plantDetails.tabs.map((tab, tabIndex) => (
+                <div key={tabIndex} className="tab-section">
+                  <h4>
+                    {isEditing ? (
+                      <input
+                        type="text"
+                        className="tab-title-input"
+                        value={tab.title}
+                        onChange={(e) => {
+                          const newTabs = [...plantDetails.tabs];
+                          newTabs[tabIndex].title = e.target.value;
+                          updateDetailsField('tabs', newTabs);
+                        }}
+                        placeholder="Tab标题"
+                      />
+                    ) : (
+                      tab.title
+                    )}
+                  </h4>
+                  <div className="tab-content">
+                    {tab.content.map((item, contentIndex) => (
+                      <div key={contentIndex} className={`content-item content-item-${item.type}`}>
+                        {item.type === 'text' ? (
+                          isEditing ? (
+                            <textarea
+                              className="content-textarea"
+                              value={item.value}
+                              onChange={(e) => updateTabContent(tabIndex, contentIndex, 'value', e.target.value)}
+                              placeholder="文本内容"
+                            />
+                          ) : (
+                            <p>{item.value}</p>
+                          )
+                        ) : (
+                          isEditing ? (
+                            <input
+                              type="text"
+                              className="content-image-input"
+                              value={item.src}
+                              onChange={(e) => updateTabContent(tabIndex, contentIndex, 'src', e.target.value)}
+                              placeholder="图片URL"
+                            />
+                          ) : (
+                            <img src={item.src} alt={`内容图片${contentIndex + 1}`} />
+                          )
+                        )}
+                      </div>
+                    ))}
+                    {isEditing && (
+                      <div className="add-content-buttons">
+                        <button
+                          className="add-text-button"
+                          onClick={() => addContentItem(tabIndex, 'text')}
+                        >
+                          + 添加文本
+                        </button>
+                        <button
+                          className="add-content-image-button"
+                          onClick={() => addContentItem(tabIndex, 'image')}
+                        >
+                          + 添加图片
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

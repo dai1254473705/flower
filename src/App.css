@@ -241,80 +241,287 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  overflow-y: auto;
 }
 
 .modal {
   background-color: white;
+  padding: 20px;
   border-radius: 8px;
-  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 90%;
-  max-width: 400px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 20px;
 }
 
 .modal h2 {
   margin-top: 0;
-  margin-bottom: 1.5rem;
-  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5em;
 }
 
 .modal input {
   width: 100%;
-  padding: 0.75rem;
+  padding: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  box-sizing: border-box;
+  font-size: 1em;
 }
 
 .modal-actions {
   display: flex;
-  gap: 1rem;
   justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modal button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.modal button:hover {
+  background-color: #45a049;
+}
+
+.modal button:last-child {
+  background-color: #2196F3;
+}
+
+.modal button:last-child:hover {
+  background-color: #0b7dda;
 }
 
 .category-select-modal {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
-  margin-top: 10px;
-}
-
-.modal-actions button {
-  padding: 0.75rem 1.5rem;
-  border: none;
   border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  font-size: 1em;
+  margin-bottom: 15px;
 }
 
-.modal-actions button:first-child {
-  background-color: #e0e0e0;
+/* 植物详情模态框样式 */
+.details-modal {
+  max-width: 800px;
+  width: 95%;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.modal-header h2 {
+  margin: 0;
+}
+
+.details-section {
+  margin-bottom: 30px;
+}
+
+.details-section h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.2em;
   color: #333;
 }
 
-.modal-actions button:first-child:hover {
-  background-color: #bdbdbd;
+.details-section h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #555;
 }
 
-.modal-actions button:last-child {
-  background-color: #61dafb;
-  color: #282c34;
+.details-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  resize: vertical;
+  font-family: inherit;
 }
 
-.modal-actions button:last-child:hover {
-  background-color: #4fa8d5;
+.detail-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.detail-image-item {
+  position: relative;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.detail-image-item img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.detail-image-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.add-image-button {
+  grid-column: 1 / -1;
+  padding: 10px;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  color: #666;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+}
+
+.add-image-button:hover {
+  border-color: #4CAF50;
+  background-color: #f0f9f0;
+  color: #4CAF50;
+}
+
+.tab-section {
+  margin-bottom: 25px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #fafafa;
+}
+
+.tab-title-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.content-item {
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.content-item-text p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.content-item-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.content-textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.content-image-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.add-content-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add-text-button,
+.add-content-image-button {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.add-text-button:hover,
+.add-content-image-button:hover {
+  background-color: #e0e0e0;
+}
+
+.add-tab-button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 0.9em;
+  color: #555;
+  margin-left: 10px;
+}
+
+.add-tab-button:hover {
+  background-color: #e0e0e0;
+}
+
+.save-button {
+  background-color: #4CAF50;
+}
+
+.save-button:hover {
+  background-color: #45a049;
+}
+
+.details-button {
+  background-color: #2196F3;
+  margin: 0 5px;
+}
+
+.details-button:hover {
+  background-color: #0b7dda;
 }
 
 /* 响应式设计 */
