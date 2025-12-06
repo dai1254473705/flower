@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import './App.css';
+import imageLinks from './image-links.json';
 
 function App() {
   // 状态管理
@@ -21,27 +22,25 @@ function App() {
   const [showArticleList, setShowArticleList] = useState(true); // 控制显示文章列表还是内容
   // 加载图片数据
   useEffect(() => {
-    const loadImages = async () => {
-      try {
-        const response = await fetch('/flower/data/image-links.json');
-        const data = await response.json();
-        // 为没有分类的图片添加默认分类
-        // 为没有articles的图片添加默认空数组
-        const imagesWithDefaults = data.map(image => ({
-          ...image,
-          category: image.category || '',
-          articles: image.articles || []
-        }));
-        setImages(imagesWithDefaults);
-      } catch (error) {
-        console.error('加载图片数据失败:', error);
-      }
-    };
-    loadImages();
+    try {
+      // 为没有分类的图片添加默认分类
+      // 为没有articles的图片添加默认空数组
+      const imagesWithDefaults = imageLinks.map(image => ({
+        ...image,
+        category: image.category || '',
+        articles: image.articles || []
+      }));
+      setImages(imagesWithDefaults);
+      // 提取所有分类
+      const uniqueCategories = [...new Set(imageLinks.map(image => image.category).filter(Boolean))];
+      setCategories(uniqueCategories);
+    } catch (error) {
+      console.error('加载图片数据失败:', error);
+    }
   }, []);
 
-  // 加载分类配置
-  useEffect(() => {
+  // 加载分类配置 - 现在从图片数据中提取分类
+  /* useEffect(() => {
     const loadCategories = async () => {
       try {
         const response = await fetch('/flower/category-config.json');
@@ -52,7 +51,7 @@ function App() {
       }
     };
     loadCategories();
-  }, []);
+  }, []); */
 
   // 防抖搜索
   useEffect(() => {

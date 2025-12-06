@@ -8,7 +8,8 @@
     "dev-actual": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && git add . && git commit -m 'Auto commit after build' && git push origin master"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.1.1",
