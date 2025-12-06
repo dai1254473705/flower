@@ -14,16 +14,11 @@ function App() {
   const [isCategoryModalOpen, setIsCategoryModalOpen] = useState(false);
   const [editingCategoryImage, setEditingCategoryImage] = useState(null);
   const [editingCategoryValue, setEditingCategoryValue] = useState('');
-  // 植物详情状态
-  const [selectedPlantId, setSelectedPlantId] = useState(null);
-  const [plantDetails, setPlantDetails] = useState({
-    description: '',
-    detailImages: [],
-    tabs: []
-  });
-  const [isDetailsModalOpen, setIsDetailsModalOpen] = useState(false);
-  const [isEditing, setIsEditing] = useState(false);
-  
+  // 文章详情弹窗状态
+  const [isArticleModalOpen, setIsArticleModalOpen] = useState(false);
+  const [currentPlant, setCurrentPlant] = useState(null);
+  const [currentArticle, setCurrentArticle] = useState(null);
+  const [showArticleList, setShowArticleList] = useState(true); // 控制显示文章列表还是内容
   // 加载图片数据
   useEffect(() => {
     const loadImages = async () => {
@@ -31,56 +26,19 @@ function App() {
         const response = await fetch('/data/image-links.json');
         const data = await response.json();
         // 为没有分类的图片添加默认分类
-        const imagesWithCategory = data.map(image => ({
+        // 为没有articles的图片添加默认空数组
+        const imagesWithDefaults = data.map(image => ({
           ...image,
-          category: image.category || ''
+          category: image.category || '',
+          articles: image.articles || []
         }));
-        setImages(imagesWithCategory);
+        setImages(imagesWithDefaults);
       } catch (error) {
         console.error('加载图片数据失败:', error);
       }
     };
     loadImages();
   }, []);
-  
-  // 加载植物详情
-  const loadPlantDetails = async (id) => {
-    try {
-      // 先尝试从localStorage加载，优先使用本地保存的数据
-      const storedData = localStorage.getItem(`plantDetails_${id}`);
-      if (storedData) {
-        return JSON.parse(storedData);
-      }
-      
-      // 如果localStorage中没有，再从服务器加载
-      const response = await fetch(`/data/details/${id}.json`);
-      const data = await response.json();
-      return data;
-    } catch (error) {
-      console.error('加载植物详情失败:', error);
-      return {
-        description: '',
-        detailImages: [],
-        tabs: []
-      };
-    }
-  };
-  
-  // 保存植物详情
-  const savePlantDetails = async (id, details) => {
-    try {
-      // 使用localStorage作为临时存储解决方案
-      localStorage.setItem(`plantDetails_${id}`, JSON.stringify(details));
-      
-      console.log('保存植物详情成功:', id, details);
-      alert('植物详情保存成功！');
-      return true;
-    } catch (error) {
-      console.error('保存植物详情失败:', error);
-      alert('保存失败，请重试！');
-      return false;
-    }
-  };
 
   // 加载分类配置
   useEffect(() => {
@@ -220,70 +178,37 @@ function App() {
     setIsCategoryModalOpen(false);
   };
   
-  // 打开植物详情模态框
-  const openDetailsModal = async (plantId) => {
-    setSelectedPlantId(plantId);
-    const details = await loadPlantDetails(plantId);
-    setPlantDetails(details);
-    setIsDetailsModalOpen(true);
-    setIsEditing(false);
+  // 打开植物文章链接弹窗
+  const openPlantArticles = (plant) => {
+    // 如果有文章，打开弹窗显示文章列表
+    if (plant.articles && plant.articles.length > 0) {
+      setCurrentPlant(plant);
+      setCurrentArticle(null);
+      setShowArticleList(true);
+      setIsArticleModalOpen(true);
+    } else {
+      alert('该植物暂无文章链接');
+    }
   };
-  
-  // 切换编辑模式
-  const toggleEditMode = () => {
-    setIsEditing(!isEditing);
+
+  // 关闭文章弹窗
+  const closeArticleModal = () => {
+    setIsArticleModalOpen(false);
+    setCurrentPlant(null);
+    setCurrentArticle(null);
+    setShowArticleList(true);
   };
-  
-  // 保存植物详情
-  const handleSaveDetails = () => {
-    if (!selectedPlantId) return;
-    savePlantDetails(selectedPlantId, plantDetails);
-    setIsEditing(false);
+
+  // 查看文章详情
+  const viewArticle = (article) => {
+    setCurrentArticle(article);
+    setShowArticleList(false);
   };
-  
-  // 更新详情字段
-  const updateDetailsField = (field, value) => {
-    setPlantDetails(prev => ({
-      ...prev,
-      [field]: value
-    }));
-  };
-  
-  // 更新tab内容
-  const updateTabContent = (tabIndex, contentIndex, field, value) => {
-    const newTabs = [...plantDetails.tabs];
-    const newContent = [...newTabs[tabIndex].content];
-    newContent[contentIndex][field] = value;
-    newTabs[tabIndex].content = newContent;
-    setPlantDetails(prev => ({
-      ...prev,
-      tabs: newTabs
-    }));
-  };
-  
-  // 添加新的tab
-  const addNewTab = () => {
-    const newTabs = [...plantDetails.tabs];
-    newTabs.push({
-      title: '新标签页',
-      content: []
-    });
-    setPlantDetails(prev => ({
-      ...prev,
-      tabs: newTabs
-    }));
-  };
-  
-  // 添加新的内容项
-  const addContentItem = (tabIndex, type) => {
-    const newTabs = [...plantDetails.tabs];
-    const newContent = [...newTabs[tabIndex].content];
-    newContent.push(type === 'text' ? { type: 'text', value: '' } : { type: 'image', src: '' });
-    newTabs[tabIndex].content = newContent;
-    setPlantDetails(prev => ({
-      ...prev,
-      tabs: newTabs
-    }));
+
+  // 返回文章列表
+  const backToArticleList = () => {
+    setShowArticleList(true);
+    setCurrentArticle(null);
   };
 
   return (
@@ -344,7 +269,7 @@ function App() {
                 <button className="rename-button" onClick={() => openRenameModal(index)}>
                   重命名
                 </button>
-                <button className="details-button" onClick={() => openDetailsModal(image.id)}>
+                <button className="details-button" onClick={() => openPlantArticles(image)}>
                   详情
                 </button>
                 <button className="delete-button" onClick={() => deleteImage(index)}>
@@ -397,162 +322,80 @@ function App() {
           </div>
         </div>
       )}
-      
-      {/* 植物详情模态框 */}
-      {isDetailsModalOpen && (
-        <div className="modal-overlay">
-          <div className="modal details-modal">
-            <div className="modal-header">
-              <h2>植物详情</h2>
-              <div className="modal-actions">
-                {isEditing ? (
-                  <>
-                    <button onClick={toggleEditMode}>取消编辑</button>
-                    <button onClick={handleSaveDetails} className="save-button">保存</button>
-                  </>
+
+      {/* 文章详情弹窗 - 模拟小程序界面 */}
+      {isArticleModalOpen && currentPlant && (
+        <div className="article-modal-overlay">
+          <div className="article-modal">
+            {/* 模拟小程序导航栏 */}
+            <div className="mini-program-header">
+              <div className="nav-left">
+                {showArticleList ? (
+                  <button className="nav-back-btn" onClick={closeArticleModal}>
+                    ←
+                  </button>
                 ) : (
-                  <button onClick={toggleEditMode}>编辑</button>
+                  <button className="nav-back-btn" onClick={backToArticleList}>
+                    ←
+                  </button>
                 )}
-                <button onClick={() => setIsDetailsModalOpen(false)}>关闭</button>
+              </div>
+              <div className="nav-title">
+                {showArticleList ? currentPlant.title : currentArticle?.title || '文章详情'}
+              </div>
+              <div className="nav-right">
+                <button className="nav-more-btn">
+                  ···
+                </button>
               </div>
             </div>
             
-            {/* 描述部分 */}
-            <div className="details-section">
-              <h3>描述</h3>
-              {isEditing ? (
-                <textarea
-                  className="details-textarea"
-                  value={plantDetails.description}
-                  onChange={(e) => updateDetailsField('description', e.target.value)}
-                  placeholder="输入植物描述"
-                />
-              ) : (
-                <p>{plantDetails.description || '暂无描述'}</p>
-              )}
-            </div>
-            
-            {/* 详情图片部分 */}
-            <div className="details-section">
-              <h3>详情图片</h3>
-              <div className="detail-images-grid">
-                {plantDetails.detailImages.map((image, index) => (
-                  <div key={index} className="detail-image-item">
-                    {isEditing ? (
-                      <input
-                        type="text"
-                        className="detail-image-input"
-                        value={image}
-                        onChange={(e) => {
-                          const newImages = [...plantDetails.detailImages];
-                          newImages[index] = e.target.value;
-                          updateDetailsField('detailImages', newImages);
-                        }}
-                        placeholder="图片URL"
-                      />
-                    ) : (
-                      <img src={image} alt={`详情图片${index + 1}`} />
-                    )}
+            {/* 文章内容区域 */}
+            <div className="mini-program-content">
+              {/* 文章列表 */}
+              {showArticleList && (
+                <div className="article-list">
+                  <div className="article-list-header">
+                    <h3>相关文章</h3>
                   </div>
-                ))}
-                {isEditing && (
-                  <button
-                    className="add-image-button"
-                    onClick={() => {
-                      const newImages = [...plantDetails.detailImages, ''];
-                      updateDetailsField('detailImages', newImages);
-                    }}
-                  >
-                    + 添加图片
-                  </button>
-                )}
-              </div>
-            </div>
-            
-            {/* Tab页部分 */}
-            <div className="details-section">
-              <h3>
-                Tab页内容
-                {isEditing && (
-                  <button
-                    className="add-tab-button"
-                    onClick={addNewTab}
-                  >
-                    + 添加Tab
-                  </button>
-                )}
-              </h3>
-              {plantDetails.tabs.map((tab, tabIndex) => (
-                <div key={tabIndex} className="tab-section">
-                  <h4>
-                    {isEditing ? (
-                      <input
-                        type="text"
-                        className="tab-title-input"
-                        value={tab.title}
-                        onChange={(e) => {
-                          const newTabs = [...plantDetails.tabs];
-                          newTabs[tabIndex].title = e.target.value;
-                          updateDetailsField('tabs', newTabs);
-                        }}
-                        placeholder="Tab标题"
-                      />
-                    ) : (
-                      tab.title
-                    )}
-                  </h4>
-                  <div className="tab-content">
-                    {tab.content.map((item, contentIndex) => (
-                      <div key={contentIndex} className={`content-item content-item-${item.type}`}>
-                        {item.type === 'text' ? (
-                          isEditing ? (
-                            <textarea
-                              className="content-textarea"
-                              value={item.value}
-                              onChange={(e) => updateTabContent(tabIndex, contentIndex, 'value', e.target.value)}
-                              placeholder="文本内容"
-                            />
-                          ) : (
-                            <p>{item.value}</p>
-                          )
-                        ) : (
-                          isEditing ? (
-                            <input
-                              type="text"
-                              className="content-image-input"
-                              value={item.src}
-                              onChange={(e) => updateTabContent(tabIndex, contentIndex, 'src', e.target.value)}
-                              placeholder="图片URL"
-                            />
-                          ) : (
-                            <img src={item.src} alt={`内容图片${contentIndex + 1}`} />
-                          )
-                        )}
+                  <div className="article-list-items">
+                    {currentPlant.articles.map((article, index) => (
+                      <div 
+                        key={index} 
+                        className="article-list-item"
+                        onClick={() => viewArticle(article)}
+                      >
+                        <div className="article-item-title">{article.title}</div>
+                        <div className="article-item-url">{article.url}</div>
                       </div>
                     ))}
-                    {isEditing && (
-                      <div className="add-content-buttons">
-                        <button
-                          className="add-text-button"
-                          onClick={() => addContentItem(tabIndex, 'text')}
-                        >
-                          + 添加文本
-                        </button>
-                        <button
-                          className="add-content-image-button"
-                          onClick={() => addContentItem(tabIndex, 'image')}
-                        >
-                          + 添加图片
-                        </button>
-                      </div>
-                    )}
                   </div>
                 </div>
-              ))}
+              )}
+              
+              {/* 文章内容 */}
+              {!showArticleList && currentArticle && (
+                <div className="article-content">
+                  <div className="article-content-header">
+                    <h3>{currentArticle.title}</h3>
+                  </div>
+                  <div className="article-iframe-container">
+                    <iframe 
+                      src={currentArticle.url} 
+                      title={currentArticle.title} 
+                      className="article-iframe"
+                      frameBorder="0"
+                      sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+                    />
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
       )}
+      
+
     </div>
   );
 }
