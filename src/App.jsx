@@ -250,7 +250,7 @@ function App() {
           <div key={index} className="image-card">
             <div className="image-wrapper">
               {/* 使用本地图片路径显示，绕过CORS限制 */}
-              <img src={`/icon/${encodeURIComponent(image.title)}.jpg`} alt={image.title} />
+              <img src={`/flower/icon/${encodeURIComponent(image.title)}.jpg`} alt={image.title} />
               {/* 如果JSON中已有该图片，添加标识 */}
               <div className="json-indicator">JSON中已存在</div>
             </div>
