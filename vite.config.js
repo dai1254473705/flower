@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/flower/', // 设置GitHub Pages的基础路径
+  build: {
+    outDir: 'docs' // 将构建输出目录改为docs，以便GitHub Pages直接读取
+  }
 })
