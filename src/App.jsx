@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     const loadImages = async () => {
       try {
-        const response = await fetch('/data/image-links.json');
+        const response = await fetch('/flower/data/image-links.json');
         const data = await response.json();
         // 为没有分类的图片添加默认分类
         // 为没有articles的图片添加默认空数组
@@ -44,7 +44,7 @@ function App() {
   useEffect(() => {
     const loadCategories = async () => {
       try {
-        const response = await fetch('/category-config.json');
+        const response = await fetch('/flower/category-config.json');
         const data = await response.json();
         setCategories(data.categories);
       } catch (error) {
