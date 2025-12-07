@@ -1,0 +1,63 @@
+<!--pages/plant-detail/plant-detail.wxml-->
+<view class="container">
+  <view wx:if="{{plant}}">
+    <!-- 植物大图 -->
+    <view class="plant-image-section">
+      <image 
+        class="plant-image" 
+        src="{{plant.src}}" 
+        mode="aspectFit"
+        bindtap="previewImage"
+      ></image>
+      <view class="image-overlay">
+        <view class="collection-btn" catchtap="toggleCollection">
+          <text class="icon {{isCollected ? 'collected' : ''}}">{{isCollected ? '♥' : '♡'}}</text>
+          <text class="btn-text">{{isCollected ? '已收藏' : '收藏'}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 植物基本信息 -->
+    <view class="plant-info-section">
+      <view class="info-card">
+        <text class="plant-title">{{plant.title}}</text>
+        <view class="plant-meta">
+          <text class="category">{{plant.category}}</text>
+          <text class="plant-id">ID: {{plant.id}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 相关文章 -->
+    <view class="articles-section" wx:if="{{plant.articles && plant.articles.length > 0}}">
+      <view class="section-header">
+        <text class="section-title">相关文章</text>
+      </view>
+      <view class="articles-list">
+        <block wx:for="{{plant.articles}}" wx:key="title">
+          <view class="article-item" bindtap="viewArticle" data-article="{{item}}">
+            <text class="article-title">{{item.title}}</text>
+            <text class="article-arrow">›</text>
+          </view>
+        </block>
+      </view>
+    </view>
+
+    <!-- 操作按钮 -->
+    <view class="action-section">
+      <button class="action-btn share-btn" open-type="share">
+        <text class="btn-icon">📤</text>
+        <text>分享给好友</text>
+      </button>
+      <button class="action-btn feedback-btn" bindtap="onFeedback">
+        <text class="btn-icon">💬</text>
+        <text>用户反馈</text>
+      </button>
+    </view>
+  </view>
+
+  <!-- 空状态 -->
+  <view wx:else class="empty">
+    <text>植物信息加载中...</text>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+<!--pages/search-result/search-result.wxml-->
+<view class="container">
+  <!-- 搜索结果标题 -->
+  <view class="search-header">
+    <text class="search-title">搜索结果</text>
+    <text class="search-keyword">关键词: "{{keyword}}"</text>
+    <text class="result-count">找到{{plants.length}}个结果</text>
+  </view>
+
+  <!-- 搜索结果列表 -->
+  <view class="search-results">
+    <block wx:for="{{plants}}" wx:key="id">
+      <view class="result-item" bindtap="goToPlantDetail" data-plant="{{item}}">
+        <image class="plant-image" src="{{item.src}}" mode="aspectFill" lazy-load="true"></image>
+        <view class="plant-info">
+          <text class="plant-title">{{item.title}}</text>
+          <text class="plant-category">{{item.category}}</text>
+        </view>
+        <view class="collection-btn" catchtap="toggleCollection" data-plant="{{item}}">
+          <text class="icon {{item.isCollected ? 'collected' : ''}}">{{item.isCollected ? '♥' : '♡'}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <!-- 加载状态 -->
+  <view wx:if="{{loading}}" class="loading">
+    <text>搜索中...</text>
+  </view>
+
+  <view wx:if="{{!loading && plants.length === 0}}" class="empty">
+    <text class="empty-icon">🔍</text>
+    <text class="empty-text">未找到相关植物</text>
+    <text class="empty-desc">请尝试其他关键词</text>
+  </view>
+
+  <view wx:if="{{!hasMore && plants.length > 0}}" class="no-more">
+    <text>没有更多结果了</text>
+  </view>
+</view>

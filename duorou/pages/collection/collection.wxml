@@ -1,0 +1,36 @@
+<!--pages/collection/collection.wxml-->
+<view class="container">
+  <!-- 页面标题 -->
+  <view class="page-header">
+    <text class="page-title">我的收藏</text>
+    <text class="collection-count">共{{collectionList.length}}个收藏</text>
+  </view>
+
+  <!-- 清空收藏按钮 -->
+  <view class="clear-section" wx:if="{{collectionList.length > 0}}">
+    <button class="clear-btn" bindtap="clearCollection">清空收藏</button>
+  </view>
+
+  <!-- 收藏列表 -->
+  <view class="collection-list">
+    <block wx:for="{{collectionList}}" wx:key="id">
+      <view class="collection-item" bindtap="goToPlantDetail" data-plant="{{item}}">
+        <image class="plant-image" src="{{item.src}}" mode="aspectFill" lazy-load="true"></image>
+        <view class="plant-info">
+          <text class="plant-title">{{item.title}}</text>
+          <text class="plant-category">{{item.category}}</text>
+        </view>
+        <view class="remove-btn" catchtap="removeFromCollection" data-plant="{{item}}">
+          <text class="icon">×</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <!-- 空状态 -->
+  <view wx:if="{{collectionList.length === 0}}" class="empty">
+    <text class="empty-icon">♡</text>
+    <text class="empty-text">暂无收藏</text>
+    <text class="empty-desc">快去首页发现喜欢的多肉植物吧</text>
+  </view>
+</view>

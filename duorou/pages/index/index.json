@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/navigation-bar"
+  },
+  "navigationStyle": "custom",
+  "navigationBarBackgroundColor": "#4CAF50",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "多肉花园",
+  "backgroundColor": "#4CAF50"
+}

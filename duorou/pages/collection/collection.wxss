@@ -1,0 +1,120 @@
+/* pages/collection/collection.wxss */
+.container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* 页面标题 */
+.page-header {
+  background: white;
+  padding: 30rpx;
+  border-bottom: 1rpx solid #eee;
+  text-align: center;
+}
+
+.page-title {
+  display: block;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.collection-count {
+  font-size: 24rpx;
+  color: #666;
+}
+
+/* 清空收藏按钮 */
+.clear-section {
+  padding: 20rpx;
+  text-align: center;
+}
+
+.clear-btn {
+  background: #ff4757;
+  color: white;
+  border: none;
+  border-radius: 8rpx;
+  padding: 15rpx 30rpx;
+  font-size: 26rpx;
+}
+
+/* 收藏列表 */
+.collection-list {
+  padding: 20rpx;
+}
+
+.collection-item {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 15rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.plant-image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+}
+
+.plant-info {
+  flex: 1;
+}
+
+.plant-title {
+  display: block;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8rpx;
+}
+
+.plant-category {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.remove-btn {
+  width: 60rpx;
+  height: 60rpx;
+  background: #f8f8f8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff4757;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+/* 空状态 */
+.empty {
+  text-align: center;
+  padding: 150rpx 20rpx;
+}
+
+.empty-icon {
+  display: block;
+  font-size: 80rpx;
+  color: #ccc;
+  margin-bottom: 20rpx;
+}
+
+.empty-text {
+  display: block;
+  font-size: 28rpx;
+  color: #999;
+  margin-bottom: 10rpx;
+}
+
+.empty-desc {
+  display: block;
+  font-size: 24rpx;
+  color: #ccc;
+}
