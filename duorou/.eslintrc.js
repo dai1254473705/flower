@@ -28,4 +28,8 @@ module.exports = {
   },
   // extends: 'eslint:recommended',
   rules: {},
+  ignorePatterns: [
+    "*.json",
+    "node_modules/"
+  ]
 }

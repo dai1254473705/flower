@@ -2,11 +2,33 @@
 Page({
   data: {
     categories: [],
-    loading: true
+    loading: true,
+    currentTheme: 'green', // 当前主题
+    fontSizeValue: 28 // 默认字体大小
   },
 
   onLoad() {
+    // 初始化主题和字体大小
+    this.initThemeAndFontSize()
+    
     this.loadCategories()
+  },
+  
+  // 初始化主题和字体大小
+  initThemeAndFontSize() {
+    const userSettings = wx.getStorageSync('userSettings') || {}
+    const themeName = userSettings.themeName || 'green'
+    const fontSize = userSettings.fontSize || 'medium'
+    
+    // 设置字体大小值
+    let fontSizeValue = 28
+    if (fontSize === 'small') fontSizeValue = 24
+    if (fontSize === 'large') fontSizeValue = 32
+    
+    this.setData({
+      currentTheme: themeName,
+      fontSizeValue
+    })
   },
 
   // 加载分类数据
@@ -101,5 +123,24 @@ Page({
       title: '多肉花园 - 植物分类',
       path: '/pages/category/category'
     }
+  },
+  
+  // 主题切换回调
+  onThemeChange(themeName) {
+    this.setData({ currentTheme: themeName })
+  },
+  
+  // 字体大小切换回调
+  onFontSizeChange(fontSize) {
+    let fontSizeValue = 28
+    if (fontSize === 'small') fontSizeValue = 24
+    if (fontSize === 'large') fontSizeValue = 32
+    
+    this.setData({ fontSizeValue })
+  },
+  
+  // 页面显示时刷新主题和字体大小
+  onShow() {
+    this.initThemeAndFontSize()
   }
 })

@@ -2,16 +2,39 @@
 Page({
   data: {
     collectionList: [],
-    loading: false
+    loading: false,
+    currentTheme: 'green', // 当前主题
+    fontSizeValue: 28 // 默认字体大小
   },
 
   onLoad() {
+    // 初始化主题和字体大小
+    this.initThemeAndFontSize()
     this.loadCollection()
   },
 
   onShow() {
+    // 初始化主题和字体大小
+    this.initThemeAndFontSize()
     // 每次显示页面时刷新收藏列表
     this.loadCollection()
+  },
+  
+  // 初始化主题和字体大小
+  initThemeAndFontSize() {
+    const userSettings = wx.getStorageSync('userSettings') || {}
+    const themeName = userSettings.themeName || 'green'
+    const fontSize = userSettings.fontSize || 'medium'
+    
+    // 设置字体大小值
+    let fontSizeValue = 28
+    if (fontSize === 'small') fontSizeValue = 24
+    if (fontSize === 'large') fontSizeValue = 32
+    
+    this.setData({
+      currentTheme: themeName,
+      fontSizeValue
+    })
   },
 
   // 加载收藏列表
@@ -83,5 +106,19 @@ Page({
       title: '多肉花园 - 我的收藏',
       path: '/pages/collection/collection'
     }
+  },
+  
+  // 主题切换回调
+  onThemeChange(themeName) {
+    this.setData({ currentTheme: themeName })
+  },
+  
+  // 字体大小切换回调
+  onFontSizeChange(fontSize) {
+    let fontSizeValue = 28
+    if (fontSize === 'small') fontSizeValue = 24
+    if (fontSize === 'large') fontSizeValue = 32
+    
+    this.setData({ fontSizeValue })
   }
 })

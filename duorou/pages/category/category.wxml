@@ -1,5 +1,5 @@
 <!--pages/category/category.wxml-->
-<view class="container">
+<view class="container {{currentTheme}}" style="font-size: {{fontSizeValue}}rpx;">
   <!-- 页面标题 -->
   <view class="page-header">
     <text class="page-title">植物分类</text>

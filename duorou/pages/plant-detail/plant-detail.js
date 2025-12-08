@@ -4,12 +4,18 @@ Page({
     plant: null,
     isCollected: false,
     currentImageIndex: 0,
-    showImagePreview: false
+    showImagePreview: false,
+    currentTheme: 'green', // 当前主题
+    fontSizeValue: 28 // 默认字体大小
   },
 
   onLoad(options) {
     if (options.plant) {
       const plant = JSON.parse(decodeURIComponent(options.plant))
+      
+      // 初始化主题和字体大小
+      this.initThemeAndFontSize()
+      
       this.setData({
         plant: plant,
         isCollected: this.checkCollectionStatus(plant.id)
@@ -18,6 +24,23 @@ Page({
         title: plant.title || '植物详情'
       })
     }
+  },
+  
+  // 初始化主题和字体大小
+  initThemeAndFontSize() {
+    const userSettings = wx.getStorageSync('userSettings') || {}
+    const themeName = userSettings.themeName || 'green'
+    const fontSize = userSettings.fontSize || 'medium'
+    
+    // 设置字体大小值
+    let fontSizeValue = 28
+    if (fontSize === 'small') fontSizeValue = 24
+    if (fontSize === 'large') fontSizeValue = 32
+    
+    this.setData({
+      currentTheme: themeName,
+      fontSizeValue
+    })
   },
 
   // 检查收藏状态
@@ -100,5 +123,24 @@ Page({
       showCancel: false,
       confirmText: '知道了'
     })
+  },
+  
+  // 主题切换回调
+  onThemeChange(themeName) {
+    this.setData({ currentTheme: themeName })
+  },
+  
+  // 字体大小切换回调
+  onFontSizeChange(fontSize) {
+    let fontSizeValue = 28
+    if (fontSize === 'small') fontSizeValue = 24
+    if (fontSize === 'large') fontSizeValue = 32
+    
+    this.setData({ fontSizeValue })
+  },
+  
+  // 页面显示时刷新主题和字体大小
+  onShow() {
+    this.initThemeAndFontSize()
   }
 })

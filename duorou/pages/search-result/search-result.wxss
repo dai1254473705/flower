@@ -1,56 +1,66 @@
 /* pages/search-result/search-result.wxss */
 .container {
   min-height: 100vh;
-  background-color: #f5f5f5;
+  background-color: var(--background);
+  padding-top: var(--status-bar-height);
 }
 
 /* 搜索结果标题 */
 .search-header {
-  background: white;
-  padding: 30rpx;
-  border-bottom: 1rpx solid #eee;
+  background: var(--card-background);
+  padding: var(--spacing-md);
+  border-bottom: 1rpx solid var(--border-color);
+  box-shadow: var(--shadow-light);
 }
 
 .search-title {
   display: block;
   font-size: 28rpx;
-  color: #666;
-  margin-bottom: 10rpx;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xs);
 }
 
 .search-keyword {
   display: block;
-  font-size: 32rpx;
+  font-size: 36rpx;
   font-weight: bold;
-  color: #333;
-  margin-bottom: 10rpx;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xs);
 }
 
 .result-count {
   font-size: 24rpx;
-  color: #666;
+  color: var(--text-secondary);
 }
 
 /* 搜索结果列表 */
 .search-results {
-  padding: 20rpx;
+  padding: var(--spacing-sm);
 }
 
 .result-item {
   display: flex;
   align-items: center;
-  background: white;
-  border-radius: 15rpx;
-  padding: 20rpx;
-  margin-bottom: 20rpx;
-  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.1);
+  background: var(--card-background);
+  border-radius: var(--border-radius-medium);
+  padding: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+  box-shadow: var(--shadow-medium);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  position: relative;
+}
+
+.result-item:active {
+  transform: scale(0.98);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .plant-image {
-  width: 120rpx;
-  height: 120rpx;
-  border-radius: 10rpx;
-  margin-right: 20rpx;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: var(--border-radius-small);
+  margin-right: var(--spacing-sm);
+  background-color: #f8f8f8;
 }
 
 .plant-info {
@@ -61,64 +71,115 @@
   display: block;
   font-size: 28rpx;
   font-weight: bold;
-  color: #333;
+  color: var(--text-primary);
   margin-bottom: 8rpx;
 }
 
 .plant-category {
   font-size: 24rpx;
-  color: #666;
+  color: var(--text-secondary);
 }
 
 .collection-btn {
-  width: 60rpx;
-  height: 60rpx;
-  background: #f8f8f8;
+  width: 70rpx;
+  height: 70rpx;
+  background: var(--background);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-light);
+}
+
+.collection-btn:active {
+  transform: scale(0.9);
 }
 
 .collection-btn .icon {
-  font-size: 28rpx;
-  color: #ccc;
+  font-size: 34rpx;
+  color: var(--text-light);
+  transition: color 0.3s ease;
 }
 
 .collection-btn .collected {
-  color: #ff4757;
+  color: var(--error-color);
+  animation: heartBeat 0.6s ease;
+}
+
+@keyframes heartBeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
 }
 
 /* 加载状态 */
 .loading, .no-more {
   text-align: center;
-  padding: 40rpx;
-  color: #999;
+  padding: var(--spacing-xl);
+  color: var(--text-light);
   font-size: 28rpx;
 }
 
 /* 空状态 */
 .empty {
   text-align: center;
-  padding: 150rpx 20rpx;
+  padding: 150rpx var(--spacing-sm);
 }
 
 .empty-icon {
   display: block;
   font-size: 80rpx;
-  color: #ccc;
-  margin-bottom: 20rpx;
+  color: var(--text-light);
+  margin-bottom: var(--spacing-sm);
+  animation: pulse 2s infinite;
 }
 
 .empty-text {
   display: block;
   font-size: 28rpx;
-  color: #999;
-  margin-bottom: 10rpx;
+  color: var(--text-light);
+  margin-bottom: var(--spacing-xs);
 }
 
 .empty-desc {
   display: block;
   font-size: 24rpx;
-  color: #ccc;
+  color: var(--text-light);
+}
+
+/* 骨架屏样式 */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: var(--border-radius-small);
+}
+
+.skeleton-image {
+  width: 140rpx;
+  height: 140rpx;
+  margin-right: var(--spacing-sm);
+  border-radius: var(--border-radius-small);
+}
+
+.skeleton-title {
+  width: 200rpx;
+  height: 32rpx;
+  margin-bottom: var(--spacing-xs);
+}
+
+.skeleton-category {
+  width: 150rpx;
+  height: 24rpx;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
 }

@@ -1,5 +1,5 @@
 <!--pages/plant-detail/plant-detail.wxml-->
-<view class="container">
+<view class="container {{currentTheme}}" style="font-size: {{fontSizeValue}}rpx;">
   <view wx:if="{{plant}}">
     <!-- 植物大图 -->
     <view class="plant-image-section">

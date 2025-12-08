@@ -6,7 +6,11 @@ Page({
     loading: true,
     hasMore: true,
     page: 1,
-    pageSize: 20
+    pageSize: 20,
+    showSkeleton: true,
+    skeletonCount: 6,
+    currentTheme: 'green', // 当前主题
+    fontSizeValue: 28 // 默认字体大小
   },
 
   onLoad(options) {
@@ -15,25 +19,49 @@ Page({
     wx.setNavigationBarTitle({
       title: `搜索: ${keyword}`
     })
+    // 初始化主题和字体大小
+    this.initThemeAndFontSize()
     this.searchPlants()
   },
 
   onShow() {
+    // 初始化主题和字体大小
+    this.initThemeAndFontSize()
     // 刷新收藏状态
     if (this.data.plants.length > 0) {
       this.updateCollectionStatus()
     }
   },
+  
+  // 初始化主题和字体大小
+  initThemeAndFontSize() {
+    const userSettings = wx.getStorageSync('userSettings') || {}
+    const themeName = userSettings.themeName || 'green'
+    const fontSize = userSettings.fontSize || 'medium'
+    
+    // 设置字体大小值
+    let fontSizeValue = 28
+    if (fontSize === 'small') fontSizeValue = 24
+    if (fontSize === 'large') fontSizeValue = 32
+    
+    this.setData({
+      currentTheme: themeName,
+      fontSizeValue
+    })
+  },
 
   // 搜索植物
   searchPlants() {
     const that = this
-    this.setData({ loading: true })
+    this.setData({ loading: true, showSkeleton: true })
 
     // 检查本地缓存
     const cachedPlants = wx.getStorageSync('plantsData')
     if (cachedPlants && cachedPlants.length > 0) {
-      that.processSearchResults(cachedPlants)
+      // 模拟网络延迟以展示骨架屏
+      setTimeout(() => {
+        that.processSearchResults(cachedPlants)
+      }, 300)
       return
     }
 
@@ -87,7 +115,8 @@ Page({
     this.setData({
       plants: this.data.page === 1 ? plantsWithCollection : [...this.data.plants, ...plantsWithCollection],
       loading: false,
-      hasMore: endIndex < filteredPlants.length
+      hasMore: endIndex < filteredPlants.length,
+      showSkeleton: false
     })
   },
 
@@ -149,5 +178,19 @@ Page({
       title: `多肉花园 - 搜索"${this.data.keyword}"`,
       path: `/pages/search-result/search-result?keyword=${encodeURIComponent(this.data.keyword)}`
     }
+  },
+  
+  // 主题切换回调
+  onThemeChange(themeName) {
+    this.setData({ currentTheme: themeName })
+  },
+  
+  // 字体大小切换回调
+  onFontSizeChange(fontSize) {
+    let fontSizeValue = 28
+    if (fontSize === 'small') fontSizeValue = 24
+    if (fontSize === 'large') fontSizeValue = 32
+    
+    this.setData({ fontSizeValue })
   }
 })

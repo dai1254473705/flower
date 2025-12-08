@@ -1,5 +1,5 @@
 <!--pages/collection/collection.wxml-->
-<view class="container">
+<view class="container {{currentTheme}}" style="font-size: {{fontSizeValue}}rpx;">
   <!-- 页面标题 -->
   <view class="page-header">
     <text class="page-title">我的收藏</text>

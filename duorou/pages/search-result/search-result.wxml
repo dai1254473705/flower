@@ -1,5 +1,5 @@
 <!--pages/search-result/search-result.wxml-->
-<view class="container">
+<view class="container {{currentTheme}}" style="font-size: {{fontSizeValue}}rpx;">
   <!-- 搜索结果标题 -->
   <view class="search-header">
     <text class="search-title">搜索结果</text>
@@ -9,7 +9,22 @@
 
   <!-- 搜索结果列表 -->
   <view class="search-results">
-    <block wx:for="{{plants}}" wx:key="id">
+    <!-- 骨架屏 -->
+    <block wx:if="{{showSkeleton}}" wx:for="{{skeletonCount}}" wx:key="index">
+      <view class="result-item">
+        <view class="skeleton skeleton-image"></view>
+        <view class="plant-info">
+          <view class="skeleton skeleton-title"></view>
+          <view class="skeleton skeleton-category"></view>
+        </view>
+        <view class="collection-btn">
+          <text class="icon">♡</text>
+        </view>
+      </view>
+    </block>
+    
+    <!-- 真实数据 -->
+    <block wx:if="{{!showSkeleton && plants.length > 0}}" wx:for="{{plants}}" wx:key="id">
       <view class="result-item" bindtap="goToPlantDetail" data-plant="{{item}}">
         <image class="plant-image" src="{{item.src}}" mode="aspectFill" lazy-load="true"></image>
         <view class="plant-info">

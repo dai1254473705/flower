@@ -1,5 +1,16 @@
 <!--pages/index/index.wxml-->
-<view class="container">
+<view class="container {{currentTheme}}" style="font-size: {{fontSizeValue}}rpx;">
+  <!-- 轮播图 -->
+  <view class="banner-section">
+    <swiper class="banner-swiper" indicator-dots circular autoplay interval="3000">
+      <swiper-item wx:for="{{banners}}" wx:key="id">
+        <image src="{{item.image || item.src}}" mode="aspectFill" class="banner-image"></image>
+        <view class="banner-mask"></view>
+        <view class="banner-title">{{item.title || ''}}</view>
+      </swiper-item>
+    </swiper>
+  </view>
+
   <!-- 搜索栏 -->
   <view class="search-section">
     <view class="search-bar">
@@ -12,16 +23,34 @@
       />
       <button class="search-btn" bindtap="onSearch">搜索</button>
     </view>
-    <view class="category-btn" bindtap="goToCategory">
-      <text>分类浏览</text>
-      <text class="icon">›</text>
+    <view class="action-buttons">
+      <view class="category-btn" bindtap="goToCategory">
+        <text>分类浏览</text>
+        <text class="icon">›</text>
+      </view>
+      <view class="settings-btn" bindtap="goToSettings">
+        <text class="icon">⚙️</text>
+        <text>设置</text>
+      </view>
     </view>
   </view>
 
   <!-- 植物网格展示 -->
   <view class="plants-grid">
-    <block wx:for="{{plants}}" wx:key="id">
-      <view class="plant-card" bindtap="goToPlantDetail" data-plant="{{item}}">
+    <!-- 骨架屏 -->
+    <block wx:if="{{showSkeleton}}" wx:for="{{skeletonCount}}" wx:key="index">
+      <view class="plant-card skeleton-card">
+        <view class="skeleton skeleton-image"></view>
+        <view class="plant-info">
+          <view class="skeleton skeleton-title"></view>
+          <view class="skeleton skeleton-category"></view>
+        </view>
+      </view>
+    </block>
+    
+    <!-- 真实数据 -->
+    <block wx:if="{{!showSkeleton && plants.length > 0}}" wx:for="{{plants}}" wx:key="id">
+      <view class="plant-card" bindtap="goToPlantList" data-plant="{{item}}">
         <image class="plant-image" src="{{item.src}}" mode="aspectFill" lazy-load="true"></image>
         <view class="plant-info">
           <text class="plant-title">{{item.title}}</text>
@@ -43,7 +72,7 @@
     <text>暂无数据</text>
   </view>
 
-  <view wx:if="{{!hasMore && plants.length > 0}}" class="no-more">
+  <view wx:if="{{showNoMore && plants.length > 0}}" class="no-more">
     <text>没有更多数据了</text>
   </view>
 </view>

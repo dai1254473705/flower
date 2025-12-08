@@ -1,5 +1,5 @@
 <!--pages/webview/webview.wxml-->
-<view class="container">
+<view class="container {{currentTheme}}">
   <web-view 
     src="{{url}}" 
     bindload="onWebviewLoad" 
