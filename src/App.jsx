@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import './App.css';
-import imageLinks from './image-links.json';
+import imageLinks from '../public/data/image-links.json';
 
 function App() {
   // 状态管理
