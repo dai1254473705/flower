@@ -1,0 +1,24 @@
+{
+  "hot_scenes": [
+    {
+      "type": "短期",
+      "title": "瑞幸9.9咖啡送达",
+      "icon": "coffee",
+      "default_time": "1小时"
+    },
+    {
+      "type": "长期",
+      "title": "2026春节回家",
+      "icon": "train",
+      "default_date": "2026-01-29"
+    }
+  ],
+  "emotion_text": [
+    { "progress": "10%", "text": "刚出发！别急，好戏在后头" },
+    { "progress": "90%", "text": "冲刺啦！目标就在眼前" }
+  ],
+  "ads": [
+    { "type": "reward", "title": "看广告解锁「奶茶皮肤」", "link": "广告链接" },
+    { "type": "banner", "title": "职场效率神器：XX笔记", "img": "广告图链接" }
+  ]
+}

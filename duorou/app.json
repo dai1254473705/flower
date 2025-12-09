@@ -14,7 +14,7 @@
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "多肉花园",
     "navigationStyle": "default",
-    "homeButton": true,
+    "homeButton": false,
     "backgroundColor": "#F5F5F5",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": true,
