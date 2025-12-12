@@ -31,13 +31,13 @@ App({
   },
   onShow() {
     // 小程序启动或从后台进入前台时
-    console.log("多肉花园小程序启动");
+    console.log("多肉小园小程序启动");
     this.initThemeAndFontSize();
   },
 
   onHide() {
     // 小程序从前台进入后台时
-    console.log("多肉花园小程序进入后台");
+    console.log("多肉小园小程序进入后台");
   },
 
   // 检查更新

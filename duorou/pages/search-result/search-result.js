@@ -44,9 +44,52 @@ Page({
     if (fontSize === 'small') fontSizeValue = 24
     if (fontSize === 'large') fontSizeValue = 32
     
+    // 将主题名转换为带 -theme 后缀的类名
+    const themeClass = `${themeName}-theme`
+    
     this.setData({
-      currentTheme: themeName,
+      currentTheme: themeClass,
       fontSizeValue
+    })
+    
+    // 更新导航栏颜色
+    this.applyTheme(themeName)
+  },
+  
+  // 应用主题到导航栏
+  applyTheme(themeName) {
+    let navigationBarColor = '#ffffff'
+    let frontColor = '#000000'
+    
+    switch(themeName) {
+      case 'green':
+        navigationBarColor = '#4CAF50'
+        frontColor = '#ffffff'
+        break
+      case 'blue':
+        navigationBarColor = '#2196F3'
+        frontColor = '#ffffff'
+        break
+      case 'pink':
+        navigationBarColor = '#E91E63'
+        frontColor = '#ffffff'
+        break
+      case 'purple':
+        navigationBarColor = '#9C27B0'
+        frontColor = '#ffffff'
+        break
+      case 'dark':
+        navigationBarColor = '#212121'
+        frontColor = '#ffffff'
+        break
+      default:
+        navigationBarColor = '#ffffff'
+        frontColor = '#000000'
+    }
+    
+    wx.setNavigationBarColor({
+      frontColor: frontColor,
+      backgroundColor: navigationBarColor
     })
   },
 
@@ -55,50 +98,32 @@ Page({
     const that = this
     this.setData({ loading: true, showSkeleton: true })
 
-    // 检查本地缓存
-    const cachedPlants = wx.getStorageSync('plantsData')
-    if (cachedPlants && cachedPlants.length > 0) {
-      // 模拟网络延迟以展示骨架屏
-      setTimeout(() => {
-        that.processSearchResults(cachedPlants)
-      }, 300)
-      return
-    }
-
-    // 从网络获取数据
-    wx.request({
-      url: 'https://dai1254473705.github.io/flower/data/image-links.json',
-      success(res) {
-        if (res.statusCode === 200 && res.data) {
-          wx.setStorageSync('plantsData', res.data)
-          that.processSearchResults(res.data)
-        } else {
-          that.setData({ loading: false })
-          wx.showToast({
-            title: '数据加载失败',
-            icon: 'none'
-          })
-        }
-      },
-      fail() {
-        that.setData({ loading: false })
+    const dataManager = require('../../utils/dataManager')
+    const searchUtils = require('../../utils/searchUtils')
+    
+    // 使用数据管理工具获取数据
+    dataManager.getPlantsData()
+      .then(plantsData => {
+        // 模拟网络延迟以展示骨架屏
+        setTimeout(() => {
+          that.processSearchResults(plantsData, searchUtils)
+        }, 300)
+      })
+      .catch(err => {
+        that.setData({ loading: false, showSkeleton: false })
         wx.showToast({
-          title: '网络错误',
+          title: err.message || '数据加载失败',
           icon: 'none'
         })
-      }
-    })
+      })
   },
 
   // 处理搜索结果
-  processSearchResults(plantsData) {
-    const keyword = this.data.keyword.toLowerCase()
+  processSearchResults(plantsData, searchUtils) {
+    const keyword = this.data.keyword
     
-    // 过滤匹配的植物
-    let filteredPlants = plantsData.filter(plant => 
-      plant.title.toLowerCase().includes(keyword) ||
-      plant.category.toLowerCase().includes(keyword)
-    )
+    // 使用搜索工具进行搜索
+    let filteredPlants = searchUtils.searchPlants(plantsData, keyword)
 
     // 分页处理
     const startIndex = (this.data.page - 1) * this.data.pageSize
@@ -175,14 +200,16 @@ Page({
   // 分享功能
   onShareAppMessage() {
     return {
-      title: `多肉花园 - 搜索"${this.data.keyword}"`,
+      title: `多肉小园 - 搜索"${this.data.keyword}"`,
       path: `/pages/search-result/search-result?keyword=${encodeURIComponent(this.data.keyword)}`
     }
   },
   
   // 主题切换回调
   onThemeChange(themeName) {
-    this.setData({ currentTheme: themeName })
+    const themeClass = `${themeName}-theme`
+    this.setData({ currentTheme: themeClass })
+    this.applyTheme(themeName)
   },
   
   // 字体大小切换回调

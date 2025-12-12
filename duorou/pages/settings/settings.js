@@ -8,11 +8,6 @@ Page({
       { id: 'purple', name: '优雅紫', colors: ['#9C27B0', '#BA68C8', '#E1BEE7'] },
       { id: 'dark', name: '深色主题', colors: ['#212121', '#424242', '#757575'] }
     ],
-    fontSizes: [
-      { id: 'small', name: '小', preview: '小字号', previewSize: '12px' },
-      { id: 'medium', name: '中', preview: '中字号', previewSize: '16px' },
-      { id: 'large', name: '大', preview: '大字号', previewSize: '20px' }
-    ],
     userSettings: {
       themeName: 'green',
       fontSize: 'medium',
@@ -41,10 +36,16 @@ Page({
     if (fontSize === 'small') fontSizeValue = 24
     if (fontSize === 'large') fontSizeValue = 32
     
+    // 将主题名转换为带 -theme 后缀的类名
+    const themeClass = `${themeName}-theme`
+    
     this.setData({
-      currentTheme: themeName,
+      currentTheme: themeClass,
       fontSizeValue
     })
+    
+    // 更新导航栏颜色
+    this.applyTheme(themeName)
   },
 
   // 加载用户设置
@@ -79,16 +80,25 @@ Page({
       themeName,
       theme: themeName === 'dark' ? 'dark' : 'light'
     }
-    this.setData({ userSettings })
     wx.setStorageSync('userSettings', userSettings)
+    
+    // 将主题名转换为带 -theme 后缀的类名
+    const themeClass = `${themeName}-theme`
+    
+    // 更新当前设置页面的主题
+    this.setData({ 
+      userSettings,
+      currentTheme: themeClass
+    })
     
     // 应用主题到导航栏
     this.applyTheme(themeName)
     
-    // 通知所有页面更新主题
+    // 通知所有页面更新主题（包括当前页面栈中的页面）
     const pages = getCurrentPages()
     pages.forEach(page => {
-      if (page.onThemeChange) {
+      // 避免对当前设置页再次调用导致递归
+      if (page !== this && page.onThemeChange) {
         page.onThemeChange(themeName)
       }
     })
@@ -138,46 +148,32 @@ Page({
     })
   },
 
-  // 切换字体大小
-  onFontSizeChange(e) {
-    // 支持两种调用方式：1. 通过事件调用 2. 直接传递fontSize
-    const fontSize = typeof e === 'string' ? e : e.currentTarget.dataset.size
-    const userSettings = {
-      ...this.data.userSettings,
-      fontSize
-    }
-    this.setData({ userSettings })
-    wx.setStorageSync('userSettings', userSettings)
-    
-    // 通知所有页面更新字体大小
-    const pages = getCurrentPages()
-    pages.forEach(page => {
-      if (page.onFontSizeChange) {
-        page.onFontSizeChange(fontSize)
-      }
-    })
-    
-    wx.showToast({
-      title: '字体大小已更新',
-      icon: 'success',
-      duration: 1500
-    })
-  },
-
   // 清除缓存
   onClearCache() {
+    const that = this
     wx.showModal({
       title: '清除缓存',
       content: '确定要清除所有缓存吗？',
       success: (res) => {
         if (res.confirm) {
-          wx.clearStorage()
-          this.setData({ cacheSize: 0 })
-          // 重新初始化设置
-          this.loadUserSettings()
-          wx.showToast({
-            title: '缓存已清除',
-            icon: 'success'
+          // 清除缓存
+          wx.clearStorage({
+            success: () => {
+              // 重新计算缓存大小
+              that.calculateCacheSize()
+              // 重新初始化设置
+              that.loadUserSettings()
+              wx.showToast({
+                title: '缓存已清除',
+                icon: 'success'
+              })
+            },
+            fail: () => {
+              wx.showToast({
+                title: '清除失败',
+                icon: 'none'
+              })
+            }
           })
         }
       }
@@ -187,7 +183,7 @@ Page({
   // 分享功能
   onShareAppMessage() {
     return {
-      title: '多肉花园 - 个性化设置',
+      title: '多肉小园 - 个性化设置',
       path: '/pages/settings/settings'
     }
   }

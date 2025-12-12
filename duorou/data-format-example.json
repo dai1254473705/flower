@@ -1,0 +1,182 @@
+{
+  "version": "1.0.0",
+  "updateTime": "2024-01-01T00:00:00Z",
+  "banner": [
+    {
+      "id": 1,
+      "image": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRVKBR8B4uQWLZ7PCdYenFxmNTh1eYAPVdwMBia6emTCcQgH6zb8LKKYg/0?from=appmsg",
+      "title": "多肉花园",
+      "link": "/pages/category/category?category=景天科"
+    },
+    {
+      "id": 2,
+      "image": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRsibibxjljR3KXU8FE9H9ObzjhbEbKUHRiaM8wtftLY1KdyDHsCmdpT7kw/0?from=appmsg",
+      "title": "发现多肉之美",
+      "link": "/pages/index/index"
+    },
+    {
+      "id": 3,
+      "image": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRsCSRicqukwHUjeZDrfpmBkbY4YQjHJFCc049KVfm5ia9snUWraTtebAQ/0?from=appmsg",
+      "title": "多肉百科全书",
+      "link": "/pages/index/index"
+    }
+  ],
+  "plants": [
+    {
+      "id": "plant_001",
+      "title": "景天科多肉植物示例",
+      "category": "景天科",
+      "src": "https://example.com/plant1.jpg",
+      "description": "这是景天科多肉植物的示例描述，可以介绍植物的基本特征和特点。",
+      "tags": ["易养", "耐旱", "新手推荐", "室内植物"],
+      "articles": [
+        {
+          "id": "article_001",
+          "title": "如何种植景天科多肉 - 从入门到精通",
+          "type": "种植方法",
+          "url": "https://mp.weixin.qq.com/s/xxxxx",
+          "cover": "https://example.com/article1.jpg",
+          "publishTime": "2024-01-01",
+          "readCount": 1000,
+          "description": "详细介绍景天科多肉的种植方法和注意事项"
+        },
+        {
+          "id": "article_002",
+          "title": "景天科多肉的生活习性和生长环境",
+          "type": "生活习性",
+          "url": "https://mp.weixin.qq.com/s/yyyyy",
+          "cover": "https://example.com/article2.jpg",
+          "publishTime": "2024-01-02",
+          "readCount": 800,
+          "description": "了解景天科多肉的生活习性和最适宜的生长环境"
+        },
+        {
+          "id": "article_003",
+          "title": "景天科多肉常见病虫害防治指南",
+          "type": "病虫害防治",
+          "url": "https://mp.weixin.qq.com/s/zzzzz",
+          "cover": "https://example.com/article3.jpg",
+          "publishTime": "2024-01-03",
+          "readCount": 600,
+          "description": "识别和防治景天科多肉常见的病虫害问题"
+        },
+        {
+          "id": "article_004",
+          "title": "景天科多肉繁殖技巧大全",
+          "type": "繁殖技巧",
+          "url": "https://mp.weixin.qq.com/s/aaaaa",
+          "cover": "https://example.com/article4.jpg",
+          "publishTime": "2024-01-04",
+          "readCount": 500,
+          "description": "学习景天科多肉的叶插、扦插等繁殖方法"
+        },
+        {
+          "id": "article_005",
+          "title": "景天科多肉日常养护要点",
+          "type": "养护要点",
+          "url": "https://mp.weixin.qq.com/s/bbbbb",
+          "cover": "https://example.com/article5.jpg",
+          "publishTime": "2024-01-05",
+          "readCount": 700,
+          "description": "掌握景天科多肉的浇水、施肥、换盆等日常养护技巧"
+        }
+      ],
+      "metadata": {
+        "difficulty": "简单",
+        "waterFrequency": "每周1次",
+        "lightRequirement": "充足阳光",
+        "temperature": "15-25°C",
+        "humidity": "40-60%",
+        "soil": "疏松透气的多肉专用土"
+      }
+    },
+    {
+      "id": "plant_002",
+      "title": "番杏科多肉植物示例",
+      "category": "番杏科",
+      "src": "https://example.com/plant2.jpg",
+      "description": "番杏科多肉植物以其独特的形态和美丽的花朵而受到喜爱。",
+      "tags": ["开花", "观赏性强", "需要充足光照"],
+      "articles": [
+        {
+          "id": "article_006",
+          "title": "番杏科多肉种植完全指南",
+          "type": "种植方法",
+          "url": "https://mp.weixin.qq.com/s/ccccc",
+          "cover": "https://example.com/article6.jpg",
+          "publishTime": "2024-01-06",
+          "readCount": 900,
+          "description": "从选盆到配土，全面了解番杏科多肉的种植方法"
+        },
+        {
+          "id": "article_007",
+          "title": "番杏科多肉的生活习性解析",
+          "type": "生活习性",
+          "url": "https://mp.weixin.qq.com/s/ddddd",
+          "cover": "https://example.com/article7.jpg",
+          "publishTime": "2024-01-07",
+          "readCount": 750,
+          "description": "深入了解番杏科多肉的生长周期和习性特点"
+        }
+      ],
+      "metadata": {
+        "difficulty": "中等",
+        "waterFrequency": "每10天1次",
+        "lightRequirement": "强烈阳光",
+        "temperature": "18-28°C",
+        "humidity": "30-50%",
+        "soil": "颗粒土为主的多肉专用土"
+      }
+    },
+    {
+      "id": "plant_003",
+      "title": "仙人掌科多肉植物示例",
+      "category": "仙人掌科",
+      "src": "https://example.com/plant3.jpg",
+      "description": "仙人掌科植物是最经典的多肉植物，耐旱性强，适合新手。",
+      "tags": ["耐旱", "易养", "适合新手", "室内外均可"],
+      "articles": [
+        {
+          "id": "article_008",
+          "title": "仙人掌科多肉新手入门教程",
+          "type": "种植方法",
+          "url": "https://mp.weixin.qq.com/s/eeeee",
+          "cover": "https://example.com/article8.jpg",
+          "publishTime": "2024-01-08",
+          "readCount": 1200,
+          "description": "新手必看！仙人掌科多肉的入门种植指南"
+        },
+        {
+          "id": "article_009",
+          "title": "仙人掌科多肉的品种介绍",
+          "type": "品种介绍",
+          "url": "https://mp.weixin.qq.com/s/fffff",
+          "cover": "https://example.com/article9.jpg",
+          "publishTime": "2024-01-09",
+          "readCount": 1100,
+          "description": "认识各种仙人掌科多肉品种，选择最适合你的"
+        },
+        {
+          "id": "article_010",
+          "title": "仙人掌科多肉病虫害识别与防治",
+          "type": "病虫害防治",
+          "url": "https://mp.weixin.qq.com/s/ggggg",
+          "cover": "https://example.com/article10.jpg",
+          "publishTime": "2024-01-10",
+          "readCount": 650,
+          "description": "学会识别和防治仙人掌科多肉的常见病虫害"
+        }
+      ],
+      "metadata": {
+        "difficulty": "简单",
+        "waterFrequency": "每2周1次",
+        "lightRequirement": "充足阳光",
+        "temperature": "20-30°C",
+        "humidity": "30-40%",
+        "soil": "沙质土壤，排水性极好"
+      }
+    }
+  ]
+}
+
+

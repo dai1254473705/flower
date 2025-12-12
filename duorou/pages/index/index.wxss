@@ -9,51 +9,12 @@
 }
 
 /* 轮播图样式 */
-.banner-section {
-  width: 100%;
-  position: relative;
-  height: 400rpx;
-  overflow: hidden;
-}
-
-.banner-swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.banner-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.banner-mask {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 120rpx;
-  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
-  pointer-events: none;
-}
-
-.banner-title {
-  position: absolute;
-  bottom: 40rpx;
-  left: 40rpx;
-  color: white;
-  font-size: 48rpx;
-  font-weight: bold;
-  text-shadow: 0 2rpx 10rpx rgba(0,0,0,0.5);
-  pointer-events: none;
-}
-
 /* 搜索栏样式 */
 .search-section {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
-  padding: 20rpx 20rpx 30rpx;
+  padding: 20rpx 20rpx 28rpx;
   border-radius: 0 0 40rpx 40rpx;
-  box-shadow: 0 8rpx 30rpx rgba(76, 175, 80, 0.4);
+  box-shadow: 0 8rpx 30rpx rgba(76, 175, 80, 0.3);
   margin-bottom: 10rpx;
   transition: var(--transition);
 }
@@ -61,34 +22,63 @@
 .search-bar {
   display: flex;
   align-items: center;
-  margin-bottom: 20rpx;
+  background: #ffffff;
+  border-radius: 999rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 4rpx;
+}
+
+.search-input-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+  min-height: 72rpx;
+}
+
+.search-icon {
+  font-size: 32rpx;
+  margin-right: 12rpx;
+  opacity: 0.5;
 }
 
 .search-input {
   flex: 1;
-  height: 80rpx;
-  background: rgba(255,255,255,0.95);
-  border-radius: 40rpx;
-  padding: 0 30rpx;
-  font-size: var(--font-size-md);
-  color: var(--text-primary);
-  border: 1rpx solid rgba(255,255,255,0.8);
-  backdrop-filter: blur(15rpx);
-  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.1);
+  height: 72rpx;
+  background: transparent;
+  font-size: 28rpx;
+  color: var(--text-primary, #333);
+  border: none;
+  line-height: 72rpx;
+}
+
+.search-input::placeholder {
+  color: var(--text-secondary, #999);
 }
 
 .search-btn {
-  width: 120rpx;
-  height: 80rpx;
-  background: rgba(255,255,255,0.95);
-  color: var(--primary-color);
-  border-radius: 40rpx;
-  margin-left: 20rpx;
-  font-size: var(--font-size-md);
-  line-height: 80rpx;
-  border: 1rpx solid rgba(255,255,255,0.8);
-  backdrop-filter: blur(15rpx);
-  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.1);
+  min-width: 120rpx;
+  height: 72rpx;
+  background: var(--primary-color, #4CAF50);
+  border-radius: 999rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24rpx;
+  transition: all 0.3s ease;
+}
+
+.search-btn:active {
+  background: var(--primary-dark, #388E3C);
+  transform: scale(0.98);
+}
+
+.search-btn-text {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1;
 }
 
 /* 操作按钮 */
@@ -134,9 +124,90 @@
   margin-bottom: 8rpx;
 }
 
-.category-btn .icon {
-  font-size: 32rpx;
+/* 分类 + 列表布局 */
+.category-layout {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.category-sidebar {
+  width: 200rpx;
+  background: var(--card-background);
+  /* 使用固定色作为兜底，避免变量缺失导致不显示 */
+  border-right: 2rpx dashed var(--border-color, #e5e5e5);
+  padding: 8rpx;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+  padding: 14rpx 8rpx;
+  border-radius: 12rpx;
+  margin-bottom: 10rpx;
+  color: var(--text-primary);
+  background: var(--background);
+  border: 1rpx dashed var(--border-color, #e5e5e5);
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.06);
+  transition: var(--transition);
+}
+
+.category-item.active {
+  background: var(--card-background, #ffffff);
+  border-color: var(--primary-color);
+  border-width: 2rpx;
   color: var(--primary-color);
+  box-shadow: 0 6rpx 16rpx rgba(0, 0, 0, 0.1);
+}
+
+.category-count-badge {
+  min-width: 60rpx;
+  padding: 6rpx 12rpx;
+  text-align: center;
+  border-radius: 999rpx;
+  font-size: var(--font-size-sm);
+  color: var(--primary-color);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.category-item.active .category-count-badge {
+  color: #ffffff;
+  background: var(--primary-color);
+  font-weight: 600;
+}
+
+.category-icon {
+  font-size: 32rpx;
+}
+
+.category-item.active .category-icon {
+  opacity: 1;
+}
+
+.category-name {
+  font-size: var(--font-size-md);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.category-item.active .category-name {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+
+.plants-area {
+  flex: 1;
+  height: 100%;
+  background: var(--background);
 }
 
 /* 植物网格样式 */
@@ -145,10 +216,7 @@
   flex-wrap: wrap;
   gap: 20rpx;
   padding: 20rpx;
-  flex: 1;
-  overflow-y: auto;
   align-content: flex-start;
-  height: calc(100vh - calc(var(--status-bar-height) * 1px) - 480rpx);
 }
 
 .plant-card {

@@ -6,58 +6,76 @@
       <image 
         class="plant-image" 
         src="{{plant.src}}" 
-        mode="aspectFit"
+        mode="aspectFill"
         bindtap="previewImage"
       ></image>
-      <view class="image-overlay">
-        <view class="collection-btn" catchtap="toggleCollection">
-          <text class="icon {{isCollected ? 'collected' : ''}}">{{isCollected ? '♥' : '♡'}}</text>
-          <text class="btn-text">{{isCollected ? '已收藏' : '收藏'}}</text>
+      <view class="image-gradient">
+        <view class="image-info">
+          <text class="plant-title">{{plant.title}}</text>
+          <view class="category-tag">
+            <text class="category-text">{{plant.category || '未分类'}}</text>
+          </view>
         </view>
+      </view>
+      
+      <!-- 收藏按钮 -->
+      <view class="collection-btn" catchtap="toggleCollection">
+        <text class="collection-icon {{isCollected ? 'collected' : ''}}">{{isCollected ? '♥' : '♡'}}</text>
+        <text class="collection-text">{{isCollected ? '已收藏' : '收藏'}}</text>
       </view>
     </view>
 
-    <!-- 植物基本信息 -->
-    <view class="plant-info-section">
-      <view class="info-card">
-        <text class="plant-title">{{plant.title}}</text>
-        <view class="plant-meta">
-          <text class="category">{{plant.category}}</text>
-          <text class="plant-id">ID: {{plant.id}}</text>
-        </view>
-      </view>
-    </view>
-
-    <!-- 相关文章 -->
-    <view class="articles-section" wx:if="{{plant.articles && plant.articles.length > 0}}">
-      <view class="section-header">
-        <text class="section-title">相关文章</text>
-      </view>
-      <view class="articles-list">
-        <block wx:for="{{plant.articles}}" wx:key="title">
-          <view class="article-item" bindtap="viewArticle" data-article="{{item}}">
-            <text class="article-title">{{item.title}}</text>
-            <text class="article-arrow">›</text>
+    <!-- 文章列表 -->
+    <scroll-view class="articles-section" scroll-y>
+      <!-- 按类型分组显示 -->
+      <view class="article-groups" wx:if="{{articleGroups && articleGroups.length > 0}}">
+        <block wx:for="{{articleGroups}}" wx:key="type" wx:for-item="group">
+          <view class="article-group">
+            <view class="group-header">
+              <text class="group-icon">{{group.icon}}</text>
+              <text class="group-title">{{group.type}}</text>
+              <text class="group-count">{{group.articles.length}}篇</text>
+            </view>
+            <view class="group-articles">
+              <view 
+                class="article-item" 
+                wx:for="{{group.articles}}" 
+                wx:key="id"
+                wx:for-item="article"
+                bindtap="viewArticle" 
+                data-article="{{article}}"
+              >
+                <image 
+                  wx:if="{{article.cover}}" 
+                  class="article-cover" 
+                  src="{{article.cover}}" 
+                  mode="aspectFill"
+                  lazy-load="{{true}}"
+                ></image>
+                <view class="article-info">
+                  <text class="article-title">{{article.title}}</text>
+                  <view class="article-meta" wx:if="{{article.publishTime || article.readCount}}">
+                    <text wx:if="{{article.publishTime}}" class="article-time">{{article.publishTime}}</text>
+                    <text wx:if="{{article.readCount}}" class="article-read">{{article.readCount}}阅读</text>
+                  </view>
+                </view>
+                <text class="article-arrow">›</text>
+              </view>
+            </view>
           </view>
         </block>
       </view>
-    </view>
 
-    <!-- 操作按钮 -->
-    <view class="action-section">
-      <button class="action-btn share-btn" open-type="share">
-        <text class="btn-icon">📤</text>
-        <text>分享给好友</text>
-      </button>
-      <button class="action-btn feedback-btn" bindtap="onFeedback">
-        <text class="btn-icon">💬</text>
-        <text>用户反馈</text>
-      </button>
-    </view>
+      <!-- 空状态 - 无相关文章 -->
+      <view class="empty-articles" wx:if="{{!articleGroups || articleGroups.length === 0}}">
+        <text class="empty-icon">📝</text>
+        <text class="empty-text">暂无相关文章</text>
+      </view>
+    </scroll-view>
   </view>
 
   <!-- 空状态 -->
   <view wx:else class="empty">
-    <text>植物信息加载中...</text>
+    <text class="empty-loading">植物信息加载中...</text>
   </view>
 </view>

@@ -31,9 +31,52 @@ Page({
     if (fontSize === 'small') fontSizeValue = 24
     if (fontSize === 'large') fontSizeValue = 32
     
+    // 将主题名转换为带 -theme 后缀的类名
+    const themeClass = `${themeName}-theme`
+    
     this.setData({
-      currentTheme: themeName,
+      currentTheme: themeClass,
       fontSizeValue
+    })
+    
+    // 更新导航栏颜色
+    this.applyTheme(themeName)
+  },
+  
+  // 应用主题到导航栏
+  applyTheme(themeName) {
+    let navigationBarColor = '#ffffff'
+    let frontColor = '#000000'
+    
+    switch(themeName) {
+      case 'green':
+        navigationBarColor = '#4CAF50'
+        frontColor = '#ffffff'
+        break
+      case 'blue':
+        navigationBarColor = '#2196F3'
+        frontColor = '#ffffff'
+        break
+      case 'pink':
+        navigationBarColor = '#E91E63'
+        frontColor = '#ffffff'
+        break
+      case 'purple':
+        navigationBarColor = '#9C27B0'
+        frontColor = '#ffffff'
+        break
+      case 'dark':
+        navigationBarColor = '#212121'
+        frontColor = '#ffffff'
+        break
+      default:
+        navigationBarColor = '#ffffff'
+        frontColor = '#000000'
+    }
+    
+    wx.setNavigationBarColor({
+      frontColor: frontColor,
+      backgroundColor: navigationBarColor
     })
   },
 
@@ -103,14 +146,16 @@ Page({
   // 分享功能
   onShareAppMessage() {
     return {
-      title: '多肉花园 - 我的收藏',
+      title: '多肉小园 - 我的收藏',
       path: '/pages/collection/collection'
     }
   },
   
   // 主题切换回调
   onThemeChange(themeName) {
-    this.setData({ currentTheme: themeName })
+    const themeClass = `${themeName}-theme`
+    this.setData({ currentTheme: themeClass })
+    this.applyTheme(themeName)
   },
   
   // 字体大小切换回调

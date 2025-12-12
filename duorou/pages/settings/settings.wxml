@@ -1,13 +1,11 @@
 <!-- settings.wxml -->
 <view class="container {{currentTheme}}" style="font-size: {{fontSizeValue}}rpx;">
-  <!-- 标题 -->
-  <view class="page-title">
-    <text>设置</text>
-  </view>
-
   <!-- 主题设置 -->
   <view class="setting-section">
-    <text class="section-title">主题配色</text>
+    <view class="section-header">
+      <text class="section-icon">🎨</text>
+      <text class="section-title">主题配色</text>
+    </view>
     <view class="theme-grid">
       <block wx:for="{{themes}}" wx:key="id">
         <view 
@@ -22,49 +20,42 @@
           </view>
           <text class="theme-name">{{item.name}}</text>
           <view class="theme-check" wx:if="{{userSettings.themeName === item.id}}">
-            <text class="check-text">✓</text>
+            <text class="check-icon">✓</text>
           </view>
         </view>
       </block>
     </view>
   </view>
 
-  <!-- 字体大小设置 -->
-  <view class="setting-section">
-    <text class="section-title">字体大小</text>
-    <view class="font-size-grid">
-      <block wx:for="{{fontSizes}}" wx:key="id">
-        <view 
-          class="font-size-item {{userSettings.fontSize === item.id ? 'active' : ''}}" 
-          bindtap="onFontSizeChange" 
-          data-size="{{item.id}}"
-        >
-          <text class="font-size-preview" style="font-size: {{item.previewSize}}">{{item.preview}}</text>
-          <text class="font-size-name">{{item.name}}</text>
-        </view>
-      </block>
-    </view>
-    <text class="font-size-desc">调整字体大小以获得更舒适的阅读体验</text>
-  </view>
-
   <!-- 缓存管理 -->
   <view class="setting-section">
-    <text class="section-title">缓存管理</text>
+    <view class="section-header">
+      <text class="section-icon">💾</text>
+      <text class="section-title">缓存管理</text>
+    </view>
     <view class="cache-item" bindtap="onClearCache">
       <view class="cache-info">
         <text class="cache-name">清除缓存</text>
         <text class="cache-size">{{cacheSize}} MB</text>
       </view>
-      <text class="arrow">></text>
+      <view class="cache-action">
+        <text class="arrow-icon">›</text>
+      </view>
     </view>
   </view>
 
   <!-- 关于信息 -->
   <view class="setting-section">
-    <text class="section-title">关于多肉花园</text>
-    <text class="about-text">多肉花园是一个为多肉植物爱好者打造的知识分享平台。在这里，你可以浏览各种多肉植物，阅读养护文章，收藏喜欢的品种。</text>
-    <view class="version-info">
-      <text class="version-text">版本 1.0.0</text>
+    <view class="section-header">
+      <text class="section-icon">ℹ️</text>
+      <text class="section-title">关于多肉小园</text>
+    </view>
+    <view class="about-content">
+      <text class="about-text">多肉小园是一个为多肉植物爱好者打造的知识分享平台。在这里，你可以浏览各种多肉植物，阅读养护文章，收藏喜欢的品种。</text>
+      <view class="version-info">
+        <text class="version-label">版本</text>
+        <text class="version-text">1.0.0</text>
+      </view>
     </view>
   </view>
 </view>

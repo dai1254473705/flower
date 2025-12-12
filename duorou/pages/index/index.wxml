@@ -1,66 +1,68 @@
 <!--pages/index/index.wxml-->
 <view class="container {{currentTheme}}" style="font-size: {{fontSizeValue}}rpx;">
-  <!-- 轮播图 -->
-  <view class="banner-section">
-    <swiper class="banner-swiper" indicator-dots circular autoplay interval="3000">
-      <swiper-item wx:for="{{banners}}" wx:key="id">
-        <image src="{{item.image || item.src}}" mode="aspectFill" class="banner-image"></image>
-        <view class="banner-mask"></view>
-        <view class="banner-title">{{item.title || ''}}</view>
-      </swiper-item>
-    </swiper>
-  </view>
-
   <!-- 搜索栏 -->
   <view class="search-section">
     <view class="search-bar">
-      <input 
-        class="search-input" 
-        placeholder="搜索多肉植物名称" 
-        value="{{searchValue}}"
-        bindinput="onSearchInput"
-        bindconfirm="onSearch"
-      />
-      <button class="search-btn" bindtap="onSearch">搜索</button>
-    </view>
-    <view class="action-buttons">
-      <view class="category-btn" bindtap="goToCategory">
-        <text>分类浏览</text>
-        <text class="icon">›</text>
+      <view class="search-input-wrapper">
+        <text class="search-icon">🔍</text>
+        <input 
+          class="search-input" 
+          placeholder="搜索多肉植物名称" 
+          value="{{searchValue}}"
+          bindinput="onSearchInput"
+          bindconfirm="onSearch"
+        />
       </view>
-      <view class="settings-btn" bindtap="goToSettings">
-        <text class="icon">⚙️</text>
-        <text>设置</text>
+      <view class="search-btn" bindtap="onSearch">
+        <text class="search-btn-text">搜索</text>
       </view>
     </view>
   </view>
 
-  <!-- 植物网格展示 -->
-  <view class="plants-grid">
-    <!-- 骨架屏 -->
-    <block wx:if="{{showSkeleton}}" wx:for="{{skeletonCount}}" wx:key="index">
-      <view class="plant-card skeleton-card">
-        <view class="skeleton skeleton-image"></view>
-        <view class="plant-info">
-          <view class="skeleton skeleton-title"></view>
-          <view class="skeleton skeleton-category"></view>
-        </view>
+  <!-- 分类 + 列表布局 -->
+  <view class="category-layout">
+    <scroll-view class="category-sidebar" scroll-y>
+      <view 
+        class="category-item {{activeCategory === item.name ? 'active' : ''}}" 
+        wx:for="{{categories}}" 
+        wx:key="name"
+        data-category="{{item.name}}"
+        bindtap="onSelectCategory"
+      >
+        <text class="category-icon">{{item.icon}}</text>
+        <text class="category-count-badge">{{item.count}}</text>
+        <text class="category-name">{{item.name}}</text>
       </view>
-    </block>
-    
-    <!-- 真实数据 -->
-    <block wx:if="{{!showSkeleton && plants.length > 0}}" wx:for="{{plants}}" wx:key="id">
-      <view class="plant-card" bindtap="goToPlantList" data-plant="{{item}}">
-        <image class="plant-image" src="{{item.src}}" mode="aspectFill" lazy-load="true"></image>
-        <view class="plant-info">
-          <text class="plant-title">{{item.title}}</text>
-          <text class="plant-category">{{item.category}}</text>
-        </view>
-        <view class="collection-btn" catchtap="toggleCollection" data-plant="{{item}}">
-          <text class="icon {{item.isCollected ? 'collected' : ''}}">{{item.isCollected ? '♥' : '♡'}}</text>
-        </view>
+    </scroll-view>
+
+    <scroll-view class="plants-area" scroll-y>
+      <view class="plants-grid">
+        <!-- 骨架屏 -->
+        <block wx:if="{{showSkeleton}}" wx:for="{{skeletonCount}}" wx:key="index">
+          <view class="plant-card skeleton-card">
+            <view class="skeleton skeleton-image"></view>
+            <view class="plant-info">
+              <view class="skeleton skeleton-title"></view>
+              <view class="skeleton skeleton-category"></view>
+            </view>
+          </view>
+        </block>
+        
+        <!-- 真实数据 -->
+        <block wx:if="{{!showSkeleton && plants.length > 0}}" wx:for="{{plants}}" wx:key="id">
+          <view class="plant-card" bindtap="goToPlantList" data-plant="{{item}}">
+            <image class="plant-image" src="{{item.src}}" mode="aspectFill" lazy-load="true"></image>
+            <view class="plant-info">
+              <text class="plant-title">{{item.title}}</text>
+              <text class="plant-category">{{item.category}}</text>
+            </view>
+            <view class="collection-btn" catchtap="toggleCollection" data-plant="{{item}}">
+              <text class="icon {{item.isCollected ? 'collected' : ''}}">{{item.isCollected ? '♥' : '♡'}}</text>
+            </view>
+          </view>
+        </block>
       </view>
-    </block>
+    </scroll-view>
   </view>
 
   <!-- 加载状态 -->

@@ -1,253 +1,351 @@
 /* pages/plant-detail/plant-detail.wxss */
 .container {
-  min-height: 100vh;
-  background-color: var(--background);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, var(--primary-light, #f0f9f0) 0%, var(--background, #ffffff) 20%);
+  overflow: hidden;
 }
 
 /* 植物大图区域 */
 .plant-image-section {
   position: relative;
-  background: var(--card-background);
+  width: 100%;
+  height: 600rpx;
+  flex-shrink: 0;
   overflow: hidden;
-  box-shadow: var(--shadow-medium);
+  background: var(--card-background, #f5f5f5);
 }
 
 .plant-image {
   width: 100%;
-  height: 550rpx;
-  display: block;
-  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
 .plant-image:active {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
-.image-overlay {
+.image-gradient {
   position: absolute;
-  top: var(--spacing-sm);
-  right: var(--spacing-sm);
-  left: var(--spacing-sm);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200rpx;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+  pointer-events: none;
 }
 
+/* 收藏按钮 */
 .collection-btn {
+  position: absolute;
+  bottom: 30rpx;
+  right: 30rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(255,255,255,0.95);
-  border-radius: 25rpx;
-  padding: 15rpx;
-  min-width: 90rpx;
-  box-shadow: 0 4rpx 15rpx rgba(0,0,0,0.1);
+  gap: 8rpx;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 999rpx;
+  padding: 20rpx 28rpx;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10rpx);
   transition: all 0.3s ease;
+  z-index: 10;
 }
 
 .collection-btn:active {
   transform: scale(0.95);
-  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.15);
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.2);
 }
 
-.collection-btn .icon {
-  font-size: 42rpx;
+.collection-icon {
+  font-size: 48rpx;
   color: #ccc;
-  margin-bottom: 5rpx;
-  transition: color 0.3s ease;
+  line-height: 1;
+  transition: all 0.3s ease;
 }
 
-.collection-btn .collected {
-  color: var(--error-color);
+.collection-icon.collected {
+  color: var(--error-color, #f44336);
   animation: heartBeat 0.6s ease;
 }
 
-.btn-text {
-  font-size: 20rpx;
-  color: var(--text-secondary);
+.collection-text {
+  font-size: 24rpx;
+  color: var(--text-primary, #333);
   font-weight: 500;
 }
 
-/* 植物信息区域 */
-.plant-info-section {
-  padding: var(--spacing-sm);
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
 }
 
-.info-card {
-  background: var(--card-background);
-  border-radius: var(--border-radius-medium);
-  padding: var(--spacing-md);
-  box-shadow: var(--shadow-medium);
-  margin-bottom: var(--spacing-sm);
+/* 图片信息覆盖层 */
+.image-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40rpx 30rpx 30rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
 }
 
 .plant-title {
-  display: block;
-  font-size: 36rpx;
+  font-size: 48rpx;
   font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: var(--spacing-sm);
+  color: #ffffff;
   line-height: 1.3;
+  text-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.3);
 }
 
-.plant-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: var(--spacing-xs);
+.category-tag {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10rpx);
+  padding: 12rpx 24rpx;
+  border-radius: 999rpx;
+  border: 1rpx solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.2);
 }
 
-.category {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
-  color: white;
-  padding: 10rpx 20rpx;
-  border-radius: 25rpx;
-  font-size: 24rpx;
-  font-weight: 500;
-  box-shadow: 0 2rpx 8rpx rgba(76, 175, 80, 0.3);
+.category-text {
+  font-size: 26rpx;
+  color: #ffffff;
+  font-weight: 600;
 }
 
-.plant-id {
-  font-size: 24rpx;
-  color: var(--text-light);
-}
-
-/* 相关文章区域 */
+/* 文章列表区域 */
 .articles-section {
-  padding: var(--spacing-sm);
-  margin-bottom: var(--spacing-sm);
+  flex: 1;
+  min-height: 0;
+  background: var(--background, #ffffff);
+  padding: 0 30rpx 30rpx;
+  box-sizing: border-box;
 }
 
 .section-header {
-  margin-bottom: var(--spacing-sm);
   display: flex;
   align-items: center;
+  gap: 12rpx;
+  margin-bottom: 24rpx;
+  padding: 0 8rpx;
+}
+
+.section-icon {
+  font-size: 36rpx;
 }
 
 .section-title {
-  font-size: 28rpx;
+  font-size: 36rpx;
   font-weight: 700;
-  color: var(--text-primary);
-  margin-left: 10rpx;
+  color: var(--text-primary, #333);
 }
 
-.section-header::before {
-  content: '';
-  display: inline-block;
-  width: 8rpx;
-  height: 28rpx;
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
-  border-radius: 4rpx;
+/* 文章分组样式 */
+.article-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
 }
 
-.articles-list {
-  background: var(--card-background);
-  border-radius: var(--border-radius-medium);
+.article-group {
+  background: var(--card-background, #ffffff);
+  border-radius: 24rpx;
   overflow: hidden;
-  box-shadow: var(--shadow-medium);
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.06);
+  border: 1rpx solid rgba(0, 0, 0, 0.04);
+}
+
+.group-header {
+  display: flex;
+  align-items: center;
+  padding: 24rpx 28rpx;
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.08) 0%, rgba(76, 175, 80, 0.03) 100%);
+  border-bottom: 1rpx solid var(--border-color, #f0f0f0);
+}
+
+.group-icon {
+  font-size: 36rpx;
+  margin-right: 12rpx;
+}
+
+.group-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--text-primary, #333);
+  flex: 1;
+}
+
+.group-count {
+  font-size: 24rpx;
+  color: var(--text-secondary, #999);
+  background: rgba(76, 175, 80, 0.1);
+  padding: 6rpx 16rpx;
+  border-radius: 999rpx;
+}
+
+.group-articles {
+  display: flex;
+  flex-direction: column;
 }
 
 .article-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-md);
-  border-bottom: 1rpx solid var(--border-color);
+  padding: 24rpx 28rpx;
+  border-bottom: 1rpx solid var(--border-color, #f0f0f0);
   transition: all 0.3s ease;
   position: relative;
-  overflow: hidden;
 }
 
-.article-item::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
+.article-item:active {
   background: rgba(76, 175, 80, 0.05);
-  transition: left 0.3s ease;
-}
-
-.article-item:active::after {
-  left: 0;
 }
 
 .article-item:last-child {
   border-bottom: none;
 }
 
-.article-title {
+.article-cover {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 16rpx;
+  margin-right: 24rpx;
+  flex-shrink: 0;
+  background: #f5f5f5;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.08);
+}
+
+.article-info {
   flex: 1;
-  font-size: 26rpx;
-  color: var(--text-primary);
-  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  gap: 12rpx;
+}
+
+.article-title {
+  font-size: 28rpx;
+  color: var(--text-primary, #333);
+  line-height: 1.5;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: var(--text-secondary, #999);
+  gap: 20rpx;
+}
+
+.article-time {
+  color: var(--text-secondary, #999);
+}
+
+.article-read {
+  color: var(--text-secondary, #999);
 }
 
 .article-arrow {
-  font-size: 36rpx;
-  color: var(--text-light);
-  margin-left: var(--spacing-sm);
-  position: relative;
-  z-index: 1;
+  font-size: 40rpx;
+  color: var(--text-light, #ccc);
+  margin-left: 16rpx;
+  flex-shrink: 0;
+  font-weight: 300;
+}
+
+/* 空状态 - 无相关文章 */
+.empty-articles {
+  text-align: center;
+  padding: 120rpx 30rpx;
+  margin: 0 30rpx 30rpx;
+  background: var(--card-background, #ffffff);
+  border-radius: 24rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.06);
+}
+
+.empty-icon {
+  display: block;
+  font-size: 80rpx;
+  margin-bottom: 24rpx;
+  opacity: 0.5;
+}
+
+.empty-text {
+  display: block;
+  font-size: 28rpx;
+  color: var(--text-secondary, #999);
 }
 
 /* 操作按钮区域 */
 .action-section {
-  padding: var(--spacing-md) var(--spacing-sm);
+  padding: 30rpx;
   display: flex;
-  gap: var(--spacing-sm);
+  gap: 20rpx;
+  background: var(--background, #ffffff);
 }
 
 .action-btn {
   flex: 1;
-  background: var(--card-background);
-  border: 1rpx solid var(--border-color);
-  border-radius: var(--border-radius-medium);
-  padding: var(--spacing-sm);
+  background: var(--card-background, #ffffff);
+  border: 1rpx solid var(--border-color, #e5e5e5);
+  border-radius: 20rpx;
+  padding: 28rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 130rpx;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: var(--shadow-light);
+  gap: 12rpx;
+  transition: all 0.3s ease;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.06);
 }
 
 .action-btn:active {
-  transform: translateY(2rpx);
-  box-shadow: var(--shadow-light);
+  transform: translateY(-2rpx);
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.1);
 }
 
 .btn-icon {
-  font-size: 40rpx;
-  margin-bottom: var(--spacing-xs);
-  transition: transform 0.3s ease;
+  font-size: 44rpx;
+  line-height: 1;
 }
 
-.action-btn:active .btn-icon {
-  transform: scale(0.9);
-}
-
-.action-btn text:last-child {
-  font-size: 24rpx;
-  color: var(--text-secondary);
+.btn-text {
+  font-size: 26rpx;
+  color: var(--text-primary, #333);
   font-weight: 500;
 }
 
 .share-btn:active {
-  background: rgba(76, 175, 80, 0.05);
+  background: rgba(76, 175, 80, 0.08);
+  border-color: var(--primary-color, #4CAF50);
 }
 
 .feedback-btn:active {
-  background: rgba(255, 152, 0, 0.05);
+  background: rgba(255, 152, 0, 0.08);
+  border-color: #ff9800;
 }
 
 /* 空状态 */
 .empty {
   text-align: center;
-  padding: 250rpx var(--spacing-sm);
-  color: var(--text-light);
+  padding: 250rpx 30rpx;
+}
+
+.empty-loading {
   font-size: 28rpx;
+  color: var(--text-secondary, #999);
 }

@@ -1,8 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/category/category",
-    "pages/plant-list/plant-list",
     "pages/plant-detail/plant-detail",
     "pages/collection/collection",
     "pages/search-result/search-result",
@@ -12,7 +10,7 @@
   "window": {
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "多肉花园",
+    "navigationBarTitleText": "多肉小园",
     "navigationStyle": "default",
     "homeButton": false,
     "backgroundColor": "#F5F5F5",
@@ -35,16 +33,16 @@
         "selectedIconPath": "images/home-active.png"
       },
       {
-        "pagePath": "pages/category/category",
-        "text": "分类",
-        "iconPath": "images/category.png",
-        "selectedIconPath": "images/category-active.png"
-      },
-      {
         "pagePath": "pages/collection/collection",
         "text": "收藏",
         "iconPath": "images/collection.png",
         "selectedIconPath": "images/collection-active.png"
+      },
+      {
+        "pagePath": "pages/settings/settings",
+        "text": "设置",
+        "iconPath": "images/category.png",
+        "selectedIconPath": "images/category-active.png"
       }
     ]
   },
