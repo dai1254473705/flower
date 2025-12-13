@@ -25,6 +25,68 @@
       </view>
     </view>
 
+    <!-- 植物介绍 -->
+    <view class="info-section" wx:if="{{plant.introduction}}">
+      <view class="section-header">
+        <text class="section-title">植物介绍</text>
+      </view>
+      <view class="section-content">
+        <text class="intro-text">{{plant.introduction}}</text>
+      </view>
+    </view>
+
+    <!-- 形态特征 -->
+    <view class="info-section" wx:if="{{plant.morphology && plant.morphology.length > 0}}">
+      <view class="section-header">
+        <text class="section-title">形态特征</text>
+      </view>
+      <view class="section-content">
+        <view class="feature-list">
+          <view class="feature-item" wx:for="{{plant.morphology}}" wx:key="index">
+            <text class="feature-bullet">•</text>
+            <text class="feature-text">{{item}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 养护要点 -->
+    <view class="info-section" wx:if="{{plant.carePoints && plant.carePoints.length > 0}}">
+      <view class="section-header">
+        <text class="section-title">养护要点</text>
+      </view>
+      <view class="section-content">
+        <view class="care-list">
+          <view class="care-item" wx:for="{{plant.carePoints}}" wx:key="index">
+            <text class="care-bullet">•</text>
+            <text class="care-text">{{item}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 养护信息网格 -->
+    <view class="info-section" wx:if="{{plant.careInfo}}">
+      <view class="care-info-grid">
+        <view class="care-info-item" wx:if="{{plant.careInfo.wateringFrequency}}">
+          <view class="care-info-label">浇水频率</view>
+          <view class="care-info-value">{{plant.careInfo.wateringFrequency}}</view>
+        </view>
+        <view class="care-info-item" wx:if="{{plant.careInfo.lightRequirement}}">
+          <view class="care-info-label">光照需求</view>
+          <view class="care-info-value">{{plant.careInfo.lightRequirement}}</view>
+        </view>
+        <view class="care-info-item" wx:if="{{plant.careInfo.suitableTemperature}}">
+          <view class="care-info-label">适宜温度</view>
+          <view class="care-info-value">{{plant.careInfo.suitableTemperature}}</view>
+        </view>
+        <view class="care-info-item" wx:if="{{plant.careInfo.soilRequirement}}">
+          <view class="care-info-label">土壤要求</view>
+          <view class="care-info-value">{{plant.careInfo.soilRequirement}}</view>
+        </view>
+      </view>
+    </view>
+
     <!-- 文章列表 -->
     <scroll-view class="articles-section" scroll-y>
       <!-- 按类型分组显示 -->
