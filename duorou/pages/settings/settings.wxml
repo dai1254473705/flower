@@ -44,6 +44,23 @@
     </view>
   </view>
 
+  <!-- 问题反馈 -->
+  <view class="setting-section">
+    <view class="section-header">
+      <text class="section-icon">💬</text>
+      <text class="section-title">问题反馈</text>
+    </view>
+    <button class="feedback-item feedback-button" open-type="contact" session-from="settings_page">
+      <view class="feedback-info">
+        <text class="feedback-name">联系客服</text>
+        <text class="feedback-desc">反馈内容不准确或遇到问题</text>
+      </view>
+      <view class="feedback-action">
+        <text class="arrow-icon">›</text>
+      </view>
+    </button>
+  </view>
+
   <!-- 关于信息 -->
   <view class="setting-section">
     <view class="section-header">

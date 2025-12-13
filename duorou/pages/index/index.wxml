@@ -51,7 +51,9 @@
         <!-- 真实数据 -->
         <block wx:if="{{!showSkeleton && plants.length > 0}}" wx:for="{{plants}}" wx:key="id">
           <view class="plant-card" bindtap="goToPlantList" data-plant="{{item}}">
-            <image class="plant-image" src="{{item.src}}" mode="aspectFill" lazy-load="true"></image>
+            <view class="plant-image-wrapper">
+              <image class="plant-image" src="{{item.src}}" mode="aspectFit" lazy-load="true"></image>
+            </view>
             <view class="plant-info">
               <text class="plant-title">{{item.title}}</text>
               <text class="plant-category">{{item.category}}</text>

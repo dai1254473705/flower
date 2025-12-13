@@ -180,6 +180,12 @@ Page({
     })
   },
 
+  // 客服消息回调（当用户点击客服按钮后）
+  onContactServiceMessage(e) {
+    // 可以在这里处理客服消息的相关逻辑
+    console.log('客服消息', e.detail)
+  },
+
   // 分享功能
   onShareAppMessage() {
     return {

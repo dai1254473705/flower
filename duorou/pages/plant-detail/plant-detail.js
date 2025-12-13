@@ -7,7 +7,10 @@ Page({
     showImagePreview: false,
     currentTheme: 'green', // 当前主题
     fontSizeValue: 28, // 默认字体大小
-    articleGroups: [] // 文章分组数据
+    articleGroups: [], // 文章分组数据
+    currentTab: 'intro', // 当前选中的 tab: 'intro' 或 'articles'
+    totalArticlesCount: 0, // 文章总数
+    hasIntroContent: false // 是否有简介内容
   },
 
   onLoad(options) {
@@ -19,11 +22,17 @@ Page({
       
       // 处理文章分组
       const articleGroups = this.groupArticlesByType(plant.articles || [])
+      const totalArticlesCount = (plant.articles || []).length
+      
+      // 判断简介内容是否为空
+      const hasIntroContent = this.hasIntroContent(plant)
       
       this.setData({
         plant: plant,
         articleGroups: articleGroups,
-        isCollected: this.checkCollectionStatus(plant.id)
+        isCollected: this.checkCollectionStatus(plant.id),
+        totalArticlesCount: totalArticlesCount,
+        hasIntroContent: hasIntroContent
       })
       wx.setNavigationBarTitle({
         title: plant.title || '植物详情'
@@ -202,14 +211,21 @@ Page({
     }
   },
 
-  // 用户反馈
+  // 客服消息回调（当用户点击客服按钮后）
+  onContactServiceMessage(e) {
+    // 可以在这里处理客服消息的相关逻辑
+    // e.detail 包含会话信息
+    console.log('客服消息', e.detail)
+    const plant = this.data.plant
+    if (plant) {
+      // 可以在这里自动发送当前植物信息给客服
+      // 注意：需要在客服会话中手动发送，或者通过其他方式传递
+    }
+  },
+  
+  // 用户反馈（保留兼容性，现在使用 button 的 open-type="contact"）
   onFeedback() {
-    wx.showModal({
-      title: '用户反馈',
-      content: '您可以通过以下方式联系我们：\n1. 发送邮件至 feedback@duorou.com\n2. 在公众号留言\n3. 添加客服微信',
-      showCancel: false,
-      confirmText: '知道了'
-    })
+    // 已改为使用 button 的 open-type="contact"，此方法保留兼容性
   },
   
   // 主题切换回调
@@ -231,5 +247,44 @@ Page({
   // 页面显示时刷新主题和字体大小
   onShow() {
     this.initThemeAndFontSize()
+  },
+  
+  // 切换 Tab
+  switchTab(e) {
+    const tab = e.currentTarget.dataset.tab
+    this.setData({
+      currentTab: tab
+    })
+  },
+  
+  // 判断是否有简介内容
+  hasIntroContent(plant) {
+    if (!plant) return false
+    
+    // 检查植物介绍
+    if (plant.introduction && plant.introduction.trim()) {
+      return true
+    }
+    
+    // 检查形态特征
+    if (plant.morphology && Array.isArray(plant.morphology) && plant.morphology.length > 0) {
+      return true
+    }
+    
+    // 检查养护要点
+    if (plant.carePoints && Array.isArray(plant.carePoints) && plant.carePoints.length > 0) {
+      return true
+    }
+    
+    // 检查养护信息
+    if (plant.careInfo) {
+      const careInfo = plant.careInfo
+      if (careInfo.wateringFrequency || careInfo.lightRequirement || 
+          careInfo.suitableTemperature || careInfo.soilRequirement) {
+        return true
+      }
+    }
+    
+    return false
   }
 })

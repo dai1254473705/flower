@@ -198,3 +198,62 @@
   font-weight: 600;
   color: var(--primary-color, #4CAF50);
 }
+
+/* 反馈功能样式 */
+.feedback-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24rpx;
+  background: var(--background, #f8f8f8);
+  border-radius: 16rpx;
+  transition: all 0.3s ease;
+  border: 1rpx solid var(--border-color, #e5e5e5);
+}
+
+.feedback-item:active {
+  background: var(--primary-light, rgba(76, 175, 80, 0.1));
+  transform: scale(0.98);
+}
+
+.feedback-button {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  border-radius: 16rpx;
+  line-height: normal;
+  font-size: inherit;
+}
+
+.feedback-button::after {
+  border: none;
+}
+
+.feedback-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+  flex: 1;
+}
+
+.feedback-name {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: var(--text-primary, #333);
+}
+
+.feedback-desc {
+  font-size: 24rpx;
+  color: var(--text-secondary, #999);
+  line-height: 1.4;
+}
+
+.feedback-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48rpx;
+  height: 48rpx;
+}
