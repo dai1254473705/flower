@@ -56,7 +56,9 @@
             </view>
             <view class="plant-info">
               <text class="plant-title">{{item.title}}</text>
-              <text class="plant-category">{{item.category}}</text>
+              <view class="plant-category-wrapper">
+                <text class="plant-category">{{item.category}}</text>
+              </view>
             </view>
             <view class="collection-btn" catchtap="toggleCollection" data-plant="{{item}}">
               <text class="icon {{item.isCollected ? 'collected' : ''}}">{{item.isCollected ? '♥' : '♡'}}</text>

@@ -199,6 +199,58 @@
   color: var(--primary-color, #4CAF50);
 }
 
+/* 隐私说明样式 */
+.privacy-section {
+  margin-top: 32rpx;
+  padding-top: 32rpx;
+  border-top: 1rpx solid var(--border-color, #f0f0f0);
+}
+
+.privacy-header {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  margin-bottom: 20rpx;
+}
+
+.privacy-icon {
+  font-size: 32rpx;
+}
+
+.privacy-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: var(--text-primary, #333);
+}
+
+.privacy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+
+.privacy-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12rpx;
+}
+
+.privacy-bullet {
+  color: var(--primary-color, #4CAF50);
+  font-size: 24rpx;
+  font-weight: bold;
+  line-height: 1.6;
+  flex-shrink: 0;
+  margin-top: 4rpx;
+}
+
+.privacy-text {
+  font-size: 26rpx;
+  color: var(--text-secondary, #666);
+  line-height: 1.6;
+  flex: 1;
+}
+
 /* 反馈功能样式 */
 .feedback-item {
   display: flex;

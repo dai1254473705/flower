@@ -263,9 +263,17 @@ Page({
   // 根据分类过滤植物
   updateFilteredPlants(category = '全部') {
     const targetCategory = category || '全部'
-    const filteredPlants = targetCategory === '全部'
-      ? this.data.allPlants
-      : this.data.allPlants.filter(plant => plant.category === targetCategory)
+    let filteredPlants = []
+    
+    if (targetCategory === '全部') {
+      filteredPlants = this.data.allPlants
+    } else if (targetCategory === '未分类') {
+      // 未分类：category 为空、null、undefined 或不存在
+      filteredPlants = this.data.allPlants.filter(plant => !plant.category || plant.category.trim() === '')
+    } else {
+      // 其他分类：精确匹配
+      filteredPlants = this.data.allPlants.filter(plant => plant.category === targetCategory)
+    }
 
     this.setData({
       activeCategory: targetCategory,

@@ -196,6 +196,35 @@
   padding-bottom: 30rpx;
 }
 
+/* 植物名称展示区域 */
+.plant-name-section {
+  background: var(--card-background, #ffffff);
+  margin: 24rpx 30rpx 0;
+  border-radius: 20rpx;
+  padding: 32rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.06);
+  border: 1rpx solid rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+
+.plant-name-chinese {
+  display: block;
+  font-size: 40rpx;
+  font-weight: 700;
+  color: var(--text-primary, #333);
+  margin-bottom: 12rpx;
+  line-height: 1.4;
+}
+
+.plant-name-english {
+  display: block;
+  font-size: 28rpx;
+  color: var(--text-secondary, #666);
+  font-style: italic;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
 /* 信息区域 */
 .info-section {
   background: var(--card-background, #ffffff);

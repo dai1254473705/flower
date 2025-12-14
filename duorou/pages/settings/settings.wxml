@@ -68,7 +68,34 @@
       <text class="section-title">关于多肉小园</text>
     </view>
     <view class="about-content">
-      <text class="about-text">多肉小园是一个为多肉植物爱好者打造的知识分享平台。在这里，你可以浏览各种多肉植物，阅读养护文章，收藏喜欢的品种。</text>
+      <text class="about-text">多肉小园是一个专为多肉植物爱好者打造的小程序。提供多肉植物图鉴、养护知识、形态特征等详细信息，帮助您更好地了解和养护多肉植物。</text>
+      
+      <!-- 隐私说明 -->
+      <view class="privacy-section">
+        <view class="privacy-header">
+          <text class="privacy-icon">🔒</text>
+          <text class="privacy-title">隐私保护</text>
+        </view>
+        <view class="privacy-list">
+          <view class="privacy-item">
+            <text class="privacy-bullet">•</text>
+            <text class="privacy-text">不收集任何用户个人信息</text>
+          </view>
+          <view class="privacy-item">
+            <text class="privacy-bullet">•</text>
+            <text class="privacy-text">所有数据仅存储在本地设备</text>
+          </view>
+          <view class="privacy-item">
+            <text class="privacy-bullet">•</text>
+            <text class="privacy-text">清除缓存后，收藏等数据将消失</text>
+          </view>
+          <view class="privacy-item">
+            <text class="privacy-bullet">•</text>
+            <text class="privacy-text">无需登录，完全离线使用</text>
+          </view>
+        </view>
+      </view>
+      
       <view class="version-info">
         <text class="version-label">版本</text>
         <text class="version-text">1.0.0</text>

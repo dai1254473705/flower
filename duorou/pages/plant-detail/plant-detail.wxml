@@ -12,7 +12,7 @@
       <view class="image-gradient">
         <view class="image-info">
           <text class="plant-title">{{plant.title}}</text>
-          <text class="plant-subtitle" wx:if="{{plant.englishName}}">{{plant.englishName}}</text>
+          <text class="plant-subtitle" wx:if="{{plant.enTitle}}">{{plant.enTitle}}</text>
           <view class="category-tag">
             <text class="category-text">{{plant.category || '未分类'}}</text>
           </view>
@@ -41,6 +41,12 @@
     <view class="content-wrapper" wx:if="{{currentTab === 'intro'}}">
       <!-- 有内容时显示 -->
       <block wx:if="{{hasIntroContent}}">
+        <!-- 植物名称展示 -->
+        <view class="plant-name-section" wx:if="{{plant.englishName}}">
+          <text class="plant-name-chinese">{{plant.title}}</text>
+          <text class="plant-name-english">{{plant.englishName}}</text>
+        </view>
+        
         <!-- 植物介绍 -->
         <view class="info-section" wx:if="{{plant.introduction}}">
           <view class="section-header">
