@@ -1,0 +1,64 @@
+[
+  {
+    "id": 109,
+    "title": "星球",
+    "enTitle": "Astrophytum asterias",
+    "category": "仙人掌科",
+    "articles": [],
+    "introduction": "仙人掌科多肉植物，星球属品种，球体规整，是仙人掌科中的精品",
+    "morphology": [
+      "球体或柱状",
+      "具刺座",
+      "耐旱性强",
+      "生长缓慢"
+    ],
+    "carePoints": [
+      "极耐旱，浇水要少",
+      "喜充足阳光",
+      "夏季适当遮阴",
+      "冬季控水保暖"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每2周1次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "20-30°C",
+      "soilRequirement": "沙质土壤，排水性极好"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/仙人掌科/星球.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRDSAXz1zmYXiarmFCXER96D8AHVwWN4H9Tztiaib6ict6YEwO7en0dTx7kQ/0?from=appmsg"
+    }
+  },
+  {
+    "id": 308,
+    "title": "鸾凤玉",
+    "enTitle": "Astrophytum myriostigma",
+    "category": "仙人掌科",
+    "articles": [],
+    "introduction": "仙人掌科多肉植物，形态独特品种，耐旱性强，是适合新手养护的品种",
+    "morphology": [
+      "球体或柱状",
+      "具刺座",
+      "耐旱性强",
+      "生长缓慢"
+    ],
+    "carePoints": [
+      "极耐旱，浇水要少",
+      "喜充足阳光",
+      "夏季适当遮阴",
+      "冬季控水保暖"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每2周1次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "20-30°C",
+      "soilRequirement": "沙质土壤，排水性极好"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/仙人掌科/鸾凤玉.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRG15O43UI8QkhFW78C0GAmmsf71zalsuPgnciac1uhdfV14TSe56Hc9g/0?from=appmsg"
+    }
+  }
+]

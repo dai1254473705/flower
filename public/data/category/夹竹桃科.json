@@ -1,0 +1,33 @@
+[
+  {
+    "id": 141,
+    "title": "沙漠玫瑰",
+    "enTitle": "Adenium obesum",
+    "category": "夹竹桃科",
+    "articles": [],
+    "introduction": "夹竹桃科多肉植物，沙漠玫瑰属品种，茎干膨大，花朵美丽，是夹竹桃科中的精品",
+    "morphology": [
+      "茎干膨大如瓶",
+      "叶片革质",
+      "花朵美丽",
+      "耐旱性强"
+    ],
+    "carePoints": [
+      "极耐旱，浇水要少",
+      "喜充足阳光",
+      "夏季适当遮阴",
+      "冬季控水保暖"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "20-30°C",
+      "soilRequirement": "排水良好的沙质土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/夹竹桃科/沙漠玫瑰.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRKscleeTmQPLqDD92mtnj3XTjVPaCZP6jMdDs2Mq2fDteVbAHZ3YLDg/0?from=appmsg"
+    }
+  }
+]

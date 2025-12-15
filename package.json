@@ -4,15 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "./start-dev.sh",
-    "dev-actual": "vite",
+    "dev": "concurrently \"npm run server\" \"vite\"",
+    "server": "node server/index.js",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
     "deploy": "npm run build && git add . && git commit -m 'Auto commit after build' && git push origin master"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.1.1",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "multer": "^2.0.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "vite": "^7.2.6"

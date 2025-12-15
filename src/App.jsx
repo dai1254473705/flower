@@ -1,295 +1,417 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
-import imageLinks from '../public/data/image-links.json';
+
+// Base API URL
+const API_BASE = 'http://localhost:3001/api';
 
 function App() {
   // 状态管理
   const [images, setImages] = useState([]);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null); // use Index or ID
   const [newName, setNewName] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('');
-  const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState([]); // List of category objects or strings
   const [selectedCategory, setSelectedCategory] = useState('');
-  const [isCategoryModalOpen, setIsCategoryModalOpen] = useState(false);
-  const [editingCategoryImage, setEditingCategoryImage] = useState(null);
-  const [editingCategoryValue, setEditingCategoryValue] = useState('');
-  // 文章详情弹窗状态
+  const [filterMode, setFilterMode] = useState('all'); // all | missingLocal | missingRemote
+
+  // Articles Modal
   const [isArticleModalOpen, setIsArticleModalOpen] = useState(false);
   const [currentPlant, setCurrentPlant] = useState(null);
   const [currentArticle, setCurrentArticle] = useState(null);
-  const [showArticleList, setShowArticleList] = useState(true); // 控制显示文章列表还是内容
-  // 加载图片数据
-  useEffect(() => {
-    try {
-      // 为没有分类的图片添加默认分类
-      // 为没有articles的图片添加默认空数组
-      const imagesWithDefaults = imageLinks.map(image => ({
-        ...image,
-        category: image.category || '',
-        articles: image.articles || []
-      }));
-      setImages(imagesWithDefaults);
-      // 提取所有分类
-      const uniqueCategories = [...new Set(imageLinks.map(image => image.category).filter(Boolean))];
-      setCategories(uniqueCategories);
-    } catch (error) {
-      console.error('加载图片数据失败:', error);
-    }
-  }, []);
+  const [showArticleList, setShowArticleList] = useState(true);
 
-  // 加载分类配置 - 现在从图片数据中提取分类
-  /* useEffect(() => {
+  // Upload Modal
+  const [isUploadModalOpen, setIsUploadModalOpen] = useState(false);
+  const [uploadFile, setUploadFile] = useState(null);
+  const [uploadName, setUploadName] = useState('');
+  const [uploadCategory, setUploadCategory] = useState('');
+
+  // 加载分类配置
+  useEffect(() => {
     const loadCategories = async () => {
       try {
-        const response = await fetch('/flower/category-config.json');
+        const response = await fetch(`${API_BASE}/categories`);
         const data = await response.json();
-        setCategories(data.categories);
+        const categoryList = data.map(c => c.name || c); // Handle object or string
+        setCategories(categoryList);
+
+        // Default to first category if available
+        if (categoryList.length > 0) {
+          setSelectedCategory(categoryList[0]);
+        }
       } catch (error) {
         console.error('加载分类配置失败:', error);
       }
     };
     loadCategories();
-  }, []); */
+  }, []);
+
+  // 加载选中分类的数据
+  useEffect(() => {
+    if (!selectedCategory) return;
+
+    const loadData = async () => {
+      try {
+        // If uncategorized, endpoint is '未分类' (encoded)
+        const catName = selectedCategory === '__uncategorized__' ? '未分类' : selectedCategory;
+        const response = await fetch(`${API_BASE}/data/${encodeURIComponent(catName)}`);
+        if (!response.ok) {
+          if (response.status === 404) {
+            setImages([]);
+            return;
+          }
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+
+        // Ensure data consistency with new structure
+        const normalizedData = data.map(item => {
+          const legacySrc =
+            item.srcList && item.srcList.length > 0
+              ? item.srcList[0]
+              : item.src
+                ? { local: '', remote: item.src }
+                : { local: '', remote: '' };
+          const srcIcon = item.srcIcon || legacySrc;
+          return {
+            ...item,
+            category: item.category || '未分类',
+            articles: item.articles || [],
+            srcIcon,
+            srcList: []
+          };
+        });
+
+        setImages(normalizedData);
+      } catch (error) {
+        console.error(`Error loading data for ${selectedCategory}:`, error);
+        setImages([]);
+      }
+    };
+
+    loadData();
+  }, [selectedCategory]);
 
   // 防抖搜索
   useEffect(() => {
     const timerId = setTimeout(() => {
       setDebouncedSearchTerm(searchTerm);
-    }, 300); // 300毫秒防抖
-
-    return () => {
-      clearTimeout(timerId);
-    };
+    }, 300);
+    return () => clearTimeout(timerId);
   }, [searchTerm]);
-  
-  // 保存图片数据到JSON
-  const saveImages = async (newImages) => {
+
+  const upsertImage = async (item) => {
+    if (item.id === undefined || item.id === null) {
+      alert('数据缺少 id，无法保存');
+      return;
+    }
+    const catName = item.category === '__uncategorized__' ? '未分类' : item.category;
     try {
-      // 注意：在实际项目中，这需要后端API支持
-      // 这里我们只是模拟保存操作
-      console.log('保存图片数据:', newImages);
-      setImages(newImages);
+      const res = await fetch(`${API_BASE}/data/${encodeURIComponent(catName)}/item`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(item)
+      });
+      if (!res.ok) throw new Error('upsert failed');
+      if (catName === (selectedCategory === '__uncategorized__' ? '未分类' : selectedCategory)) {
+        setImages(prev => {
+          const exists = prev.some(img => img.id === item.id);
+          if (exists) {
+            return prev.map(img => (img.id === item.id ? item : img));
+          }
+          return [...prev, item];
+        });
+      }
     } catch (error) {
-      console.error('保存图片数据失败:', error);
+      console.error('Failed to save item:', error);
+      alert('保存失败');
     }
   };
-  
-  // 删除图片
-  const deleteImage = (index) => {
-    const newImages = [...images];
-    newImages.splice(index, 1);
-    saveImages(newImages);
+
+  const deleteImageById = async (id, category) => {
+    const catName = category === '__uncategorized__' ? '未分类' : category;
+    const res = await fetch(`${API_BASE}/data/${encodeURIComponent(catName)}/item/${encodeURIComponent(id)}`, {
+      method: 'DELETE'
+    });
+    if (!res.ok) throw new Error('delete failed');
+    if (catName === (selectedCategory === '__uncategorized__' ? '未分类' : selectedCategory)) {
+      setImages(prev => prev.filter(img => img.id !== id));
+    }
   };
-  
-  // 打开重命名模态框
+
+  // 删除图片
+  const deleteImage = async (index) => {
+    if (!window.confirm('确定要删除吗？')) return;
+    const target = images[index];
+    if (!target) return;
+    try {
+      await deleteImageById(target.id, target.category);
+    } catch (error) {
+      console.error(error);
+      alert('删除失败');
+    }
+  };
+
+  // 打开重命名
   const openRenameModal = (index) => {
-    setSelectedImage(index);
+    setSelectedImageIndex(index);
     setNewName(images[index].title);
     setIsModalOpen(true);
   };
-  
+
   // 保存新名称
-  const saveNewName = () => {
-    if (!selectedImage || !newName.trim()) return;
-    
-    const newImages = [...images];
-    newImages[selectedImage].title = newName.trim();
-    saveImages(newImages);
+  const saveNewName = async () => {
+    if (selectedImageIndex === null || !newName.trim()) return;
+    const updated = { ...images[selectedImageIndex], title: newName.trim() };
+    await upsertImage(updated);
     setIsModalOpen(false);
   };
-  
-  // 新增图片
-  const handleAddImage = (e) => {
-    // 这里需要实现图片上传功能
-    // 注意：在实际项目中，这需要后端API支持
-    // 当前版本仅作为前端演示，不包含实际的图片上传功能
-    console.log('图片新增功能需要后端API支持，用于处理文件上传和保存');
-    alert('图片新增功能需要后端API支持才能实现完整功能');
-  };
 
-  // 生成JSON文件
-  const generateJSON = () => {
+  // 新增图片逻辑 (Upload 新增条目)
+  const openUploadModal = () => {
+    setUploadName('');
+    setUploadFile(null);
+    setUploadCategory(selectedCategory || categories[0]);
+    setIsUploadModalOpen(true);
+  }
+
+  const handleUpload = async () => {
+    if (!uploadFile || !uploadName) {
+      alert('请填写名称并选择文件');
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('file', uploadFile);
+
+    // Query params for backend naming (icon upload on home)
+    const type = 'icon';
+    const cat = uploadCategory === '__uncategorized__' ? '未分类' : uploadCategory;
+
     try {
-      // 模拟备份过程
-      console.log('正在备份旧文件...');
-      console.log('旧文件已备份为: image-links.bak.json');
-      
-      // 生成新的JSON内容
-      console.log('正在生成新的JSON文件...');
-      
-      // 创建下载链接
-      const jsonContent = JSON.stringify(images, null, 2);
-      const blob = new Blob([jsonContent], { type: 'application/json' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'image-links.json';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-      
-      alert('JSON文件已生成并下载！请将下载的文件替换原始的image-links.json文件。\n\n注意：\n1. 旧文件已模拟备份为image-links.bak.json\n2. 请手动将下载的image-links.json文件放置到项目根目录');
-    } catch (error) {
-      console.error('生成JSON文件失败:', error);
-      alert('生成JSON文件失败，请查看控制台日志');
+      // 1. Upload File
+      const uploadRes = await fetch(`${API_BASE}/upload?name=${encodeURIComponent(uploadName)}&type=${type}&category=${encodeURIComponent(cat)}`, {
+        method: 'POST',
+        body: formData
+      });
+
+      if (!uploadRes.ok) throw new Error('Upload failed');
+      const uploadData = await uploadRes.json();
+
+      // 2. Add to JSON
+      const newItem = {
+        id: Date.now(), // Temp ID
+        title: uploadName,
+        category: cat,
+        articles: [],
+        introduction: '',
+        morphology: [],
+        carePoints: [],
+        careInfo: {},
+        srcIcon: {
+          local: uploadData.path,
+          remote: ''
+        },
+        srcList: []
+      };
+
+      await upsertImage(newItem);
+
+      setIsUploadModalOpen(false);
+      alert('上传成功');
+    } catch (err) {
+      console.error(err);
+      alert('上传失败');
     }
   };
 
-  // 搜索处理
-  const handleSearch = (e) => {
-    setSearchTerm(e.target.value);
+  // 针对已有远程但无本地的补图上传
+  const handleAttachLocal = async (file, image, index) => {
+    if (!file) return;
+    const formData = new FormData();
+    formData.append('file', file);
+    const cat = image.category || '未分类';
+    const type = 'icon';
+    const name = image.title || 'unknown';
+
+    try {
+      const uploadRes = await fetch(`${API_BASE}/upload?name=${encodeURIComponent(name)}&type=${type}&category=${encodeURIComponent(cat)}`, {
+        method: 'POST',
+        body: formData
+      });
+      if (!uploadRes.ok) throw new Error('Upload failed');
+      const uploadData = await uploadRes.json();
+
+      const updatedItem = {
+        ...image,
+        srcIcon: {
+          local: uploadData.path,
+          remote: image.srcIcon ? image.srcIcon.remote : ''
+        },
+        srcList: []
+      };
+      await upsertImage(updatedItem);
+      alert('本地图片已上传并更新');
+    } catch (err) {
+      console.error(err);
+      alert('上传失败');
+    }
   };
 
-  // 分类筛选处理
-  const handleCategoryFilter = (e) => {
-    setSelectedCategory(e.target.value);
-  };
-
-  // 过滤后的图片列表
   const filteredImages = images.filter(image => {
     const matchesSearch = image.title.toLowerCase().includes(debouncedSearchTerm.toLowerCase());
-    let matchesCategory;
-    if (selectedCategory === "__uncategorized__") {
-      matchesCategory = !image.category || image.category === '';
-    } else {
-      matchesCategory = selectedCategory ? image.category === selectedCategory : true;
-    }
-    return matchesSearch && matchesCategory;
+    if (!matchesSearch) return false;
+    const icon = image.srcIcon || { local: '', remote: '' };
+    if (filterMode === 'missingLocal') return !icon.local;
+    if (filterMode === 'missingRemote') return !icon.remote;
+    return true;
   });
 
-  // 打开分类编辑模态框
-  const openCategoryModal = (index) => {
-    setEditingCategoryImage(index);
-    setEditingCategoryValue(images[index].category || '');
-    setIsCategoryModalOpen(true);
-  };
-
-  // 保存分类
-  const saveCategory = () => {
-    if (!editingCategoryImage) return;
-    
-    const newImages = [...images];
-    newImages[editingCategoryImage].category = editingCategoryValue;
-    saveImages(newImages);
-    setIsCategoryModalOpen(false);
-  };
-  
-  // 打开植物文章链接弹窗
-  const openPlantArticles = (plant) => {
-    // 如果有文章，打开弹窗显示文章列表
-    if (plant.articles && plant.articles.length > 0) {
-      setCurrentPlant(plant);
-      setCurrentArticle(null);
-      setShowArticleList(true);
-      setIsArticleModalOpen(true);
-    } else {
-      alert('该植物暂无文章链接');
-    }
-  };
-
-  // 关闭文章弹窗
-  const closeArticleModal = () => {
-    setIsArticleModalOpen(false);
-    setCurrentPlant(null);
-    setCurrentArticle(null);
-    setShowArticleList(true);
-  };
-
-  // 查看文章详情
-  const viewArticle = (article) => {
-    setCurrentArticle(article);
-    setShowArticleList(false);
-  };
-
-  // 返回文章列表
-  const backToArticleList = () => {
-    setShowArticleList(true);
-    setCurrentArticle(null);
-  };
+  const PLACEHOLDER_IMG = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300"><rect width="300" height="300" fill="#f0f0f0"/><text x="50%" y="50%" fill="#999" font-size="20" font-family="Arial" text-anchor="middle" dominant-baseline="middle">No Image</text></svg>`;
 
   return (
     <div className="app">
       <header className="app-header">
-        <h1>图片管理系统</h1>
+        <h1>多肉管理系统</h1>
         <div className="search-container">
           <input
             type="text"
             className="search-input"
-            placeholder="搜索图片..."
+            placeholder="搜索当前分类..."
             value={searchTerm}
-            onChange={handleSearch}
+            onChange={(e) => setSearchTerm(e.target.value)}
           />
+        </div>
+        <div className="filter-container">
+          <select
+            className="filter-select"
+            value={filterMode}
+            onChange={(e) => setFilterMode(e.target.value)}
+          >
+            <option value="all">全部</option>
+            <option value="missingLocal">缺本地</option>
+            <option value="missingRemote">缺远端</option>
+          </select>
         </div>
         <div className="category-filter-container">
           <select
             className="category-select"
             value={selectedCategory}
-            onChange={handleCategoryFilter}
+            onChange={(e) => setSelectedCategory(e.target.value)}
           >
-            <option value="">所有分类</option>
-            <option value="__uncategorized__">未分类</option>
             {categories.map((category, index) => (
               <option key={index} value={category}>{category}</option>
             ))}
+            <option value="__uncategorized__">未分类</option>
           </select>
         </div>
-        <button className="add-button" onClick={handleAddImage}>
-          新增图片
-        </button>
-        <button className="generate-json-button" onClick={generateJSON}>
-          生成 JSON
+        <button className="add-button" onClick={openUploadModal}>
+          新增/上传
         </button>
       </header>
-      
+
       <main className="image-grid">
-        {filteredImages.map((image, index) => (
-          <div key={index} className="image-card">
-            <div className="image-wrapper">
-              {/* 使用本地图片路径显示，绕过CORS限制 */}
-              <img src={`/flower/icon/${encodeURIComponent(image.title)}.jpg`} alt={image.title} />
-              {/* 如果JSON中已有该图片，添加标识 */}
-              <div className="json-indicator">JSON中已存在</div>
+        {filteredImages.length === 0 && <div className="no-data">暂无数据</div>}
+        {filteredImages.map((image, index) => {
+          // 展示逻辑：优先本地；如果没有本地，用占位图；如果有微信远端则显示标识并允许预览
+          const srcItem = image.srcIcon
+            ? image.srcIcon
+            : (image.srcList && image.srcList.length > 0 ? image.srcList[0] : null);
+          const hasLocal = !!(srcItem && srcItem.local);
+          const hasRemote = !!(srcItem && srcItem.remote);
+          const localSrc = hasLocal ? '/' + srcItem.local.replace(/^public\//, 'flower/') : '';
+          const displaySrc = hasLocal ? localSrc : PLACEHOLDER_IMG;
+
+          return (
+            <div key={index} className="image-card">
+              <div className="image-wrapper">
+                <img src={displaySrc} alt={image.title} onError={(e) => { e.target.src = PLACEHOLDER_IMG; }} />
+                {!hasLocal && <div className="image-badge placeholder-badge">占位</div>}
+                {hasRemote && <div className="image-badge remote-badge" onClick={() => window.open(srcItem.remote, '_blank')}>已上传(微信)</div>}
+              </div>
+              <div className="image-info">
+                <span className="image-title">{image.title}</span>
+                <div className="image-category">
+                  <span className="category-label">分类：</span>
+                  <span className="category-value">{image.category}</span>
+                </div>
+                <div className="image-actions">
+                  <button className="rename-button" onClick={() => openRenameModal(index)}>
+                    重命名
+                  </button>
+                  <button className="details-button" onClick={() => {
+                    if (image.articles && image.articles.length > 0) {
+                      setCurrentPlant(image);
+                      setShowArticleList(true);
+                      setIsArticleModalOpen(true);
+                    } else {
+                      alert('暂无文章');
+                    }
+                  }}>详情</button>
+                  <button className="delete-button" onClick={() => deleteImage(index)}>
+                    删除
+                  </button>
+                  {hasRemote && !hasLocal && (
+                    <label className="upload-local-button">
+                      补本地
+                      <input
+                        type="file"
+                        accept="image/*"
+                        style={{ display: 'none' }}
+                        onChange={(e) => {
+                          const file = e.target.files && e.target.files[0];
+                          handleAttachLocal(file, image, index);
+                          e.target.value = '';
+                        }}
+                      />
+                    </label>
+                  )}
+                </div>
+              </div>
             </div>
-            <div className="image-info">
-              <span className="image-title">{image.title}</span>
-              <div className="image-category">
-                <span className="category-label">分类：</span>
-                <span className={`category-value ${!image.category ? 'category-empty' : ''}`}>
-                  {image.category || '未分类'}
-                </span>
-                <button className="category-button" onClick={() => openCategoryModal(index)}>
-                  编辑分类
-                </button>
-              </div>
-              <div className="image-actions">
-                <button className="rename-button" onClick={() => openRenameModal(index)}>
-                  重命名
-                </button>
-                <button className="details-button" onClick={() => openPlantArticles(image)}>
-                  详情
-                </button>
-                <button className="delete-button" onClick={() => deleteImage(index)}>
-                  删除
-                </button>
-              </div>
+          )
+        })}
+      </main>
+
+      {/* Upload Modal */}
+      {isUploadModalOpen && (
+        <div className="modal-overlay">
+          <div className="modal">
+            <h2>新增图片</h2>
+            <div className="form-group">
+              <label>名称：</label>
+              <input type="text" value={uploadName} onChange={e => setUploadName(e.target.value)} />
+            </div>
+            <div className="form-group">
+              <label>分类：</label>
+              <select value={uploadCategory} onChange={e => setUploadCategory(e.target.value)}>
+                {categories.map((c, i) => <option key={i} value={c}>{c}</option>)}
+                <option value="__uncategorized__">未分类</option>
+              </select>
+            </div>
+            <div className="form-group">
+              <label>图片：</label>
+              <input type="file" onChange={e => setUploadFile(e.target.files[0])} accept="image/*" />
+            </div>
+            <div className="modal-actions">
+              <button onClick={() => setIsUploadModalOpen(false)}>取消</button>
+              <button onClick={handleUpload}>上传并保存</button>
             </div>
           </div>
-        ))}
-      </main>
-      
-      {/* 重命名模态框 */}
+        </div>
+      )}
+
+      {/* Rename Modal */}
       {isModalOpen && (
         <div className="modal-overlay">
           <div className="modal">
-            <h2>重命名图片</h2>
+            <h2>重命名</h2>
             <input
               type="text"
               value={newName}
               onChange={(e) => setNewName(e.target.value)}
-              placeholder="输入新名称"
             />
             <div className="modal-actions">
               <button onClick={() => setIsModalOpen(false)}>取消</button>
@@ -299,104 +421,51 @@ function App() {
         </div>
       )}
 
-      {/* 分类编辑模态框 */}
-      {isCategoryModalOpen && (
-        <div className="modal-overlay">
-          <div className="modal">
-            <h2>编辑图片分类</h2>
-            <select
-              className="category-select-modal"
-              value={editingCategoryValue}
-              onChange={(e) => setEditingCategoryValue(e.target.value)}
-            >
-              <option value="">未分类</option>
-              {categories.map((category, index) => (
-                <option key={index} value={category}>{category}</option>
-              ))}
-            </select>
-            <div className="modal-actions">
-              <button onClick={() => setIsCategoryModalOpen(false)}>取消</button>
-              <button onClick={saveCategory}>保存</button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* 文章详情弹窗 - 模拟小程序界面 */}
+      {/* Article Modal (Kept mostly same, just simplified logic) */}
       {isArticleModalOpen && currentPlant && (
         <div className="article-modal-overlay">
           <div className="article-modal">
-            {/* 模拟小程序导航栏 */}
             <div className="mini-program-header">
               <div className="nav-left">
-                {showArticleList ? (
-                  <button className="nav-back-btn" onClick={closeArticleModal}>
-                    ←
-                  </button>
-                ) : (
-                  <button className="nav-back-btn" onClick={backToArticleList}>
-                    ←
-                  </button>
-                )}
+                <button className="nav-back-btn" onClick={() => {
+                  if (currentArticle) {
+                    setCurrentArticle(null);
+                    setShowArticleList(true);
+                  } else {
+                    setIsArticleModalOpen(false);
+                  }
+                }}>←</button>
               </div>
               <div className="nav-title">
-                {showArticleList ? currentPlant.title : currentArticle?.title || '文章详情'}
-              </div>
-              <div className="nav-right">
-                <button className="nav-more-btn">
-                  ···
-                </button>
+                {currentArticle ? '文章详情' : currentPlant.title}
               </div>
             </div>
-            
-            {/* 文章内容区域 */}
+
             <div className="mini-program-content">
-              {/* 文章列表 */}
-              {showArticleList && (
+              {showArticleList ? (
                 <div className="article-list">
-                  <div className="article-list-header">
-                    <h3>相关文章</h3>
-                  </div>
-                  <div className="article-list-items">
-                    {currentPlant.articles.map((article, index) => (
-                      <div 
-                        key={index} 
-                        className="article-list-item"
-                        onClick={() => viewArticle(article)}
-                      >
-                        <div className="article-item-title">{article.title}</div>
-                        <div className="article-item-url">{article.url}</div>
-                      </div>
-                    ))}
-                  </div>
+                  {currentPlant.articles.map((article, index) => (
+                    <div key={index} className="article-list-item" onClick={() => {
+                      setCurrentArticle(article);
+                      setShowArticleList(false);
+                    }}>
+                      <div className="article-item-title">{article.title}</div>
+                    </div>
+                  ))}
                 </div>
-              )}
-              
-              {/* 文章内容 */}
-              {!showArticleList && currentArticle && (
-                <div className="article-content">
-                  <div className="article-content-header">
-                    <h3>{currentArticle.title}</h3>
+              ) : (
+                currentArticle && (
+                  <div className="article-content">
+                    <iframe src={currentArticle.url} className="article-iframe" />
                   </div>
-                  <div className="article-iframe-container">
-                    <iframe 
-                      src={currentArticle.url} 
-                      title={currentArticle.title} 
-                      className="article-iframe"
-                      frameBorder="0"
-                      sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
-                    />
-                  </div>
-                </div>
+                )
               )}
             </div>
           </div>
         </div>
       )}
-      
-
     </div>
   );
 }
 
-export default App
+export default App;

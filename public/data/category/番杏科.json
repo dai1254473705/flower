@@ -1,0 +1,261 @@
+[
+  {
+    "id": 23,
+    "title": "五十铃玉",
+    "enTitle": "Fenestraria rhopalophylla",
+    "category": "番杏科",
+    "articles": [],
+    "introduction": "番杏科棒叶花属多肉植物，适应干旱环境，肉质叶棍棒状，形态酷似小棒，叶色翠绿，秋季开黄色小花，观赏价值独特",
+    "morphology": [
+      "肉质叶呈棍棒状，密集丛生",
+      "叶色翠绿，顶端圆润",
+      "秋季开黄色小花"
+    ],
+    "carePoints": [
+      "极少浇水，忌盆土积水",
+      "夏季休眠期严格控水，遮阴通风",
+      "深盆种植，避免碰伤叶片"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足阳光（夏季遮阴50%）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主（赤玉土+鹿沼土+河沙=4:3:2）"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/番杏科/五十铃玉.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR7ibsQpTuofcoX2xpTud7aupLAsN7PzRBpw8dgNawTkrMichPU1sDWpUg/0?from=appmsg"
+    }
+  },
+  {
+    "id": 42,
+    "title": "口笛",
+    "enTitle": "Conophytum bilobum",
+    "category": "番杏科",
+    "articles": [],
+    "introduction": "番杏科肉锥花属多肉，植株小巧，肉质叶对生，呈球形，叶色翠绿，秋季开黄色小花，酷似口笛，观赏价值独特",
+    "morphology": [
+      "肉质叶对生，球形紧凑",
+      "叶色翠绿，表面光滑",
+      "株型矮小，直径2-3cm，秋季开花"
+    ],
+    "carePoints": [
+      "极少浇水，忌盆土积水",
+      "夏季休眠期严格控水，遮阴通风",
+      "深盆种植，避免碰伤"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每15-20天1次",
+      "lightRequirement": "充足阳光（夏季遮阴50%）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主（赤玉土+鹿沼土+河沙=5:3:2）"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/番杏科/口笛.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRv77h5cJfgncoqXDYibwtU84RUuxtRQkcUNave04w3NsibUOZyLpticWkA/0?from=appmsg"
+    }
+  },
+  {
+    "id": 92,
+    "title": "帝玉",
+    "enTitle": "Pleiospilos nelii",
+    "category": "番杏科",
+    "articles": [],
+    "introduction": "番杏科多肉植物，形态独特，观赏价值高，是多肉植物中的特色品种",
+    "morphology": [
+      "形态独特",
+      "叶片肥厚",
+      "耐旱性强",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "耐旱性强，浇水要少",
+      "喜充足阳光",
+      "夏季适当遮阴",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/番杏科/帝玉.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRbwQ1riaPaMjnOB06lgedoKma8351okadJ3GLx4FCpFmPFrv6s4Ojv1g/0?from=appmsg"
+    }
+  },
+  {
+    "id": 166,
+    "title": "生石花",
+    "enTitle": "Lithops",
+    "category": "番杏科",
+    "articles": [],
+    "introduction": "生石花外形酷似小石头,是拟态植物的典型代表。",
+    "morphology": [
+      "拟态石头",
+      "两片叶对生",
+      "秋季开花",
+      "极端耐旱"
+    ],
+    "carePoints": [
+      "极少浇水",
+      "夏季休眠",
+      "深盆种植",
+      "避免碰伤"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每月一次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "20-35°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/番杏科/生石花.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRpNbkJQfrGb72iaMnsQhzRc1MD1TCkYnibMk756sdvUdmicTSOX0Rde0ZQ/0?from=appmsg"
+    }
+  },
+  {
+    "id": 167,
+    "title": "留碟玉",
+    "enTitle": "Lithops",
+    "category": "番杏科",
+    "articles": [],
+    "introduction": "番杏科多肉植物，形态独特，观赏价值高，是多肉植物中的特色品种",
+    "morphology": [
+      "形态独特",
+      "叶片肥厚",
+      "耐旱性强",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "耐旱性强，浇水要少",
+      "喜充足阳光",
+      "夏季适当遮阴",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/番杏科/留碟玉.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRyKqsZqIEadF4wIQXX2aHfpj6FaTIWwzj0On17BIHSJcgLpribsEibNVg/0?from=appmsg"
+    }
+  },
+  {
+    "id": 180,
+    "title": "碧光环",
+    "enTitle": "Monilaria obconica",
+    "category": "番杏科",
+    "articles": [],
+    "introduction": "番杏科多肉植物，形态独特，观赏价值高，是多肉植物中的特色品种",
+    "morphology": [
+      "形态独特",
+      "叶片肥厚",
+      "耐旱性强",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "耐旱性强，浇水要少",
+      "喜充足阳光",
+      "夏季适当遮阴",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/番杏科/碧光环.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRehg7kY4m4XaGGagYzrJesOWSrlgbyHVKowQuRx6APu5vAJ9zKxRnrg/0?from=appmsg"
+    }
+  },
+  {
+    "id": 259,
+    "title": "藻铃玉",
+    "enTitle": "Fenestraria rhopalophylla",
+    "category": "番杏科",
+    "articles": [],
+    "introduction": "番杏科多肉植物，形态独特，观赏价值高，是多肉植物中的特色品种",
+    "morphology": [
+      "形态独特",
+      "叶片肥厚",
+      "耐旱性强",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "耐旱性强，浇水要少",
+      "喜充足阳光",
+      "夏季适当遮阴",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/番杏科/藻铃玉.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRlxwibOg40OGiarUlzicOV0QTr23Z1eIYTbQMNynZ2wjHOfclgWQZChC8w/0?from=appmsg"
+    }
+  },
+  {
+    "id": 309,
+    "title": "鹿角海棠",
+    "enTitle": "Astrophytum capricorne",
+    "category": "番杏科",
+    "articles": [],
+    "introduction": "番杏科多肉植物，形态独特，观赏价值高，是多肉植物中的特色品种",
+    "morphology": [
+      "形态独特",
+      "叶片肥厚",
+      "耐旱性强",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "耐旱性强，浇水要少",
+      "喜充足阳光",
+      "夏季适当遮阴",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/番杏科/鹿角海棠.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR0zETxFs50cDTlq62LuCicicYvjw5Qg3f11PcKE7WwekCEibGjPl6ASWrg/0?from=appmsg"
+    }
+  },
+  {
+    "id": 1765808267487,
+    "title": "蜜橘糖球",
+    "category": "番杏科",
+    "articles": [],
+    "introduction": "",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {},
+    "srcIcon": {
+      "local": "public/images/icon/番杏科/蜜橘糖球icon1765808267478.jpg",
+      "remote": ""
+    },
+    "srcList": []
+  }
+]

@@ -1,0 +1,653 @@
+[
+  {
+    "id": 12,
+    "title": "万象锦",
+    "enTitle": "Haworthia maughanii f. variegata",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科十二卷属多肉，万象的斑锦变异品种，叶片肥厚呈扇形，锦斑色彩鲜艳（黄绿/白绿相间），是高端观赏多肉",
+    "morphology": [
+      "叶片莲座状排列，肉质厚实",
+      "叶面光滑，具透明窗状顶端",
+      "锦斑分布均匀，株型规整"
+    ],
+    "carePoints": [
+      "喜散射光，忌强光直射",
+      "耐旱，浇水见干见湿，忌积水",
+      "冬季温度不低于10°C，控水"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足散射光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "赤玉土+鹿沼土+泥炭=5:3:2"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/万象锦.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR0IHNtDHR1gZfzrYJXoiaBblArAIGLkSxiaKyiaOheibTAmPGECvy4xnaBQ/0?from=appmsg"
+    }
+  },
+  {
+    "id": 27,
+    "title": "克里克特寿斯科特",
+    "enTitle": "Haworthia cooperi var. truncata",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科十二卷属多肉，叶片肥厚呈莲座状，叶面具细密纹路，叶色翠绿，株型规整，是寿类多肉中的经典品种",
+    "morphology": [
+      "叶片卵形，肉质厚实",
+      "叶色翠绿，叶面具白色网状纹路",
+      "株型小巧，直径6-10cm"
+    ],
+    "carePoints": [
+      "喜散射光，忌强光直射",
+      "耐旱，浇水见干见湿，忌积水",
+      "冬季温度不低于10°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足散射光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "赤玉土+鹿沼土+泥炭=5:3:2"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/克里克特寿斯科特.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR3lddqiarrk65ciciaLBs2ibVX3bYfQ5QGIVFpjeAPpO0Y26guVXCIkxr7g/0?from=appmsg"
+    }
+  },
+  {
+    "id": 28,
+    "title": "克里克特寿锦",
+    "enTitle": "Haworthia cooperi f. variegata",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科十二卷属斑锦品种，克里克特寿的锦化变异，叶色黄绿或白绿相间，纹路清晰，观赏价值极高，是高端多肉品种",
+    "morphology": [
+      "叶片卵形，肉质厚实",
+      "叶色具黄绿/白绿锦斑，叶面纹路清晰",
+      "株型规整，直径6-10cm"
+    ],
+    "carePoints": [
+      "喜散射光，忌强光直射",
+      "耐旱，浇水见干见湿，忌积水",
+      "冬季温度不低于10°C，控水"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足散射光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "赤玉土+鹿沼土+泥炭=5:3:2"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/克里克特寿锦.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRpMpiaLkuiaXqhWZnQGicz9SYMqNzbFOwhzJfHfzVkk1ZUknZjh4rBJYGQ/0?from=appmsg"
+    }
+  },
+  {
+    "id": 32,
+    "title": "冰灯玉露",
+    "enTitle": "Haworthia cooperi var. truncata",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科十二卷属多肉，玉露的优选品种，叶片肉质饱满，顶端具透明窗，叶色翠绿，晶莹剔透，酷似冰灯，观赏价值极高",
+    "morphology": [
+      "叶片莲座状排列，肉质厚实",
+      "叶色翠绿，顶端透明窗明显",
+      "株型小巧，直径5-8cm"
+    ],
+    "carePoints": [
+      "喜散射光，忌强光直射灼伤叶片",
+      "耐旱，浇水见干见湿，忌积水",
+      "冬季温度不低于10°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足散射光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "赤玉土+鹿沼土+泥炭=5:3:2"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/冰灯玉露.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRxH6zgicNh1YSmiarz9dBicmyulcXPZNNs8DyzuG7v388CBD3yMLULBIow/0?from=appmsg"
+    }
+  },
+  {
+    "id": 45,
+    "title": "圆头玉露",
+    "enTitle": "Haworthia cooperi",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科十二卷属多肉，叶片肉质呈卵形，顶端具圆形透明窗，叶色翠绿，晶莹剔透，株型小巧，观赏价值高",
+    "morphology": [
+      "叶片莲座状排列，肉质厚实",
+      "叶色翠绿，顶端圆形透明窗明显",
+      "株型小巧，直径5-8cm"
+    ],
+    "carePoints": [
+      "喜散射光，忌强光直射",
+      "耐旱，浇水见干见湿，忌积水",
+      "冬季温度不低于10°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足散射光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "赤玉土+鹿沼土+泥炭=5:3:2"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/圆头玉露.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR6NhL2rWdgPBw8HuqB9uSLdG7RuPxVvmcYJfJDOFyKibtURdvhJX9d8w/0?from=appmsg"
+    }
+  },
+  {
+    "id": 94,
+    "title": "康平寿",
+    "enTitle": "Haworthia comptoniana",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，寿属品种，形态优美，是观赏价值极高的品种",
+    "morphology": [
+      "叶片肥厚，具窗面"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/康平寿.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRIB52mhCv4ns9IrWE7c91xiafyCEbjg1kvtXgQGMFy8dic81on69DhoiaQ/0?from=appmsg"
+    }
+  },
+  {
+    "id": 95,
+    "title": "康平寿锦",
+    "enTitle": "Haworthia comptoniana f. variegata",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，寿属品种，形态优美，是观赏价值极高的品种",
+    "morphology": [
+      "叶片肥厚，具窗面"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "散射光（避免强光）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/康平寿锦.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRiaBv7tVemnDVHACOpkn8Dfc3obpwdYHFouSPUbibD93cVDP6KOKPa2Bw/0?from=appmsg"
+    }
+  },
+  {
+    "id": 105,
+    "title": "无纹万象-天照",
+    "enTitle": "Haworthia maughanii",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，万象属品种，形态优美，是观赏价值极高的品种",
+    "morphology": [
+      "叶片呈扇形排列"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "散射光（避免强光）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/无纹万象-天照.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRExLJd9rdQrL8bBHBeglD3Faa3qiat3TzGw3ahY6b5ticdH7CzdichN26w/0?from=appmsg"
+    }
+  },
+  {
+    "id": 120,
+    "title": "条纹十二卷",
+    "enTitle": "Haworthia fasciata",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，十二卷属品种，形态优美，是观赏价值极高的品种",
+    "morphology": [
+      "叶片具白色斑纹"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/条纹十二卷.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRruzA8QJm5VzCc0c11ht5wdm73tJNBfrghgSfUnd7dxkSp3QEKApLYg/0?from=appmsg"
+    }
+  },
+  {
+    "id": 137,
+    "title": "水晶康平寿",
+    "enTitle": "Haworthia comptoniana",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，寿属品种，形态优美，是观赏价值极高的品种",
+    "morphology": [
+      "叶片肥厚，具窗面"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "散射光（避免强光）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/水晶康平寿.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR6Kfibj4ibEBtGWrd6C18CogoicCiat5XbEIqbic32ibyK7kwkU4y8WicuCWUg/0?from=appmsg"
+    }
+  },
+  {
+    "id": 150,
+    "title": "点点寿",
+    "enTitle": "Haworthia retusa",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，寿属品种，形态优美，是观赏价值极高的品种",
+    "morphology": [
+      "叶片肥厚，具窗面"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "散射光（避免强光）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/点点寿.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRxVGzksGAAyZIYkpTAbyQDXjalvCHAwUOQBPVgZAUiczUCWIFKkGKGibQ/0?from=appmsg"
+    }
+  },
+  {
+    "id": 160,
+    "title": "玉扇",
+    "enTitle": "Haworthia truncata",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，十二卷属品种，形态优美，是观赏价值极高的品种",
+    "morphology": [
+      "叶片肥厚",
+      "形态优美"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/玉扇.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRX5fVgNibjGenWwcK31RujgS41TZm7hR31vNcQwibGZE1QZzyHGPf3mew/0?from=appmsg"
+    }
+  },
+  {
+    "id": 164,
+    "title": "玉露寿",
+    "enTitle": "Haworthia cooperi",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，玉露属品种，叶片晶莹剔透，是多肉植物中的精品",
+    "morphology": [
+      "叶片晶莹剔透，窗面透明",
+      "叶片肥厚，具窗面"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "散射光（避免强光）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/玉露寿.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRibpR0CcicW5OwiaOIviaWZQIbrumMRyaKouiaZicG92MhA06uZH8VgSF9NYA/0?from=appmsg"
+    }
+  },
+  {
+    "id": 173,
+    "title": "白斑玉露",
+    "enTitle": "Haworthia cooperi f. variegata",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，玉露属品种，叶片晶莹剔透，是多肉植物中的精品",
+    "morphology": [
+      "叶片晶莹剔透，窗面透明"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "散射光（避免强光）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/白斑玉露.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRsINtkDicKdrzc0XLbeJsjC7DzGB2mf5SXaEkqe1IVqb0D9cf9FrCSMQ/0?from=appmsg"
+    }
+  },
+  {
+    "id": 183,
+    "title": "磨面克里克特寿",
+    "enTitle": "Haworthia cooperi",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，寿属品种，形态优美，是观赏价值极高的品种",
+    "morphology": [
+      "叶片肥厚，具窗面"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "散射光（避免强光）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/磨面克里克特寿.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRkvnZeFB1HicQhWo1XCr6YkMT56rVJA5YLEdStticfTfYWI4OLA8bx4cg/0?from=appmsg"
+    }
+  },
+  {
+    "id": 184,
+    "title": "磨面蓝光寿锦",
+    "enTitle": "Haworthia comptoniana f. variegata",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，寿属品种，形态优美，是观赏价值极高的品种",
+    "morphology": [
+      "叶片肥厚，具窗面"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "散射光（避免强光）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/磨面蓝光寿锦.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRINS4Kn92F7O79ibULpjBE2Wewjuz2F0DxyS3q4ldqellZv9zB2oPuEQ/0?from=appmsg"
+    }
+  },
+  {
+    "id": 202,
+    "title": "紫肌玉露  ",
+    "enTitle": "Haworthia cooperi",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，玉露属品种，叶片晶莹剔透，是多肉植物中的精品",
+    "morphology": [
+      "叶片晶莹剔透，窗面透明"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "散射光（避免强光）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/紫肌玉露  .jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRY0xnToW3NGHADaIT7PyyAOMBpWSLdMTp8v2Mib8YzExR4skFFicUpPfw/0?from=appmsg"
+    }
+  },
+  {
+    "id": 236,
+    "title": "草玉露",
+    "enTitle": "Haworthia cooperi",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，玉露属品种，叶片晶莹剔透，是多肉植物中的精品",
+    "morphology": [
+      "叶片晶莹剔透，窗面透明"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "散射光（避免强光）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/草玉露.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRXUuZqnWIYSfxr5hrgBQia7iboaU5zBFUsXibnStZNtRPSyGfyACMCVB1g/0?from=appmsg"
+    }
+  },
+  {
+    "id": 244,
+    "title": "莲花玉露",
+    "enTitle": "Haworthia cooperi",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，玉露属品种，叶片晶莹剔透，是多肉植物中的精品",
+    "morphology": [
+      "叶片晶莹剔透，窗面透明"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "散射光（避免强光）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/莲花玉露.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRbvAQUibUl5n4wkgiaFAawiaa4t3up9NtMZiasjx0Lf2RctAmhduwiaIibNicw/0?from=appmsg"
+    }
+  },
+  {
+    "id": 265,
+    "title": "蝉翼玉露",
+    "enTitle": "Haworthia cooperi",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，玉露属品种，叶片晶莹剔透，是多肉植物中的精品",
+    "morphology": [
+      "叶片晶莹剔透，窗面透明"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "散射光（避免强光）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/蝉翼玉露.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRmBQhczfTGF6DDyL25C2Zjje5iaPzDVHUKb5qXQ91MGQbByhGwpmGxiag/0?from=appmsg"
+    }
+  },
+  {
+    "id": 267,
+    "title": "西瓜寿",
+    "enTitle": "Haworthia retusa",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，寿属品种，形态优美，是观赏价值极高的品种",
+    "morphology": [
+      "叶片肥厚，具窗面"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "散射光（避免强光）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/西瓜寿.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRueNpHwT9kzD0ENSTZ7LZ3An3AGTJR14VGnJYtBhcia6M2wVCbicfBGIw/0?from=appmsg"
+    }
+  },
+  {
+    "id": 270,
+    "title": "贝叶寿",
+    "enTitle": "Haworthia bayeri",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，寿属品种，形态优美，是观赏价值极高的品种",
+    "morphology": [
+      "叶片肥厚，具窗面"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "散射光（避免强光）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/贝叶寿.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR8RbCkltUuqIVK97VJSFNqYH6uePhZqbibSLbDicRYW7dm5M0iaOQZFQyA/0?from=appmsg"
+    }
+  },
+  {
+    "id": 301,
+    "title": "青鸟寿逆斑",
+    "enTitle": "Haworthia retusa",
+    "category": "独尾草科",
+    "articles": [],
+    "introduction": "独尾草科多肉植物，寿属品种，形态优美，是观赏价值极高的品种",
+    "morphology": [
+      "叶片肥厚，具窗面"
+    ],
+    "carePoints": [
+      "喜散射光，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季需遮阴通风",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "散射光（避免强光）",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "颗粒土为主"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/独尾草科/青鸟寿逆斑.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRhytJLR8t71SNl90Rgls7qCbQ4sFQK20gvqh8Cv7uWE0475HvfTwhKw/0?from=appmsg"
+    }
+  }
+]

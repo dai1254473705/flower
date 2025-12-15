@@ -1,0 +1,92 @@
+[
+  {
+    "id": 18,
+    "title": "串钱藤",
+    "enTitle": "Dischidia nummularia",
+    "category": "萝藦科",
+    "articles": [],
+    "introduction": "萝藦科吊灯花属多肉植物，茎蔓柔软可垂吊，叶片肉质呈圆形，酷似串钱，观赏价值高，适合悬挂养护",
+    "morphology": [
+      "茎细长蔓生，可垂吊生长",
+      "叶片肉质饱满，圆形翠绿",
+      "茎节易生根，繁殖能力强"
+    ],
+    "carePoints": [
+      "喜半阴环境，避免强光直射",
+      "耐旱，浇水见干见湿",
+      "夏季通风降温，忌高温闷热"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足散射光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "多肉专用土+珍珠岩=4:1"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/萝藦科/串钱藤.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRUWs31V5yKFyibs6CgeShr3KdMIw19k4qmtvjzG4nrZoDwShicZYH4mDw/0?from=appmsg"
+    }
+  },
+  {
+    "id": 99,
+    "title": "心叶球兰",
+    "enTitle": "Hoya kerrii",
+    "category": "萝藦科",
+    "articles": [],
+    "introduction": "萝藦科多肉植物，攀援型品种，观赏价值高，适合垂吊或攀援种植",
+    "morphology": [
+      "形态独特",
+      "叶片肥厚",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "夏季适当遮阴",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/萝藦科/心叶球兰.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRgUOQbueC4s1hicsRc3dwK7x98DoHyB6YGzHR5fPoxRhKKib3aWuw0wjA/0?from=appmsg"
+    }
+  },
+  {
+    "id": 153,
+    "title": "爱之蔓",
+    "enTitle": "Ceropegia woodii",
+    "category": "萝藦科",
+    "articles": [],
+    "introduction": "萝藦科多肉植物，垂吊型品种，叶片心形，具斑纹，适合垂吊或攀援种植",
+    "morphology": [
+      "叶片心形，具斑纹",
+      "茎细长，易垂吊",
+      "生长速度快",
+      "易爆盆"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "夏季适当遮阴",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/萝藦科/爱之蔓.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloROd3aosQFbSKYiby0ACtF2ibOoibmLdGE4HpWMmXEwe9japJvibQB2RdaNw/0?from=appmsg"
+    }
+  }
+]
