@@ -70,9 +70,10 @@ function App() {
 
         // Ensure data consistency with new structure
         const normalizedData = data.map(item => {
+          const srcListArr = Array.isArray(item.srcList) ? item.srcList : [];
           const legacySrc =
-            item.srcList && item.srcList.length > 0
-              ? item.srcList[0]
+            srcListArr.length > 0
+              ? srcListArr[0]
               : item.src
                 ? { local: '', remote: item.src }
                 : { local: '', remote: '' };
@@ -82,7 +83,7 @@ function App() {
             category: item.category || '未分类',
             articles: item.articles || [],
             srcIcon,
-            srcList: []
+            srcList: srcListArr
           };
         });
 
@@ -253,7 +254,7 @@ function App() {
           local: uploadData.path,
           remote: image.srcIcon ? image.srcIcon.remote : ''
         },
-        srcList: []
+        srcList: image.srcList || []
       };
       await upsertImage(updatedItem, image.category);
       alert('本地图片已上传并更新');
@@ -289,7 +290,7 @@ function App() {
           local: image.srcIcon?.local || '',
           remote
         },
-        srcList: []
+        srcList: image.srcList || []
       };
       setImages(prev => prev.map(i => (i.id === image.id ? updatedItem : i)));
       alert('上传微信成功');
@@ -426,10 +427,11 @@ function App() {
       const data = await res.json();
       uploaded.push({ local: data.path, remote: '' });
     }
-    setEditForm(prev => ({
-      ...prev,
-      srcList: [...(prev.srcList || []), ...uploaded]
-    }));
+    const newSrcList = [...(editForm.srcList || []), ...uploaded];
+    const updated = { ...editForm, srcList: newSrcList };
+    setEditForm(updated);
+    const prevCategory = images.find(i => i.id === updated.id)?.category;
+    await upsertImage(updated, prevCategory);
   };
 
   const filteredImages = images.filter(image => {

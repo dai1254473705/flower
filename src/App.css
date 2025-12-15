@@ -414,24 +414,27 @@
 }
 
 .src-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -6px;
 }
 
 .src-item {
-  padding: 8px;
+  width: 150px;
+  padding: 6px;
+  box-sizing: border-box;
   border: 1px solid #eee;
   border-radius: 6px;
   background: #fff;
   font-size: 0.9rem;
   line-height: 1.4;
   word-break: break-all;
+  margin: 6px;
+  height: 150px;
 }
 
 .detail-wrapper {
   position: relative;
-  padding-top: 75%;
   overflow: hidden;
 }
 
@@ -439,9 +442,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
 }
 
 .src-meta {
