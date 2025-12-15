@@ -305,12 +305,26 @@
   width: 90%;
   max-width: 500px;
   margin: 20px;
+  box-sizing: border-box;
+}
+
+.large-modal {
+  max-width: 900px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal h2 {
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 1.5em;
+}
+
+.modal-scroll {
+  overflow-y: auto;
+  padding-right: 8px;
+  flex: 1;
 }
 
 .modal input {
@@ -320,6 +334,7 @@
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 1em;
+  box-sizing: border-box;
 }
 
 .modal-actions {
@@ -349,6 +364,96 @@
 
 .modal button:last-child:hover {
   background-color: #0b7dda;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+  min-width: 0;
+}
+
+.form-grid input,
+.form-grid textarea,
+.form-grid select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.care-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  grid-column: 1 / -1;
+}
+
+.src-section {
+  margin-top: 16px;
+  border: 1px solid #eee;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.src-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.src-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 8px;
+}
+
+.src-item {
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  word-break: break-all;
+}
+
+.detail-wrapper {
+  position: relative;
+  padding-top: 75%;
+  overflow: hidden;
+}
+
+.detail-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.src-meta {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.src-meta-row {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .upload-local-button {
@@ -385,6 +490,15 @@
 
 .wechat-button:hover {
   background-color: #43a047;
+}
+
+.wechat-button.small {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  padding: 0.35rem 0.55rem;
+  font-size: 0.8rem;
+  z-index: 2;
 }
 
 .category-select-modal {

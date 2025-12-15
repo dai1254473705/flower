@@ -27,7 +27,12 @@
       "suitableTemperature": "15-25°C",
       "soilRequirement": "泥炭+珍珠岩+赤玉土=3:2:1"
     },
-    "srcList": [],
+    "srcList": [
+      {
+        "local": "public/images/detail/景天科/粉姬detail1765809508128.png",
+        "remote": ""
+      }
+    ],
     "srcIcon": {
       "local": "public/images/icon/景天科/PINKY.jpg",
       "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRVKBR8B4uQWLZ7PCdYenFxmNTh1eYAPVdwMBia6emTCcQgH6zb8LKKYg/0?from=appmsg"

@@ -6,7 +6,7 @@ import path from 'path';
 import multer from 'multer';
 import { fileURLToPath } from 'url';
 import { Blob } from 'buffer';
-import { WECHAT_APPID, WECHAT_SECRET } from './config';
+import { WECHAT_APPID, WECHAT_SECRET } from './config.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -27,7 +27,7 @@ const IMAGES_DIR = path.join(projectRoot, 'public/images');
 const ICON_DIR = path.join(IMAGES_DIR, 'icon');
 const DETAIL_DIR = path.join(IMAGES_DIR, 'detail');
 
-// WeChat config via env
+// WeChat config (local config.js, gitignored)
 let tokenCache = { token: null, expiresAt: 0 };
 
 // Ensure directories exist
@@ -218,7 +218,7 @@ app.delete('/api/data/:categoryName/item/:id', (req, res) => {
 // 5. Upload existing local icon to WeChat and update remote URL
 app.post('/api/wechat/upload-icon', async (req, res) => {
     try {
-        const { id, category } = req.body || {};
+        const { id, category, srcIndex } = req.body || {};
         if (id === undefined || id === null || !category) {
             return res.status(400).json({ error: 'id and category are required' });
         }
@@ -232,9 +232,19 @@ app.post('/api/wechat/upload-icon', async (req, res) => {
             return res.status(404).json({ error: 'Item not found' });
         }
         const item = data[idx];
-        const localPath = item.srcIcon && item.srcIcon.local;
+        let localPath = item.srcIcon && item.srcIcon.local;
+        let targetField = 'srcIcon';
+        let targetIndex = -1;
+        if (typeof srcIndex === 'number') {
+            targetField = 'srcList';
+            targetIndex = srcIndex;
+            if (!Array.isArray(item.srcList) || !item.srcList[targetIndex]) {
+                return res.status(400).json({ error: 'srcList item not found' });
+            }
+            localPath = item.srcList[targetIndex].local;
+        }
         if (!localPath) {
-            return res.status(400).json({ error: 'No local icon to upload' });
+            return res.status(400).json({ error: 'No local file to upload' });
         }
         const absPath = path.join(projectRoot, localPath);
         if (!fs.existsSync(absPath)) {
@@ -242,14 +252,20 @@ app.post('/api/wechat/upload-icon', async (req, res) => {
         }
         const wxResp = await uploadImageToWeChat(absPath);
         const remoteUrl = wxResp.url || wxResp.media_id || '';
-        data[idx] = {
-            ...item,
-            srcIcon: {
+        const updated = { ...item };
+        if (targetField === 'srcIcon') {
+            updated.srcIcon = { local: localPath, remote: remoteUrl };
+            updated.srcList = updated.srcList || [];
+        } else {
+            updated.srcList = Array.isArray(updated.srcList) ? [...updated.srcList] : [];
+            updated.srcList[targetIndex] = {
+                ...(updated.srcList[targetIndex] || {}),
                 local: localPath,
                 remote: remoteUrl
-            },
-            srcList: []
-        };
+            };
+            updated.srcIcon = updated.srcIcon || { local: '', remote: '' };
+        }
+        data[idx] = updated;
         if (!writeJson(filePath, data)) {
             return res.status(500).json({ error: 'Failed to update json' });
         }

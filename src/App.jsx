@@ -27,6 +27,8 @@ function App() {
   const [uploadFile, setUploadFile] = useState(null);
   const [uploadName, setUploadName] = useState('');
   const [uploadCategory, setUploadCategory] = useState('');
+  const [isEditOpen, setIsEditOpen] = useState(false);
+  const [editForm, setEditForm] = useState(null); // full object being edited
 
   // 加载分类配置
   useEffect(() => {
@@ -102,7 +104,7 @@ function App() {
     return () => clearTimeout(timerId);
   }, [searchTerm]);
 
-  const upsertImage = async (item) => {
+  const upsertImage = async (item, prevCategory) => {
     if (item.id === undefined || item.id === null) {
       alert('数据缺少 id，无法保存');
       return;
@@ -115,14 +117,15 @@ function App() {
         body: JSON.stringify(item)
       });
       if (!res.ok) throw new Error('upsert failed');
-      if (catName === (selectedCategory === '__uncategorized__' ? '未分类' : selectedCategory)) {
+      const currentCatName = selectedCategory === '__uncategorized__' ? '未分类' : selectedCategory;
+      if (catName === currentCatName) {
         setImages(prev => {
           const exists = prev.some(img => img.id === item.id);
-          if (exists) {
-            return prev.map(img => (img.id === item.id ? item : img));
-          }
+          if (exists) return prev.map(img => (img.id === item.id ? item : img));
           return [...prev, item];
         });
+      } else if (prevCategory && prevCategory === currentCatName) {
+        setImages(prev => prev.filter(img => img.id !== item.id));
       }
     } catch (error) {
       console.error('Failed to save item:', error);
@@ -228,7 +231,7 @@ function App() {
   };
 
   // 针对已有远程但无本地的补图上传
-  const handleAttachLocal = async (file, image, index) => {
+  const handleAttachLocal = async (file, image) => {
     if (!file) return;
     const formData = new FormData();
     formData.append('file', file);
@@ -252,7 +255,7 @@ function App() {
         },
         srcList: []
       };
-      await upsertImage(updatedItem);
+      await upsertImage(updatedItem, image.category);
       alert('本地图片已上传并更新');
     } catch (err) {
       console.error(err);
@@ -294,6 +297,139 @@ function App() {
       console.error(err);
       alert(err.message || '上传微信失败');
     }
+  };
+
+  const handleUploadWeChatSrcList = async (image, srcIndex) => {
+    if (!image || image.id === undefined || image.id === null) {
+      alert('缺少ID，无法上传微信');
+      return;
+    }
+    const cat = image.category || '未分类';
+    try {
+      const res = await fetch(`${API_BASE}/wechat/upload-icon`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          id: image.id,
+          category: cat,
+          srcIndex
+        })
+      });
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || '上传失败');
+      }
+      const remote = data.remote || '';
+      setEditForm(prev => {
+        const next = { ...prev, srcList: Array.isArray(prev.srcList) ? [...prev.srcList] : [] };
+        if (next.srcList[srcIndex]) {
+          next.srcList[srcIndex] = { ...next.srcList[srcIndex], remote };
+        }
+        return next;
+      });
+      if (cat === (selectedCategory === '__uncategorized__' ? '未分类' : selectedCategory)) {
+        setImages(prev => prev.map(img => {
+          if (img.id !== image.id) return img;
+          const nextList = Array.isArray(img.srcList) ? [...img.srcList] : [];
+          if (nextList[srcIndex]) nextList[srcIndex] = { ...nextList[srcIndex], remote };
+          return { ...img, srcList: nextList };
+        }));
+      }
+      alert('上传微信成功');
+    } catch (err) {
+      console.error(err);
+      alert(err.message || '上传微信失败');
+    }
+  };
+
+  const openEditPanel = (item) => {
+    setEditForm({
+      ...item,
+      category: item.category || '未分类',
+      introduction: item.introduction || '',
+      morphology: item.morphology || [],
+      carePoints: item.carePoints || [],
+      careInfo: item.careInfo || {
+        wateringFrequency: '',
+        lightRequirement: '',
+        suitableTemperature: '',
+        soilRequirement: ''
+      },
+      articles: item.articles || [],
+      srcList: item.srcList || [],
+      srcIcon: item.srcIcon || { local: '', remote: '' }
+    });
+    setIsEditOpen(true);
+  };
+
+  const handleEditChange = (field, value) => {
+    setEditForm(prev => ({ ...prev, [field]: value }));
+  };
+
+  const parseLines = (text) => text.split('\n').map(l => l.trim()).filter(Boolean);
+  const stringifyList = (list) =>
+    Array.isArray(list)
+      ? list.map((v) => (typeof v === 'string' ? v : JSON.stringify(v))).join('\n')
+      : '';
+
+  const parseFlexibleList = (text) => {
+    const trimmed = (text || '').trim();
+    if (!trimmed) return [];
+    if (trimmed.startsWith('[') || trimmed.startsWith('{')) {
+      try {
+        const parsed = JSON.parse(trimmed);
+        return Array.isArray(parsed) ? parsed : [parsed];
+      } catch {
+        // fallback to line split
+      }
+    }
+    return parseLines(trimmed);
+  };
+
+  const handleEditSave = async () => {
+    if (!editForm) return;
+    const updated = {
+      ...editForm,
+      morphology: parseFlexibleList(editForm.morphologyText ?? stringifyList(editForm.morphology)),
+      carePoints: parseFlexibleList(editForm.carePointsText ?? stringifyList(editForm.carePoints)),
+      articles: parseFlexibleList(editForm.articlesText ?? stringifyList(editForm.articles)),
+      careInfo: {
+        wateringFrequency: editForm.careInfo?.wateringFrequency || '',
+        lightRequirement: editForm.careInfo?.lightRequirement || '',
+        suitableTemperature: editForm.careInfo?.suitableTemperature || '',
+        soilRequirement: editForm.careInfo?.soilRequirement || ''
+      },
+      srcList: editForm.srcList || [],
+      srcIcon: editForm.srcIcon || { local: '', remote: '' }
+    };
+    const prevCategory = images.find(i => i.id === updated.id)?.category;
+    await upsertImage(updated, prevCategory);
+    setIsEditOpen(false);
+  };
+
+  const handleDetailUpload = async (files) => {
+    if (!editForm) return;
+    const cat = editForm.category || '未分类';
+    const uploads = Array.from(files || []);
+    const uploaded = [];
+    for (const f of uploads) {
+      const formData = new FormData();
+      formData.append('file', f);
+      const res = await fetch(`${API_BASE}/upload?name=${encodeURIComponent(editForm.title || f.name)}&type=detail&category=${encodeURIComponent(cat)}`, {
+        method: 'POST',
+        body: formData
+      });
+      if (!res.ok) {
+        alert('上传失败');
+        return;
+      }
+      const data = await res.json();
+      uploaded.push({ local: data.path, remote: '' });
+    }
+    setEditForm(prev => ({
+      ...prev,
+      srcList: [...(prev.srcList || []), ...uploaded]
+    }));
   };
 
   const filteredImages = images.filter(image => {
@@ -389,6 +525,9 @@ function App() {
                   <button className="delete-button" onClick={() => deleteImage(index)}>
                     删除
                   </button>
+                <button className="details-button" onClick={() => openEditPanel(image)}>
+                  编辑/查看
+                </button>
                   {hasRemote && !hasLocal && (
                     <label className="upload-local-button">
                       补本地
@@ -398,7 +537,7 @@ function App() {
                         style={{ display: 'none' }}
                         onChange={(e) => {
                           const file = e.target.files && e.target.files[0];
-                          handleAttachLocal(file, image, index);
+                          handleAttachLocal(file, image);
                           e.target.value = '';
                         }}
                       />
@@ -501,6 +640,120 @@ function App() {
                   </div>
                 )
               )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Edit / View Panel */}
+      {isEditOpen && editForm && (
+        <div className="modal-overlay">
+          <div className="modal large-modal">
+            <h2>编辑 / 查看</h2>
+            <div className="modal-scroll">
+              <div className="form-grid">
+              <label>
+                标题
+                <input type="text" value={editForm.title} onChange={e => handleEditChange('title', e.target.value)} />
+              </label>
+              <label>
+                英文名
+                <input type="text" value={editForm.enTitle || ''} onChange={e => handleEditChange('enTitle', e.target.value)} />
+              </label>
+              <label>
+                分类
+                <select value={editForm.category} onChange={e => handleEditChange('category', e.target.value)}>
+                  {categories.map((c, i) => <option key={i} value={c}>{c}</option>)}
+                  <option value="未分类">未分类</option>
+                </select>
+              </label>
+              <label>
+                介绍
+                <textarea rows={3} value={editForm.introduction} onChange={e => handleEditChange('introduction', e.target.value)} />
+              </label>
+              <label>
+                形态（每行一条）
+                <textarea
+                  rows={3}
+                      value={editForm.morphologyText ?? stringifyList(editForm.morphology)}
+                  onChange={e => handleEditChange('morphologyText', e.target.value)}
+                />
+              </label>
+              <label>
+                养护要点（每行一条）
+                <textarea
+                  rows={3}
+                      value={editForm.carePointsText ?? stringifyList(editForm.carePoints)}
+                  onChange={e => handleEditChange('carePointsText', e.target.value)}
+                />
+              </label>
+              <div className="care-info-grid">
+                <label>
+                  浇水频率
+                  <input type="text" value={editForm.careInfo?.wateringFrequency || ''} onChange={e => setEditForm(prev => ({ ...prev, careInfo: { ...prev.careInfo, wateringFrequency: e.target.value } }))} />
+                </label>
+                <label>
+                  光照需求
+                  <input type="text" value={editForm.careInfo?.lightRequirement || ''} onChange={e => setEditForm(prev => ({ ...prev, careInfo: { ...prev.careInfo, lightRequirement: e.target.value } }))} />
+                </label>
+                <label>
+                  适宜温度
+                  <input type="text" value={editForm.careInfo?.suitableTemperature || ''} onChange={e => setEditForm(prev => ({ ...prev, careInfo: { ...prev.careInfo, suitableTemperature: e.target.value } }))} />
+                </label>
+                <label>
+                  土壤需求
+                  <input type="text" value={editForm.careInfo?.soilRequirement || ''} onChange={e => setEditForm(prev => ({ ...prev, careInfo: { ...prev.careInfo, soilRequirement: e.target.value } }))} />
+                </label>
+              </div>
+              <label>
+                文章列表（每行一条）
+                  <textarea
+                    rows={3}
+                    value={editForm.articlesText ?? stringifyList(editForm.articles)}
+                    onChange={(evt) => handleEditChange('articlesText', evt.target.value)}
+                  />
+              </label>
+            </div>
+
+                <div className="src-section">
+                  <div className="src-header">
+                    <h3>图集（srcList，多图）</h3>
+                    <label className="upload-local-button">
+                      上传多张
+                      <input type="file" accept="image/*" multiple onChange={e => { handleDetailUpload(e.target.files); e.target.value=''; }} />
+                    </label>
+                  </div>
+                  <div className="src-list">
+                    {(editForm.srcList || []).map((s, idx) => {
+                      const hasLocal = !!s.local;
+                      const hasRemote = !!s.remote;
+                      const localSrc = hasLocal ? '/' + s.local.replace(/^public\//, 'flower/') : '';
+                      const displaySrc = hasLocal ? localSrc : PLACEHOLDER_IMG;
+                      return (
+                        <div key={idx} className="src-item image-wrapper detail-wrapper">
+                          <img src={displaySrc} alt={`detail-${idx}`} onError={(e) => { e.target.src = PLACEHOLDER_IMG; }} />
+                          {!hasLocal && <div className="image-badge placeholder-badge">占位</div>}
+                          {hasRemote && <div className="image-badge remote-badge" onClick={() => window.open(s.remote, '_blank')}>已上传(微信)</div>}
+                          {hasLocal && !hasRemote && (
+                            <button className="wechat-button small" onClick={() => handleUploadWeChatSrcList(editForm, idx)}>
+                              上传微信
+                            </button>
+                          )}
+                          <div className="src-meta">
+                            <div className="src-meta-row">local: {s.local || '-'}</div>
+                            <div className="src-meta-row">remote: {s.remote || '-'}</div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                    {(editForm.srcList || []).length === 0 && <div className="no-data">暂无 srcList</div>}
+                  </div>
+                </div>
+              </div>
+
+            <div className="modal-actions">
+              <button onClick={() => setIsEditOpen(false)}>关闭</button>
+              <button onClick={handleEditSave}>保存</button>
             </div>
           </div>
         </div>
