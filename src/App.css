@@ -373,6 +373,20 @@
   cursor: pointer;
 }
 
+.wechat-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.wechat-button:hover {
+  background-color: #43a047;
+}
+
 .category-select-modal {
   width: 100%;
   padding: 10px;

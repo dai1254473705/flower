@@ -260,6 +260,42 @@ function App() {
     }
   };
 
+  const handleUploadWeChat = async (image) => {
+    if (!image || !image.id) {
+      alert('缺少ID，无法上传微信');
+      return;
+    }
+    const cat = image.category || '未分类';
+    try {
+      const res = await fetch(`${API_BASE}/wechat/upload-icon`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          id: image.id,
+          category: cat
+        })
+      });
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || '上传失败');
+      }
+      const remote = data.remote || image.srcIcon?.remote || '';
+      const updatedItem = {
+        ...image,
+        srcIcon: {
+          local: image.srcIcon?.local || '',
+          remote
+        },
+        srcList: []
+      };
+      setImages(prev => prev.map(i => (i.id === image.id ? updatedItem : i)));
+      alert('上传微信成功');
+    } catch (err) {
+      console.error(err);
+      alert(err.message || '上传微信失败');
+    }
+  };
+
   const filteredImages = images.filter(image => {
     const matchesSearch = image.title.toLowerCase().includes(debouncedSearchTerm.toLowerCase());
     if (!matchesSearch) return false;
@@ -367,6 +403,11 @@ function App() {
                         }}
                       />
                     </label>
+                  )}
+                  {hasLocal && !hasRemote && (
+                    <button className="wechat-button" onClick={() => handleUploadWeChat(image)}>
+                      上传微信
+                    </button>
                   )}
                 </div>
               </div>

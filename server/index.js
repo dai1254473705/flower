@@ -5,6 +5,8 @@ import fs from 'fs';
 import path from 'path';
 import multer from 'multer';
 import { fileURLToPath } from 'url';
+import { Blob } from 'buffer';
+import { WECHAT_APPID, WECHAT_SECRET } from './config';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -24,6 +26,9 @@ const CATEGORY_DIR = path.join(DATA_DIR, 'category');
 const IMAGES_DIR = path.join(projectRoot, 'public/images');
 const ICON_DIR = path.join(IMAGES_DIR, 'icon');
 const DETAIL_DIR = path.join(IMAGES_DIR, 'detail');
+
+// WeChat config via env
+let tokenCache = { token: null, expiresAt: 0 };
 
 // Ensure directories exist
 [ICON_DIR, DETAIL_DIR].forEach(dir => {
@@ -52,6 +57,39 @@ const writeJson = (filePath, data) => {
         console.error(`Error writing ${filePath}:`, err);
         return false;
     }
+};
+
+// WeChat helpers
+const getAccessToken = async () => {
+    if (!WECHAT_APPID || !WECHAT_SECRET) {
+        throw new Error('WeChat APPID/SECRET not configured');
+    }
+    const now = Date.now();
+    if (tokenCache.token && tokenCache.expiresAt > now + 60_000) {
+        return tokenCache.token;
+    }
+    const url = `https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${WECHAT_APPID}&secret=${WECHAT_SECRET}`;
+    const resp = await fetch(url);
+    const data = await resp.json();
+    if (data.errcode) {
+        throw new Error(`WeChat token error: ${data.errcode} ${data.errmsg}`);
+    }
+    tokenCache = { token: data.access_token, expiresAt: now + (data.expires_in || 7000) * 1000 };
+    return tokenCache.token;
+};
+
+const uploadImageToWeChat = async (absPath) => {
+    const token = await getAccessToken();
+    const buffer = fs.readFileSync(absPath);
+    const form = new FormData();
+    form.append('media', new Blob([buffer]), path.basename(absPath));
+    const url = `https://api.weixin.qq.com/cgi-bin/material/add_material?type=image&access_token=${token}`;
+    const resp = await fetch(url, { method: 'POST', body: form });
+    const data = await resp.json();
+    if (data.errcode) {
+        throw new Error(`WeChat upload error: ${data.errcode} ${data.errmsg}`);
+    }
+    return data; // expected { media_id, url }
 };
 
 // Multer Storage Configuration
@@ -174,6 +212,51 @@ app.delete('/api/data/:categoryName/item/:id', (req, res) => {
         res.json({ success: true, count: filtered.length });
     } else {
         res.status(500).json({ error: 'Failed to write file' });
+    }
+});
+
+// 5. Upload existing local icon to WeChat and update remote URL
+app.post('/api/wechat/upload-icon', async (req, res) => {
+    try {
+        const { id, category } = req.body || {};
+        if (id === undefined || id === null || !category) {
+            return res.status(400).json({ error: 'id and category are required' });
+        }
+        const filePath = path.join(CATEGORY_DIR, `${category}.json`);
+        const data = readJson(filePath);
+        if (!Array.isArray(data)) {
+            return res.status(404).json({ error: 'Category not found' });
+        }
+        const idx = data.findIndex(entry => entry && entry.id === id);
+        if (idx < 0) {
+            return res.status(404).json({ error: 'Item not found' });
+        }
+        const item = data[idx];
+        const localPath = item.srcIcon && item.srcIcon.local;
+        if (!localPath) {
+            return res.status(400).json({ error: 'No local icon to upload' });
+        }
+        const absPath = path.join(projectRoot, localPath);
+        if (!fs.existsSync(absPath)) {
+            return res.status(400).json({ error: 'Local file not found on server' });
+        }
+        const wxResp = await uploadImageToWeChat(absPath);
+        const remoteUrl = wxResp.url || wxResp.media_id || '';
+        data[idx] = {
+            ...item,
+            srcIcon: {
+                local: localPath,
+                remote: remoteUrl
+            },
+            srcList: []
+        };
+        if (!writeJson(filePath, data)) {
+            return res.status(500).json({ error: 'Failed to update json' });
+        }
+        res.json({ success: true, remote: remoteUrl });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: err.message || 'Upload failed' });
     }
 });
 
