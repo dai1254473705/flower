@@ -1,0 +1,152 @@
+[
+  {
+    "id": 25,
+    "title": "佛珠",
+    "enTitle": "Senecio rowleyanus",
+    "category": "菊科",
+    "articles": [],
+    "introduction": "菊科千里光属多肉，茎蔓垂吊生长，叶片肉质呈圆形，酷似佛珠，叶色翠绿，适合悬挂养护，观赏价值高",
+    "morphology": [
+      "茎细长蔓生，可垂吊",
+      "叶片圆形，肉质饱满，翠绿有光泽",
+      "茎节易生根，繁殖能力强"
+    ],
+    "carePoints": [
+      "喜半阴环境，避免强光直射",
+      "耐旱，浇水见干见湿，忌积水",
+      "夏季通风降温，忌闷热"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/菊科/佛珠.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR5Td0ucJTN4YYN5iaodCrfQs5n3XpOxqJQlXnNU65oMP41m2gcKmjUpQ/0?from=appmsg"
+    }
+  },
+  {
+    "id": 100,
+    "title": "情人泪",
+    "enTitle": "Senecio rowleyanus",
+    "category": "菊科",
+    "articles": [],
+    "introduction": "菊科多肉植物，垂吊型品种，观赏价值高，适合垂吊种植",
+    "morphology": [
+      "叶片圆润如珠",
+      "茎细长，易垂吊",
+      "生长速度快",
+      "易爆盆"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "夏季适当遮阴",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/菊科/情人泪.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRtp7HhQCokykoFslUetWjsI1EJHaJZpiaibMsroP0auC8gIPrpSaSMWgQ/0?from=appmsg"
+    }
+  },
+  {
+    "id": 196,
+    "title": "紫玄月",
+    "enTitle": "Senecio herreianus",
+    "category": "菊科",
+    "articles": [],
+    "introduction": "菊科多肉植物，形态独特品种，观赏价值高，适合盆栽观赏",
+    "morphology": [
+      "形态独特",
+      "叶片肥厚",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "夏季适当遮阴",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/菊科/紫玄月.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR2xwRiaajSybrRwibXD4mnmNuflkMOib5csk5azicEgiaDjPRLibYibNOTHWDg/0?from=appmsg"
+    }
+  },
+  {
+    "id": 250,
+    "title": "蓝松",
+    "enTitle": "Senecio serpens",
+    "category": "菊科",
+    "articles": [],
+    "introduction": "菊科多肉植物，形态独特品种，观赏价值高，适合盆栽观赏",
+    "morphology": [
+      "形态独特",
+      "叶片肥厚",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "夏季适当遮阴",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/菊科/蓝松.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR8d9cRC20ptKNOsmt3aInO73MBWHUZNVxJ5ENBFIFyLErw1DPU7OfJQ/0?from=appmsg"
+    }
+  },
+  {
+    "id": 284,
+    "title": "锦上珠",
+    "enTitle": "Senecio rowleyanus",
+    "category": "菊科",
+    "articles": [],
+    "introduction": "菊科多肉植物，形态独特品种，观赏价值高，适合盆栽观赏",
+    "morphology": [
+      "形态独特",
+      "叶片肥厚",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "夏季适当遮阴",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/菊科/锦上珠.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRIxib25O9DJicYaeU1ynOs7Hh2XkW9AEkibHnI4fDcO9aAbCFF3jOMC7Kw/0?from=appmsg"
+    }
+  }
+]

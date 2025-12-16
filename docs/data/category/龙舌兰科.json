@@ -1,0 +1,33 @@
+[
+  {
+    "id": 188,
+    "title": "笹之雪",
+    "enTitle": "Agave victoriae-reginae",
+    "category": "龙舌兰科",
+    "articles": [],
+    "introduction": "龙舌兰科多肉植物，笹之雪属品种，叶片具白色斑纹，是龙舌兰科中的精品",
+    "morphology": [
+      "叶片呈莲座状",
+      "叶缘具刺",
+      "耐旱性强",
+      "生长缓慢"
+    ],
+    "carePoints": [
+      "极耐旱，浇水要少",
+      "喜充足阳光",
+      "夏季适当遮阴",
+      "冬季控水保暖"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每2周1次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "15-30°C",
+      "soilRequirement": "排水良好的沙质土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/龙舌兰科/笹之雪.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRjjssf2u0vP4icWo7xJkXGH2iaEPkaQRXGibKia2ibOEOlCe5yicYzUkuuhDg/0?from=appmsg"
+    }
+  }
+]

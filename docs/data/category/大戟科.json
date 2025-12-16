@@ -1,0 +1,33 @@
+[
+  {
+    "id": 91,
+    "title": "布纹球",
+    "enTitle": "Euphorbia obesa",
+    "category": "大戟科",
+    "articles": [],
+    "introduction": "大戟科多肉植物，形态独特，球体具布纹状花纹，是大戟科中的特色品种",
+    "morphology": [
+      "形态独特",
+      "具乳汁",
+      "耐旱性强",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "耐旱，浇水要少",
+      "喜充足阳光",
+      "夏季适当遮阴",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "18-28°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/大戟科/布纹球.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRNhDsPc6dqPrvK3HlWupQgBicCJQx2rdibicOhT6rKnyZsL79a4Z5OBYBw/0?from=appmsg"
+    }
+  }
+]

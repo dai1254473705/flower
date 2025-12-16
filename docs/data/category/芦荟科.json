@@ -1,0 +1,31 @@
+[
+  {
+    "id": 14,
+    "title": "不夜城",
+    "enTitle": "Aloe nobilis",
+    "category": "芦荟科",
+    "articles": [],
+    "introduction": "芦荟科芦荟属多肉，叶片莲座状排列，翠绿有光泽，边缘具细小尖刺，兼具观赏与净化空气功能，生长旺盛",
+    "morphology": [
+      "叶片肥厚多汁，披针形",
+      "叶色深绿，表面光滑，边缘具稀疏小刺",
+      "易萌发侧芽，形成丛生株"
+    ],
+    "carePoints": [
+      "耐旱忌涝，盆土干透再浇",
+      "喜充足阳光，夏季遮阴20%",
+      "冬季温度不低于5°C"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每10-15天1次",
+      "lightRequirement": "充足阳光",
+      "suitableTemperature": "15-28°C",
+      "soilRequirement": "沙质土+腐叶土=6:4"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/芦荟科/不夜城.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRvF4Lic7qeYRNZO9yL4ZZtYHDkOXibmEAiaiamQFsibP8URK2wyhLtibEx8nQ/0?from=appmsg"
+    }
+  }
+]
