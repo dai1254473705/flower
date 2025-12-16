@@ -1,8 +1,8 @@
 [
   {
     "id": 0,
-    "title": "粉姬",
-    "enTitle": "PINKY",
+    "title": "粉姬莲",
+    "enTitle": "Echeveria minima cv.",
     "category": "景天科",
     "articles": [
       {
@@ -10,22 +10,23 @@
         "url": "https://mp.weixin.qq.com/s/DxUYANJnuQLHI25iQ8Y1VA"
       }
     ],
-    "introduction": "景天科多肉品种，株型小巧呈莲座状，叶片粉嫩通透，叶尖带红晕，观赏价值极高，是热门小型多肉品种",
+    "introduction": "景天科拟石莲属多肉植物，为姬莲的变种，植株小巧精致。",
     "morphology": [
-      "叶片莲座状紧密排列",
-      "叶色粉绿渐变，叶尖泛红",
-      "株高5-8cm，易群生爆侧芽"
+      "植株呈迷你莲座状，直径通常2-3厘米",
+      "叶片短匙形，肥厚，叶尖明显，带有粉色边缘",
+      "出状态时，叶片颜色粉绿，叶尖及边缘红晕加深"
     ],
     "carePoints": [
-      "耐旱怕涝，浇水见干见湿",
-      "夏季遮阴30%，避免叶片灼伤",
-      "冬季温度不低于5°C，控水保暖"
+      "耐旱不耐涝，浇水秉持干透浇透原则",
+      "喜阳光充足、通风良好环境，夏季高温适当遮阴",
+      "生长适宜温度为15 - 25°C，冬季不低于5°C",
+      "种植土壤需疏松透气，排水性好"
     ],
     "careInfo": {
-      "wateringFrequency": "每周1-2次",
-      "lightRequirement": "充足阳光（夏季遮阴）",
-      "suitableTemperature": "15-25°C",
-      "soilRequirement": "泥炭+珍珠岩+赤玉土=3:2:1"
+      "wateringFrequency": "春秋生长季，10 - 15天浇一次水；夏季高温休眠期，每月浇1 - 2次水；冬季温度低，每月浇1次水",
+      "lightRequirement": "每日保证5 - 7小时光照，夏季高温时段需遮阴50% - 60%，避免晒伤",
+      "suitableTemperature": "15 - 25°C（生长季），冬季不低于5°C",
+      "soilRequirement": "泥炭土、珍珠岩、颗粒土按3:2:5配制，保证疏松透气，排水良好"
     },
     "srcList": [
       {
