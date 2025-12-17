@@ -5,6 +5,24 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+function nullOutLocalFields(value) {
+  if (!value || typeof value !== 'object') return value;
+  if (Array.isArray(value)) {
+    for (let i = 0; i < value.length; i++) {
+      value[i] = nullOutLocalFields(value[i]);
+    }
+    return value;
+  }
+  for (const key of Object.keys(value)) {
+    if (key === 'local') {
+      value[key] = null;
+    } else {
+      value[key] = nullOutLocalFields(value[key]);
+    }
+  }
+  return value;
+}
+
 async function generateDuorouJson() {
   const categoryDir = path.join(__dirname, '..', 'public', 'data', 'category');
   const outputFile = path.join(__dirname, '..', 'public', 'data', 'duorou.json');
@@ -32,6 +50,9 @@ async function generateDuorouJson() {
       console.error(`Failed to parse JSON file: ${filePath}`, err);
     }
   }
+
+  // Reduce size for deploy: keep remote URLs, null out any "local" fields.
+  nullOutLocalFields(allItems);
 
   // Minified output
   const json = JSON.stringify(allItems);

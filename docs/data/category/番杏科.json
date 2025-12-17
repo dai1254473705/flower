@@ -5,7 +5,7 @@
     "enTitle": "Fenestraria rhopalophylla",
     "category": "番杏科",
     "articles": [],
-    "introduction": "番杏科棒叶花属多肉植物，适应干旱环境，肉质叶棍棒状，形态酷似小棒，叶色翠绿，秋季开黄色小花，观赏价值独特",
+    "introduction": "原生地位于南非和纳米比亚接壤处，喜欢温暖、干燥的环境。特别喜欢日照，可全日照。对水分特别敏感，稍不注意就会涝死，推荐大家使用透气性较好的红陶花器养殖。夏季高温（高于30°C）与冬季低温（低于10°C）必须完全断水。繁殖方式以分株为主，也可播种。",
     "morphology": [
       "肉质叶呈棍棒状，密集丛生",
       "叶色翠绿，顶端圆润",
@@ -25,7 +25,7 @@
     "srcList": [],
     "srcIcon": {
       "local": "public/images/icon/番杏科/五十铃玉.jpg",
-      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR7ibsQpTuofcoX2xpTud7aupLAsN7PzRBpw8dgNawTkrMichPU1sDWpUg/0?from=appmsg"
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpEcUYhPRjJ0t121fViau24mZRsMs5ehamU51AXeTTUf5bRNticON7x2Wg/0?wx_fmt=jpeg"
     }
   },
   {
@@ -94,7 +94,7 @@
     "enTitle": "Lithops",
     "category": "番杏科",
     "articles": [],
-    "introduction": "生石花外形酷似小石头,是拟态植物的典型代表。",
+    "introduction": "原生地位于非洲南部及西南干旱地区的岩床裂隙或砾石土中。喜冬暖夏凉的气候，怕低温，忌强光。土质以疏松的石沙为主。春秋生长季节对水分需求较多，夏季和冬季可完全断水。断水后会出现蜕皮现象，属于正常新陈代谢。生石花品种繁多。繁殖方式以播种为主。",
     "morphology": [
       "拟态石头",
       "两片叶对生",
@@ -116,7 +116,7 @@
     "srcList": [],
     "srcIcon": {
       "local": "public/images/icon/番杏科/生石花.jpg",
-      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRpNbkJQfrGb72iaMnsQhzRc1MD1TCkYnibMk756sdvUdmicTSOX0Rde0ZQ/0?from=appmsg"
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpo2QH7SmkRsFMSbyhpwlV5JYZngg4MeAZGA77fcnUL7fN3Lg9BbIndQ/0?wx_fmt=jpeg"
     }
   },
   {
@@ -218,7 +218,7 @@
     "enTitle": "Astrophytum capricorne",
     "category": "番杏科",
     "articles": [],
-    "introduction": "番杏科多肉植物，形态独特，观赏价值高，是多肉植物中的特色品种",
+    "introduction": "容易与‘碧玉莲’混淆，开粉色或白色小花。较喜欢日照，喜欢干燥、温暖的环境。对水分需求不大，一定要严格控水。浇水方式可参考叶片情况，当缺水时，叶片会褶皱，这是植物给出的浇水信息。也可半阴养殖，阴养环境下枝条容易拉长，但植株依然健康。繁殖方式主要是扦插。",
     "morphology": [
       "形态独特",
       "叶片肥厚",
@@ -240,7 +240,7 @@
     "srcList": [],
     "srcIcon": {
       "local": "public/images/icon/番杏科/鹿角海棠.jpg",
-      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR0zETxFs50cDTlq62LuCicicYvjw5Qg3f11PcKE7WwekCEibGjPl6ASWrg/0?from=appmsg"
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpgRH5AtDribDJkibcCTDBFhIoOYrSkkia9R5S8DHFYKIASmtvHm5xIrcTQ/0?wx_fmt=jpeg"
     }
   },
   {
@@ -257,5 +257,110 @@
       "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svS4RMCPp1NbibXRn0YniaR9fJczMkansbU3gBVIGFQHnHcRKb14VopFo9W1QYUbpXkDl57roqPUIr7g/0?wx_fmt=jpeg"
     },
     "srcList": []
+  },
+  {
+    "id": 1765808267509,
+    "title": "芳香波",
+    "enTitle": "",
+    "category": "番杏科",
+    "articles": [],
+    "introduction": "多肉植物中较少开花带香味的品种之一。较喜阳光，对水分需求很少。夏季与冬季休眠，一定要注意减少浇水，增加室内通风。水分过多，非常容易腐烂。开黄色花朵，带有一股不腻人的清香味道，3至4朵花即可让整个阳台飘香，强力推荐的品种。繁殖方式主要是分株扦插，也可播种。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/番杏科/芳香波.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpohvqQiaXEEdAcIKAjfnibOlP3miaTFY84RlXlibAWo8IBTdXk0ibH7wj7UQ/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267510,
+    "title": "黄花照波",
+    "enTitle": "",
+    "category": "番杏科",
+    "articles": [],
+    "introduction": "原生地主要分布于南非和纳米比亚。对日照需求不是太大，散光也可存活，但株型会比较难看，像多看花就要增加日照时间。水分需求不大，一定要严格控水，番杏类非常容易因水分过多而涝死。原生地环境下，几个月都是没有雨水的。一般下午及傍晚开花，繁殖方式主要采用分株。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/番杏科/黄花照波.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpOP5MzDqWHdRzFicM2dqHl6blP8l1XmgI4pia3cRww4VJgEKJzUiaSWIiaw/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267511,
+    "title": "快刀乱麻",
+    "enTitle": "",
+    "category": "番杏科",
+    "articles": [],
+    "introduction": "原生地位于南非开普省。喜欢温暖干燥，通风良好的环境。对日照需求较多，切忌大湿大水。水分过多，很容易被涝死。叶片呈鹿角状，可开黄花。夏季高温休眠，冬季可持续生长。喜欢松软透气的颗粒土质。繁殖方式主要是扦插。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/番杏科/快刀乱麻.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpDd5bJQ22LkrMZkKRPWraeLSltWAQ5VDforf4Oic60oQPD5jEp9lD8qA/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267512,
+    "title": "雷童",
+    "enTitle": "",
+    "category": "番杏科",
+    "articles": [],
+    "introduction": "原生地位于南非干旱的亚热带地区。喜欢温暖干燥，通风良好的环境。对日照需求较多，正常为绿色，日照时间增加及温差增大后整株转变为粉红色。可半阴养，不过缺光过多会徒长，枝干与叶间距增大。对水分需求不多，水分太多容易腐烂。开白色小花。繁殖方式主要是扦插。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/番杏科/雷童.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpP1Xb6xFc3XJ2jLWn3tFI2SKRicErWNyn2s0UHPpOvBH19sc0BfX5L7A/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267513,
+    "title": "四海波",
+    "enTitle": "",
+    "category": "番杏科",
+    "articles": [],
+    "introduction": "原生地位于南非大卡鲁高原的石灰岩地区。喜欢温暖干燥的环境，较喜欢日照。夏季休眠，对水分特别敏感，水分过多会立即烂掉。开黄花，日常为绿色，日照时间增加与温差增大后也会变红。繁殖方式主要是分株，也可以播种。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/番杏科/四海波.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpEavHibia081JQ2zjMmAxIoI87KGe7WoHAwOy6SM4ATrribSWicDRyI6xWw/0?wx_fmt=jpeg"
+    }
   }
 ]

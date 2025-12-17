@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1765808267527,
+    "title": "雅乐之舞",
+    "enTitle": "",
+    "category": "马齿苋科",
+    "articles": [],
+    "introduction": "原生地位于南非。为‘马齿苋树’的斑锦变异品种。喜阳光充足和温暖、干燥的环境，耐干旱，忌阴湿和寒冷。生长期对水分需求较多，再散射光条件下也能正常生长，但叶片上的斑锦色彩会减退。增加日照时间，叶片颜色会非常漂亮，呈金黄色。繁殖方式主要是扦插。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/马齿苋科/雅乐之舞.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpticu2QL4yqIeAlPoRfvDmaycmrwNUDCyKUwibibqrcbQ2vRJ9hKDq4jug/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267528,
+    "title": "吹雪之松锦",
+    "enTitle": "",
+    "category": "马齿苋科",
+    "articles": [],
+    "introduction": "原生地位于纳米比亚。喜阳光，可半阴养殖，长时间阴养容易徒长，但不影响生长。喜干燥，对水分需求不多。冬季与夏季都会有半休眠状态，注意减少浇水。容易垂吊，可作为吊兰养殖。增加日照时间叶片会转变为红色，加上植株原有的白色斑锦非常漂亮。繁殖方式叶插扦插均可。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/马齿苋科/吹雪之松锦.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWp4c8Mgkq073sQ40pmpe1WtwA0cpHsiaWwryAITAKkgsZiaQ0KPNbRgIibA/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267529,
+    "title": "金枝玉叶",
+    "enTitle": "",
+    "category": "马齿苋科",
+    "articles": [],
+    "introduction": "原生地位于南非。喜欢温暖干燥，阳光充足的环境，耐半阴。在散射光条件下也能良好生长。不过叶片色彩稍差，叶片也会变得比较薄。耐旱，不耐寒。枝干特别容易木质化，呈树状。能开红色花朵，非常漂亮，但很难遇见。喜欢松软的沙质土质。繁殖方式主要是扦插。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/马齿苋科/金枝玉叶.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpBBtUNaY81VCF84EQRfuBLfibr2XDJdyGLyu3tsNBrIaFh0qjIyUS1BA/0?wx_fmt=jpeg"
+    }
+  }
+]

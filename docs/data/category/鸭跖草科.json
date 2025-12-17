@@ -1,0 +1,32 @@
+[
+  {
+    "id": 177,
+    "title": "白雪姬",
+    "enTitle": "Tradescantia sillamontana Matuda",
+    "category": "鸭跖草科",
+    "articles": [],
+    "introduction": "原生地位于中南美洲危地马拉，伯利兹，墨西哥等国。喜温暖、湿润，日照充足及通风良好的环境。耐半阴和干旱，不耐寒，忌暴晒和积水。散光下也能生长的很好，但会使植株徒长，叶与叶直接距离拉长，茎、叶上的白毛稀疏，影响观赏。开粉色花朵，繁殖方式以分株扦插为主。",
+    "morphology": [
+      "植株丛生，茎直立或稍匍匐，高15 - 20厘米，密被白色长毛",
+      "叶互生，长卵形，绿色或褐绿色，同样覆有白毛",
+      "小花淡紫粉色，花瓣3片，花期在6 - 8月"
+    ],
+    "carePoints": [
+      "喜温暖湿润、阳光充足的环境，也耐半阴",
+      "耐旱性较强，但不耐寒",
+      "生长季需保证充足水分，避免积水",
+      "冬季需做好保暖措施"
+    ],
+    "careInfo": {
+      "wateringFrequency": "春秋生长季，2 - 3天浇一次水；夏季气温高，每天早晚可适量喷水，保持空气湿度，土壤见干浇透；冬季减少浇水，7 - 10天浇一次水",
+      "lightRequirement": "每日保证4 - 6小时光照，夏季高温时需遮阴50% - 70%，避免强光直射",
+      "suitableTemperature": "生长适温为18 - 25°C，冬季温度不低于10°C",
+      "soilRequirement": "可用腐叶土、泥炭土、珍珠岩按照3:2:1的比例配制，要求疏松透气、排水良好"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/白雪姬.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpSQD7Af2x7flibu7ViapEqAQNcxLjf3ZTvXaqDSZSclPGiaugD0wWawiabw/0?wx_fmt=jpeg"
+    }
+  }
+]
