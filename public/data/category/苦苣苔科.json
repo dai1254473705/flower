@@ -1,0 +1,31 @@
+[
+  {
+    "id": 102,
+    "title": "断崖女王",
+    "enTitle": "Sinningia leucotricha",
+    "category": "苦苣苔科",
+    "genus": "岩桐属",
+    "articles": [],
+    "introduction": "块根多肉，叶被绒毛，花红色。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/苦苣苔科/断崖女王.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRmZKWAtWcf7MAQHjaqXzmwHXHb4xMic83ptH9fhV8LfCd018IvaMDpbw/0?from=appmsg"
+    }
+  }
+]

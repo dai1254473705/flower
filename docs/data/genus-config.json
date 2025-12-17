@@ -1,0 +1,60 @@
+{
+  "genera": [
+    {
+      "name": "伽蓝菜属",
+      "enName": "Kalanchoe",
+      "families": [
+        "景天科"
+      ]
+    },
+    {
+      "name": "景天属",
+      "enName": "Sedum",
+      "families": [
+        "景天科"
+      ]
+    },
+    {
+      "name": "马齿苋属",
+      "enName": "Portulacaria",
+      "families": [
+        "景天科"
+      ]
+    },
+    {
+      "name": "拟石莲花属",
+      "enName": "Echeveria",
+      "families": [
+        "景天科"
+      ]
+    },
+    {
+      "name": "青锁龙属",
+      "enName": "Crassula",
+      "families": [
+        "景天科"
+      ]
+    },
+    {
+      "name": "十二卷属",
+      "enName": "Haworthia",
+      "families": [
+        "百合科"
+      ]
+    },
+    {
+      "name": "岩桐属",
+      "enName": "Sinningia",
+      "families": [
+        "苦苣苔科"
+      ]
+    },
+    {
+      "name": "鹰爪属",
+      "enName": "Faucaria",
+      "families": [
+        "番杏科"
+      ]
+    }
+  ]
+}

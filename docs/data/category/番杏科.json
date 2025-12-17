@@ -4,6 +4,7 @@
     "title": "五十铃玉",
     "enTitle": "Fenestraria rhopalophylla",
     "category": "番杏科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于南非和纳米比亚接壤处，喜欢温暖、干燥的环境。特别喜欢日照，可全日照。对水分特别敏感，稍不注意就会涝死，推荐大家使用透气性较好的红陶花器养殖。夏季高温（高于30°C）与冬季低温（低于10°C）必须完全断水。繁殖方式以分株为主，也可播种。",
     "morphology": [
@@ -33,6 +34,7 @@
     "title": "口笛",
     "enTitle": "Conophytum bilobum",
     "category": "番杏科",
+    "genus": "",
     "articles": [],
     "introduction": "番杏科肉锥花属多肉，植株小巧，肉质叶对生，呈球形，叶色翠绿，秋季开黄色小花，酷似口笛，观赏价值独特",
     "morphology": [
@@ -62,6 +64,7 @@
     "title": "帝玉",
     "enTitle": "Pleiospilos nelii",
     "category": "番杏科",
+    "genus": "",
     "articles": [],
     "introduction": "番杏科多肉植物，形态独特，观赏价值高，是多肉植物中的特色品种",
     "morphology": [
@@ -89,10 +92,40 @@
     }
   },
   {
+    "id": 136,
+    "title": "水史扑鹰爪",
+    "enTitle": "Faucaria subintegra 'Shui Shi Pu'",
+    "category": "番杏科",
+    "genus": "鹰爪属",
+    "articles": [],
+    "introduction": "叶片带齿，形似鹰爪。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/番杏科/水史扑鹰爪.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR0fVyt04oYVqjwYxdNYUWbSQPWzjYGjhK1bxOraoSkB67TtghO9gEnQ/0?from=appmsg"
+    }
+  },
+  {
     "id": 166,
     "title": "生石花",
     "enTitle": "Lithops",
     "category": "番杏科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于非洲南部及西南干旱地区的岩床裂隙或砾石土中。喜冬暖夏凉的气候，怕低温，忌强光。土质以疏松的石沙为主。春秋生长季节对水分需求较多，夏季和冬季可完全断水。断水后会出现蜕皮现象，属于正常新陈代谢。生石花品种繁多。繁殖方式以播种为主。",
     "morphology": [
@@ -124,6 +157,7 @@
     "title": "留碟玉",
     "enTitle": "Lithops",
     "category": "番杏科",
+    "genus": "",
     "articles": [],
     "introduction": "番杏科多肉植物，形态独特，观赏价值高，是多肉植物中的特色品种",
     "morphology": [
@@ -155,6 +189,7 @@
     "title": "碧光环",
     "enTitle": "Monilaria obconica",
     "category": "番杏科",
+    "genus": "",
     "articles": [],
     "introduction": "番杏科多肉植物，形态独特，观赏价值高，是多肉植物中的特色品种",
     "morphology": [
@@ -186,6 +221,7 @@
     "title": "藻铃玉",
     "enTitle": "Fenestraria rhopalophylla",
     "category": "番杏科",
+    "genus": "",
     "articles": [],
     "introduction": "番杏科多肉植物，形态独特，观赏价值高，是多肉植物中的特色品种",
     "morphology": [
@@ -217,6 +253,7 @@
     "title": "鹿角海棠",
     "enTitle": "Astrophytum capricorne",
     "category": "番杏科",
+    "genus": "",
     "articles": [],
     "introduction": "容易与‘碧玉莲’混淆，开粉色或白色小花。较喜欢日照，喜欢干燥、温暖的环境。对水分需求不大，一定要严格控水。浇水方式可参考叶片情况，当缺水时，叶片会褶皱，这是植物给出的浇水信息。也可半阴养殖，阴养环境下枝条容易拉长，但植株依然健康。繁殖方式主要是扦插。",
     "morphology": [
@@ -246,23 +283,26 @@
   {
     "id": 1765808267487,
     "title": "蜜橘糖球",
+    "enTitle": "",
     "category": "番杏科",
+    "genus": "",
     "articles": [],
     "introduction": "",
     "morphology": [],
     "carePoints": [],
     "careInfo": {},
+    "srcList": [],
     "srcIcon": {
       "local": "public/images/icon/番杏科/蜜橘糖球icon1765808267478.jpg",
       "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svS4RMCPp1NbibXRn0YniaR9fJczMkansbU3gBVIGFQHnHcRKb14VopFo9W1QYUbpXkDl57roqPUIr7g/0?wx_fmt=jpeg"
-    },
-    "srcList": []
+    }
   },
   {
     "id": 1765808267509,
     "title": "芳香波",
     "enTitle": "",
     "category": "番杏科",
+    "genus": "",
     "articles": [],
     "introduction": "多肉植物中较少开花带香味的品种之一。较喜阳光，对水分需求很少。夏季与冬季休眠，一定要注意减少浇水，增加室内通风。水分过多，非常容易腐烂。开黄色花朵，带有一股不腻人的清香味道，3至4朵花即可让整个阳台飘香，强力推荐的品种。繁殖方式主要是分株扦插，也可播种。",
     "morphology": [],
@@ -284,6 +324,7 @@
     "title": "黄花照波",
     "enTitle": "",
     "category": "番杏科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地主要分布于南非和纳米比亚。对日照需求不是太大，散光也可存活，但株型会比较难看，像多看花就要增加日照时间。水分需求不大，一定要严格控水，番杏类非常容易因水分过多而涝死。原生地环境下，几个月都是没有雨水的。一般下午及傍晚开花，繁殖方式主要采用分株。",
     "morphology": [],
@@ -305,6 +346,7 @@
     "title": "快刀乱麻",
     "enTitle": "",
     "category": "番杏科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于南非开普省。喜欢温暖干燥，通风良好的环境。对日照需求较多，切忌大湿大水。水分过多，很容易被涝死。叶片呈鹿角状，可开黄花。夏季高温休眠，冬季可持续生长。喜欢松软透气的颗粒土质。繁殖方式主要是扦插。",
     "morphology": [],
@@ -326,6 +368,7 @@
     "title": "雷童",
     "enTitle": "",
     "category": "番杏科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于南非干旱的亚热带地区。喜欢温暖干燥，通风良好的环境。对日照需求较多，正常为绿色，日照时间增加及温差增大后整株转变为粉红色。可半阴养，不过缺光过多会徒长，枝干与叶间距增大。对水分需求不多，水分太多容易腐烂。开白色小花。繁殖方式主要是扦插。",
     "morphology": [],
@@ -347,6 +390,7 @@
     "title": "四海波",
     "enTitle": "",
     "category": "番杏科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于南非大卡鲁高原的石灰岩地区。喜欢温暖干燥的环境，较喜欢日照。夏季休眠，对水分特别敏感，水分过多会立即烂掉。开黄花，日常为绿色，日照时间增加与温差增大后也会变红。繁殖方式主要是分株，也可以播种。",
     "morphology": [],

@@ -4,6 +4,7 @@
     "title": "粉姬莲",
     "enTitle": "Echeveria minima cv.",
     "category": "景天科",
+    "genus": "",
     "articles": [
       {
         "title": "测试啊",
@@ -48,6 +49,7 @@
     "title": "贝迪维尔长生草",
     "enTitle": "Sempervivum 'Bedivere'",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科长生草属多肉，叶片莲座状排列，叶边带细密绒毛，耐寒性强，适应能力广，适合新手养护",
     "morphology": [
@@ -77,6 +79,7 @@
     "title": "海伊指挥官",
     "enTitle": "Sempervivum 'Commander Hay'",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科长生草属多肉，又名‘海伊指挥官’，莲座状株型挺拔，叶色翠绿带红边，绒毛密集，观赏价值高",
     "morphology": [
@@ -106,6 +109,7 @@
     "title": "乔吉特长生草",
     "enTitle": "Sempervivum 'Georgette'",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科长生草属多肉，株型紧凑圆润，叶色粉绿相间，叶缘绒毛呈粉色，是长生草属中观赏性较强的品种",
     "morphology": [
@@ -135,6 +139,7 @@
     "title": "‘炼金术师’",
     "enTitle": "Sempervivum Alchemist",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科长生草属多肉，又名‘炼金术师’，叶色黄绿渐变，叶缘带红边，株型规整，适应能力强",
     "morphology": [
@@ -164,6 +169,7 @@
     "title": "‘青铜柔色’",
     "enTitle": "Sempervivum Bronze Pastel",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科长生草属多肉，又名‘青铜柔色’，叶色呈青铜色渐变，质感独特，株型紧凑，观赏价值高",
     "morphology": [
@@ -193,6 +199,7 @@
     "title": "‘CMiral的黄’",
     "enTitle": "Sempervivum Cmirals Yellow",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科长生草属多肉，又名‘CMiral的黄’，叶色以黄色为主，叶缘带绿边，色彩明快，是长生草属中少见的黄色系品种",
     "morphology": [
@@ -222,6 +229,7 @@
     "title": "‘毕加索’",
     "enTitle": "Sempervivum Picasso",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科长生草属多肉，又名‘毕加索’，叶色斑驳多彩，绿白相间，株型紧凑，具艺术感，观赏价值极高",
     "morphology": [
@@ -251,6 +259,7 @@
     "title": "特德海德长生草",
     "enTitle": "Sempervivum Tederheid",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科长生草属多肉，叶色翠绿，叶缘带红边，叶片表面具细密绒毛，触感柔软，适应能力强",
     "morphology": [
@@ -280,6 +289,7 @@
     "title": "托梅拉长生草",
     "enTitle": "Sempervivum Tommella",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科长生草属多肉，株型小巧圆润，叶色浅绿带红边，叶片短小紧凑，是小型长生草品种",
     "morphology": [
@@ -309,6 +319,7 @@
     "title": "‘蒂比’",
     "enTitle": "TP",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科拟石莲花属多肉，又名‘蒂比’，叶片肥厚呈莲座状，叶色蓝绿带粉边，出状态时粉边明显，易群生",
     "morphology": [
@@ -338,6 +349,7 @@
     "title": "玫瑰与紫罗兰",
     "enTitle": "rosa and violette",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科杂交多肉品种，叶片莲座状排列，叶色兼具粉紫与翠绿，层次丰富，观赏价值高，生长速度中等",
     "morphology": [
@@ -367,6 +379,7 @@
     "title": "三角琉璃莲",
     "enTitle": "Haworthia cooperi var. truncata",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科十二卷属多肉，叶片三角状，排列紧密，叶面具细密纹路，晶莹剔透，耐阴能力强",
     "morphology": [
@@ -396,6 +409,7 @@
     "title": "不死鸟锦",
     "enTitle": "Kalanchoe daigremontiana f. variegata",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科伽蓝菜属斑锦品种，叶片肉质呈羽状分裂，锦斑黄绿相间，繁殖能力极强，叶片边缘易萌发小苗",
     "morphology": [
@@ -425,6 +439,7 @@
     "title": "丘比特",
     "enTitle": "Echeveria Cupid",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科杂交多肉（黛比×特玉莲），叶片莲座状，先端扭曲上翘，叶色粉紫渐变，出状态时色彩浓郁，观赏性佳",
     "morphology": [
@@ -454,6 +469,7 @@
     "title": "中斑莲花掌",
     "enTitle": "Aeonium decorum f. variegata",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "属于莲花掌的变异品种，叶片中间凸显白斑。是一种大型莲花掌，叶面直径可超过50cm，对日照需求不是太多，根系较为庞大，老株可以多浇水，但需注意切勿积水，土壤积水较多容易导致枝干腐烂黑化。属‘冬种型’，夏季高温休眠会掉落部分叶片。繁殖方式主要是扦插。",
     "morphology": [
@@ -484,6 +500,7 @@
     "title": "丸叶姬秋丽",
     "enTitle": "Graptopetalum mendozae",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科风车草属多肉，叶片小巧圆润，呈莲座状排列，叶色粉绿至粉红，出状态时色彩粉嫩，易群生成丛",
     "morphology": [
@@ -513,6 +530,7 @@
     "title": "丸叶翠绿石",
     "enTitle": "Crassula ovata",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科青锁龙属多肉，叶片圆润饱满，呈莲座状排列，叶色翠绿有光泽，株型紧凑，生长速度缓慢",
     "morphology": [
@@ -542,6 +560,7 @@
     "title": "丽娜莲",
     "enTitle": "Echeveria lilacina",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "非常喜欢日照，生长较为缓慢的石莲花。正常状态下呈白色，但严重缺光会慢慢转变为绿色，需尽快增加日照，缺光严重容易死掉。对水分需求较少，叶片表面有很厚的白粉，浇水尽量避免直接淋到叶片。繁殖方式以叶插为主，不过成功率不高，最好选在春秋季节叶插。",
     "morphology": [
@@ -571,6 +590,7 @@
     "title": "乙女心",
     "enTitle": "Sedum pachyphyllum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "经常会被大家误认为‘八千代’，叶片尖部会因紫外线强度及季节因素变色，很少整株变色。水分过多会不停长高，最终转为垂吊型，喜欢老株效果可以适当减少浇水，让底部枝干木质化。扦插与叶插是最普遍的繁殖方式，极易繁殖。",
     "morphology": [
@@ -600,6 +620,7 @@
     "title": "仙女杯",
     "enTitle": "Dudleya",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科仙女杯属多肉，叶片肥厚呈莲座状，叶色灰绿至蓝绿，表面覆盖白霜，株型高大挺拔，观赏价值高",
     "morphology": [
@@ -629,6 +650,7 @@
     "title": "元祖冰砂糖",
     "enTitle": "Sedum rubrotinctum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科拟石莲花属多肉，叶片莲座状排列，叶色浅绿带粉边，表面覆盖薄粉，出状态时色彩粉嫩，酷似冰砂糖，观赏价值高",
     "morphology": [
@@ -658,6 +680,7 @@
     "title": "八千代",
     "enTitle": "Sedum pachyphyllum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科景天属多肉，叶片肉质呈圆柱形，排列松散，叶色翠绿至粉红，茎干易木质化，可养成垂吊老桩，观赏价值高",
     "morphology": [
@@ -687,6 +710,7 @@
     "title": "八宝景天",
     "enTitle": "Sedum spectabile",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科八宝属多肉，又名华丽景天，叶片肉质呈卵形，莲座状排列，叶色翠绿，秋季开粉色或白色花朵，适应性强",
     "morphology": [
@@ -716,6 +740,7 @@
     "title": "冰梅",
     "enTitle": "Echeveria elegans",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科拟石莲花属多肉，叶片莲座状排列，叶色蓝绿带粉边，表面覆盖厚粉，出状态时色彩浓郁，酷似冰梅，观赏价值高",
     "morphology": [
@@ -745,6 +770,7 @@
     "title": "凌樱",
     "enTitle": "Echeveria Lola",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科杂交多肉品种，叶片莲座状排列，叶色粉绿相间，叶尖泛红，株型小巧紧凑，生长速度中等，观赏价值高",
     "morphology": [
@@ -774,6 +800,7 @@
     "title": "初恋",
     "enTitle": "Echeveria Huthspinke",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "属于一种薄叶片的石莲花，缺光会变成绿色，增加日照后会慢慢变成粉红最终转变为紫红色。夏季温度过高后底部叶片会干枯脱落，属于正常新陈代谢。繁殖方式以叶插为主，多年老株可采取扦插方式，亦可断水让枝干木质化塑型。",
     "morphology": [
@@ -803,6 +830,7 @@
     "title": "劳尔",
     "enTitle": "Sedum clavatum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科景天属多肉，叶片肉质呈卵形，莲座状排列，叶色翠绿至粉红，具淡淡的香味，出状态时色彩浓郁，观赏价值高",
     "morphology": [
@@ -832,6 +860,7 @@
     "title": "千代田之松",
     "enTitle": "Pachyphytum compactum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于墨西哥伊达尔戈州，较喜欢日照，不过夏季应注意适当遮阴避免灼伤。对水分需求不多，叶片上有奇怪的纹路条理，属于正常现象。几乎全年都可生长，冬季应挪到日照充足的向阳面。繁殖方式叶插扦插都可，较为容易繁殖的品种。",
     "morphology": [
@@ -861,6 +890,7 @@
     "title": "千佛手",
     "enTitle": "Sedum sedoides",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "常被误认为‘新玉缀’，属于垂吊型景天。较喜欢日照，日常为绿色，日照时间增多及温差巨大的情况下，会整株变为粉红色。对水分需求不多，过多水分容易腐烂。喜欢松软透气的土质，几乎全年都在生长。根系发达，喜欢深的花器。繁殖方式叶插扦插都可，较易繁殖的品种。",
     "morphology": [
@@ -890,6 +920,7 @@
     "title": "千兔耳",
     "enTitle": "Kalanchoe tomentosa",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于马达加斯加岛。同类还有‘月兔耳’等，属‘夏种型’，夏季依然生长，冬季休眠。可全日照，日照充足叶片呈白色，缺光叶片会变成绿色并且慢慢往下塌，但不影响生长。对水分需求稍多，生长速度相对较快。繁殖方式叶插扦插都可，较为容易叶插的品种。",
     "morphology": [
@@ -919,6 +950,7 @@
     "title": "卡罗拉",
     "enTitle": "Echeveria colorata",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科拟石莲花属多肉，叶片莲座状排列，叶色蓝绿，边缘具红边，表面覆盖厚粉，株型规整，观赏价值高",
     "morphology": [
@@ -948,6 +980,7 @@
     "title": "原始姬莲",
     "enTitle": "Echeveria minima",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科拟石莲花属多肉，又名原始朱丽叶，叶片莲座状排列，叶色蓝绿，边缘具红边，株型小巧紧凑，是姬莲系的原始品种",
     "morphology": [
@@ -977,6 +1010,7 @@
     "title": "原始绿爪",
     "enTitle": "Echeveria cuspidata var. zaragozae",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科拟石莲花属多肉，叶片莲座状排列，叶色翠绿，叶尖具红爪状突起，株型紧凑，是绿爪的原始品种，观赏价值高",
     "morphology": [
@@ -1006,6 +1040,7 @@
     "title": "吉娃莲",
     "enTitle": "Echeveria chihuahuaensis",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于墨西哥奇瓦瓦州。也常被称为‘吉娃娃’，比较容易栽培的品种。喜欢日照，对水分需求不大。缺少日照会变成绿色，叶片也会往下塌，非常难看。叶尖会因日照时间增加而变红，与‘花月夜’较相似（花月夜是叶边变红）。繁殖方式以叶插为主。",
     "morphology": [
@@ -1035,6 +1070,7 @@
     "title": "唐印",
     "enTitle": "Kalanchoe thyrsiflora",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于南非开普省东部和德兰士瓦省。较耐阴，长期放在散光地点（非阳光直射）依然能够生长得很健康，不过缺光会一直保持绿色。也可全日照养护，日照时间增加会整株变为红色。叶片有较厚白色粉末，对水分需求不大，过多的水分容易导致烂根。繁殖方式以扦插为主。",
     "morphology": [
@@ -1064,6 +1100,7 @@
     "title": "圣诞东云",
     "enTitle": "Echeveria agavoides",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科拟石莲花属多肉，东云系品种，叶片莲座状排列，叶色翠绿至深红，出状态时色彩浓郁，株型规整，观赏价值高",
     "morphology": [
@@ -1093,6 +1130,7 @@
     "title": "垂盆草",
     "enTitle": "Sedum sarmentosum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "分布于中国南北地区，一般生长在山坡岩石石隙、山沟边、河边湿润处。极易存货，野外及公共绿化带都非常多。可全日照，耐旱。冬季太冷会死亡，来年春天又会继续发芽生长。开黄色小花，可作为平房屋顶绿化使用。生长非常迅速，繁殖方式主要是扦插。",
     "morphology": [
@@ -1122,6 +1160,7 @@
     "title": "埃尔多拉多",
     "enTitle": "Echeveria El Dorado",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科拟石莲花",
     "morphology": [
@@ -1147,10 +1186,100 @@
     }
   },
   {
+    "id": 49,
+    "title": "墨西哥雪球",
+    "enTitle": "Echeveria ‘Mexican Snowball’",
+    "category": "景天科",
+    "genus": "",
+    "articles": [],
+    "introduction": "墨西哥雪球是景天科石莲花属的多肉草本开花植物，属于月影系品种，原产于墨西哥。它习性强健，较易养护，常被用于观赏，无论是布置沙漠专类园，还是盆栽点缀室内环境都很合适。",
+    "morphology": [
+      "植株易群生，株高一般5 - 10厘米",
+      "叶片呈莲座状紧密排列，匙形，肥厚肉质，有明显短叶尖且略被白粉",
+      "出状态时叶片从淡蓝绿转变为粉红色，株型紧凑，叶片向中心微拢",
+      "小花倒钟形，花瓣前端外翻，黄色，花瓣背部粉紫色，花期在冬末至春季"
+    ],
+    "carePoints": [
+      "生长适宜温度为10 - 25℃，春秋为生长期，可充分日照",
+      "春秋季一周浇水1 - 2次，避免长期淋雨和盆土长期潮湿",
+      "夏季需适当遮阴并注意通风控水，度夏相对容易"
+    ],
+    "careInfo": {
+      "wateringFrequency": "春秋生长季每周1 - 2次，夏季高温时每月2 - 3次，冬季每月1次",
+      "lightRequirement": "每日保证5 - 7小时光照，夏季高温时需遮阴50%左右，避免强光直射",
+      "suitableTemperature": "10 - 25°C（生长季），冬季不低于5°C",
+      "soilRequirement": "泥炭土、珍珠岩、颗粒土以3:2:5的比例混合配制，要求疏松透气、排水良好"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/未分类/墨西哥雪球.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRKINzcVMBLloQooLhQYE90vDjD5YHCA5dm8ic3gPSJjn0vtlOTlCiaia5A/0?from=appmsg"
+    }
+  },
+  {
+    "id": 50,
+    "title": "处女座",
+    "enTitle": "Echeveria Virgo",
+    "category": "景天科",
+    "genus": "",
+    "articles": [],
+    "introduction": "处女座是多肉植物，形态优美，观赏价值高，适合盆栽观赏。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/未分类/处女座.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRgcOAibddg2AFK5JRg6t0j2oTJHhCd1Q2C55ibWztulaicUPTjEx5BQmmA/0?from=appmsg"
+    }
+  },
+  {
+    "id": 52,
+    "title": "夜森林",
+    "enTitle": "Echeveria Dark Forest",
+    "category": "景天科",
+    "genus": "",
+    "articles": [],
+    "introduction": "夜森林是多肉植物，形态优美，观赏价值高，适合盆栽观赏。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/未分类/夜森林.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRQ6ZIOG9ANKhFquVC1ZwPicoDNSQNmViadssAjKkIqZCrKo5FOUcgaicBw/0?from=appmsg"
+    }
+  },
+  {
     "id": 53,
     "title": "大卫",
     "enTitle": "Echeveria David",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，大型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1176,10 +1305,40 @@
     }
   },
   {
+    "id": 54,
+    "title": "大和峰",
+    "enTitle": "Echeveria 'Yamato Mine'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "莲座状，叶片灰绿带红边。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/大和峰.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRmefth1YKzPSuJV0W3KCvVia9JXiczHR7nibiaYoVjkicC4D9SuJVETQ9TPQ/0?from=appmsg"
+    }
+  },
+  {
     "id": 55,
     "title": "大和锦",
     "enTitle": "Echeveria purpusorum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "生长比较缓慢的石莲花，一年时间基本长不了太大。可全日照，特别喜欢阳光。喜干燥凉爽，通风良好的环境。对水的需求较少，喜欢松软透气的土质。夏季温度过高休眠，冬季一定要放在日照充足的地方。开花花茎特别长，花朵非常好看。繁殖方式主要是叶插，也可扦插。",
     "morphology": [
@@ -1204,10 +1363,40 @@
     }
   },
   {
+    "id": 56,
+    "title": "大疣朱紫玉",
+    "enTitle": "Crassula marnieriana 'Warty'",
+    "category": "景天科",
+    "genus": "青锁龙属",
+    "articles": [],
+    "introduction": "茎肉质，叶片带凸起疣点。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/大疣朱紫玉.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRsI0icMuLu382SQhJayc3wYeWJ7L6BFnQ01iaUJJErVYcycN5WBKdHtsw/0?from=appmsg"
+    }
+  },
+  {
     "id": 58,
     "title": "大红卷娟",
     "enTitle": "Sempervivum arachnoideum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，大型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1237,6 +1426,7 @@
     "title": "大西洋Sempervivum Atlanticum",
     "enTitle": "Sempervivum Atlanticum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，大型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1262,10 +1452,40 @@
     }
   },
   {
+    "id": 60,
+    "title": "天之泉",
+    "enTitle": "Echeveria 'Ten no Izumi'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "杂交品种，叶色浅粉绿。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/天之泉.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRBDcKiaIuQbdcXNUJVvspDq9LBZIH6TLCZgrb1rKrEx2FyHzoZbklXibA/0?from=appmsg"
+    }
+  },
+  {
     "id": 61,
     "title": "天使之泪",
     "enTitle": "Sedum treleasei",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1291,10 +1511,40 @@
     }
   },
   {
+    "id": 62,
+    "title": "天堂花",
+    "enTitle": "Echeveria 'Paradise Flower'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "莲座舒展，花色淡雅。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/天堂花.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRqCltkQqvH6fTDONtbsHpJqCDz7XCVNHQdRjgHicaF86cjdONib31WTibA/0?from=appmsg"
+    }
+  },
+  {
     "id": 63,
     "title": "天狗之舞",
     "enTitle": "Kalanchoe beharensis",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "喜欢凉爽干燥、通风良好的环境。较喜欢日照，对水分需求不多。过多水分容易滋生病害（白粉病）及腐烂。可半阴养，阴养时间过长叶片间距会变长，但不影响生长。日常为绿色，日照时间增加后，叶边会慢慢变红。夏季休眠注意减少浇水量，冬季可持续生长。繁殖方式以扦插为主。",
     "morphology": [
@@ -1324,6 +1574,7 @@
     "title": "天狼星Sempervivum‘Sirius’",
     "enTitle": "Sempervivum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1353,6 +1604,7 @@
     "title": "天锦章",
     "enTitle": "Adromischus cristatus",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色丰富，观赏价值高",
     "morphology": [
@@ -1381,6 +1633,7 @@
     "title": "央金",
     "enTitle": "Echeveria Yangjin",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1410,6 +1663,7 @@
     "title": "奥利维亚",
     "enTitle": "Echeveria Olivia",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1439,6 +1693,7 @@
     "title": "奥普琳娜",
     "enTitle": "Echeveria Opalina",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1468,6 +1723,7 @@
     "title": "女雏",
     "enTitle": "Echeveria Mebina",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1497,6 +1753,7 @@
     "title": "奶酪",
     "enTitle": "Echeveria Cheese",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1526,6 +1783,7 @@
     "title": "姬星美人",
     "enTitle": "Sedum dasyphyllum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地在西亚和北非的干旱地区。极容易群生，日常为蓝绿色，增加日照时间与大温差会渐变色为粉红色。缺光后会徒长得非常难看，夏季应适当遮光防止晒伤。较喜欢干燥，浇水时间可相对延长一些。叶片有一股清香。繁殖方式主要是扦插，剪下一条插在土里即可，繁殖速度极快。",
     "morphology": [
@@ -1555,6 +1813,7 @@
     "title": "姬玉露",
     "enTitle": "Haworthia cooperi var. truncata",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，小型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1583,6 +1842,7 @@
     "title": "姬秋丽",
     "enTitle": "Graptopetalum mendozae",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，小型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1611,6 +1871,7 @@
     "title": "姬胧月",
     "enTitle": "Graptopetalum paraguayense",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "几乎全年都在生长的品种，喜欢日照，缺少光线会变为绿色，枝干拔高，但不影响生长。日照时间增加后会整株变红，特别容易枝干化。忌大湿大水，喜温暖干燥。叶片很容易碰掉，碰掉的叶片可以叶插。繁殖方式以叶插为主，也可扦插，是一种极易叶插的品种，新手练手首选。",
     "morphology": [
@@ -1640,6 +1901,7 @@
     "title": "婴儿手指",
     "enTitle": "Pachyphytum oviferum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1669,6 +1931,7 @@
     "title": "子持莲华",
     "enTitle": "Orostachys iwarenge",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "特别喜欢阳光，即使暴晒也完全无压力。夏季可持续生长，属于‘夏种型’多肉植物。浇水方式较特别，红陶花盆加暴晒可每天浇水一此。陶瓷花盆五天至一周一次。冬季休眠呈卷心菜状，开花整株死亡，所以发现花苞要立即剪掉。繁殖方式主要是扦插，剪下一朵插在土里即可生根。",
     "morphology": [
@@ -1693,10 +1956,69 @@
     }
   },
   {
+    "id": 77,
+    "title": "宇玉殿（灵石）",
+    "enTitle": "Crassula 'In灵石'",
+    "category": "景天科",
+    "genus": "青锁龙属",
+    "articles": [],
+    "introduction": "小型丛生，叶片紧凑呈灰绿色。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/宇玉殿（灵石）.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRL2CNvG2ylAVmBYUEKpLfk4LX9OHsic1gG83uyE3rH5wZLKib65UTPibzQ/0?from=appmsg"
+    }
+  },
+  {
+    "id": 78,
+    "title": "宝丽安娜",
+    "enTitle": "Echeveria 'Brianna'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶边红边明显，莲座规整。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/宝丽安娜.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRBNvOWcd6b6NIMyT4zbEcMkQGjFptC5yib4twgOMekDJZhsGOC3eZsBQ/0?from=appmsg"
+    }
+  },
+  {
     "id": 79,
     "title": "宽叶不死鸟",
     "enTitle": "Kalanchoe daigremontiana",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于非洲马达加斯加岛的热带地区。喜欢温暖湿润和阳光充足的环境，不耐寒，耐干旱和半阴，散光环境下也能生长得很好。忌涝水，几乎全年生长的品种。极容易群生，繁殖方式主要是靠叶尖上的小芽，掉落后即可生根生长，因此而得名。",
     "morphology": [
@@ -1726,6 +2048,7 @@
     "title": "小人祭",
     "enTitle": "Aeonium sedifolium",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1755,6 +2078,7 @@
     "title": "小和锦",
     "enTitle": "Echeveria purpusorum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "‘大和锦’的杂交品种，个头较小。生长特别缓慢，特别喜欢日照，喜欢干燥温暖的环境。缺光时间过长叶片会往下翻，容易滋生病害及死亡。对水分需求不多，开花非常漂亮。繁殖方式以叶插为主，也可分株扦插。",
     "morphology": [
@@ -1783,6 +2107,7 @@
     "title": "小天狗",
     "enTitle": "Crassula deceptor",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1812,6 +2137,7 @@
     "title": "小球玫瑰",
     "enTitle": "Sedum spurium",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1841,6 +2167,7 @@
     "title": "小米星",
     "enTitle": "Crassula rupestris",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1870,6 +2197,7 @@
     "title": "小红卷娟",
     "enTitle": "Sempervivum arachnoideum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1899,6 +2227,7 @@
     "title": "小红衣",
     "enTitle": "Echeveria globulosa",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1928,6 +2257,7 @@
     "title": "小蓝衣",
     "enTitle": "Echeveria Blue Bird",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1957,6 +2287,7 @@
     "title": "小辣椒水泡",
     "enTitle": "Adromischus cristatus",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -1986,6 +2317,7 @@
     "title": "山地玫瑰",
     "enTitle": "Greenovia",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2015,6 +2347,7 @@
     "title": "巧克力线",
     "enTitle": "Echeveria Chocolate",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2044,6 +2377,7 @@
     "title": "广寒宫",
     "enTitle": "Echeveria cante",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2069,10 +2403,40 @@
     }
   },
   {
+    "id": 96,
+    "title": "弗兰克",
+    "enTitle": "Echeveria 'Frank Reinelt'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "经典红色系，叶尖鲜红。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/弗兰克.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRa8EucW3tqEYTx8iaKJuO0qodiaIAc3JH6ZoJT06uvXMJ6OY9GVNCiaMgg/0?from=appmsg"
+    }
+  },
+  {
     "id": 97,
     "title": "彩色蜡笔",
     "enTitle": "Echeveria Rainbow",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2102,6 +2466,7 @@
     "title": "御所锦水泡",
     "enTitle": "Adromischus marianae",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色丰富，观赏价值高",
     "morphology": [
@@ -2126,10 +2491,40 @@
     }
   },
   {
+    "id": 101,
+    "title": "戴冠曲",
+    "enTitle": "Sedum 'Cristatum'",
+    "category": "景天科",
+    "genus": "景天属",
+    "articles": [],
+    "introduction": "缀化品种，茎干扁平呈扇形。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/戴冠曲.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRLZHiczaV8u67XrORbBJRWkGicTTBvB0ysBNT1UVFc2TZVFIj2nSSpxdQ/0?from=appmsg"
+    }
+  },
+  {
     "id": 103,
     "title": "新玉缀",
     "enTitle": "Sedum morganianum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于墨西哥。非常喜欢日照，可全日照。缺少光线会徒长得很厉害，叶片松散容易掉落。对水分需求不多，过多的水分容易腐烂。可作为吊兰养殖，枝干与叶片会越长越长，慢慢长成垂吊型。夏季温度过高会休眠。繁殖方式叶插扦插都可，叶片掉落都可以叶插，非常容易繁殖。",
     "morphology": [
@@ -2159,6 +2554,7 @@
     "title": "方鳞绿塔",
     "enTitle": "Crassula pyramidalis",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "对水分和阳光需求都不是太多，可半阴养，不过缺光时间过长会徒长得很厉害，叶片松散。夏季休眠，冬季生长。切忌大湿大水，水分过多容易腐烂。正常为绿色，日照时间增加及温差增大后会慢慢变红。特别容易群生。繁殖方式以扦插为主，剪下一条插入土中即可生根。",
     "morphology": [
@@ -2188,6 +2584,7 @@
     "title": "日月潭",
     "enTitle": "Echeveria Sun Moon",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2216,6 +2613,7 @@
     "title": "昂斯诺",
     "enTitle": "Echeveria Onslow",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2245,6 +2643,7 @@
     "title": "明镜",
     "enTitle": "Aeonium tabuliforme",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于非洲西北部加那利群岛。植株低矮扁平，叶面直径最大可至50cm。较喜阳光，草绿色，日照增多后会略微变黄，对水分需求不大。夏季完全休眠，需注意遮阴。从叶片中心开花，花后整株死亡，所以发现花苞要立即剪掉。繁殖方式主要是分株，叶插很少能成功。",
     "morphology": [
@@ -2274,6 +2673,7 @@
     "title": "春之奇迹",
     "enTitle": "Sedum Spring Miracle",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2303,6 +2703,7 @@
     "title": "春萌",
     "enTitle": "Sedum Spring",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2332,6 +2733,7 @@
     "title": "晚霞",
     "enTitle": "Echeveria Afterglow",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2361,6 +2763,7 @@
     "title": "晚霞之舞",
     "enTitle": "Echeveria Afterglow Dance",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2390,6 +2793,7 @@
     "title": "晨光",
     "enTitle": "Echeveria Morning Light",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2419,6 +2823,7 @@
     "title": "月亮仙子",
     "enTitle": "Echeveria Moon Fairy",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2447,6 +2852,7 @@
     "title": "月光女神",
     "enTitle": "Echeveria Moon Goddess",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2475,6 +2881,7 @@
     "title": "月兔耳",
     "enTitle": "Kalanchoe tomentosa",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于马达加斯加岛及中美洲干燥地区。喜欢温暖干燥的气候，较喜欢日照。缺光后会转变为绿色，株型很难看，长期放在荫蔽的地方容易滋生病害甚至死亡。增加日照时间叶边会变色。对水分需求不大，水分过多会掉叶。繁殖方式叶插扦插均可，叶插较为容易的品种。",
     "morphology": [
@@ -2503,6 +2910,7 @@
     "title": "朱唇石水泡",
     "enTitle": "Adromischus maculatus",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2532,6 +2940,7 @@
     "title": "松虫水泡",
     "enTitle": "Adromischus cristatus",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2561,6 +2970,7 @@
     "title": "松衣 Sempervivum ruthenicum",
     "enTitle": "Sempervivum ruthenicum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2590,6 +3000,7 @@
     "title": "柳叶莲华",
     "enTitle": "Orostachys iwarenge",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型莲座状，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2618,6 +3029,7 @@
     "title": "格林",
     "enTitle": "Echeveria Green",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2647,6 +3059,7 @@
     "title": "桃之卵",
     "enTitle": "Graptopetalum amethystinum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2676,6 +3089,7 @@
     "title": "桃太郎",
     "enTitle": "Echeveria Peach",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2705,6 +3119,7 @@
     "title": "桃美人",
     "enTitle": "Pachyphytum oviferum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "日照充足时叶尖会变成粉红色，看起来特别像桃子。由于叶片肥厚，含水量较多，可以适当减少浇水量。除夏季高温短暂休眠外，其余时间几乎一直在生长。能接受较强烈的日照，适合露天养殖。繁殖方式以扦插和叶插为主，多年生可以用断水的方式来塑形。",
     "morphology": [
@@ -2733,6 +3148,7 @@
     "title": "梅花鹿水泡",
     "enTitle": "Adromischus maculatus",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2762,6 +3178,7 @@
     "title": "梦椿",
     "enTitle": "Echeveria Dream",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2791,6 +3208,7 @@
     "title": "棒叶仙女杯",
     "enTitle": "Dudleya farinosa",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2816,10 +3234,40 @@
     }
   },
   {
+    "id": 131,
+    "title": "棕玫瑰",
+    "enTitle": "Echeveria 'Brown Rose'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶色棕红，莲座似玫瑰。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/棕玫瑰.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRPTCaaX2wXVUehVgKBGiabSMkZ3DQ4zS2pQvfzeE8WB2c5DPySfwsJhg/0?from=appmsg"
+    }
+  },
+  {
     "id": 132,
     "title": "樱桃",
     "enTitle": "Echeveria Cherry",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2845,10 +3293,40 @@
     }
   },
   {
+    "id": 134,
+    "title": "橘子球",
+    "enTitle": "Sedum 'Orange Ball'",
+    "category": "景天科",
+    "genus": "景天属",
+    "articles": [],
+    "introduction": "小型球状，叶色橙黄。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/橘子球.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRzTB8uo3BbVvzSsUzrqJQpXURHOvfdtaBdYZfhYMf6YAUMVtW7RubHw/0?from=appmsg"
+    }
+  },
+  {
     "id": 135,
     "title": "橙梦露",
     "enTitle": "Echeveria Orange Dream",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2878,6 +3356,7 @@
     "title": "水蜜桃",
     "enTitle": "Echeveria Peach",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2907,6 +3386,7 @@
     "title": "江户紫",
     "enTitle": "Kalanchoe marmorata",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2932,10 +3412,69 @@
     }
   },
   {
+    "id": 140,
+    "title": "汤姆漫画",
+    "enTitle": "Echeveria \"Tom's Comics\"",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶片带斑纹，色彩丰富。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/汤姆漫画.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRUfSsoMFx2nLCeAZUSzvetWWYqLZSaQHq167Jia21D0D2CEcTwK5Qfng/0?from=appmsg"
+    }
+  },
+  {
+    "id": 142,
+    "title": "海姆里克",
+    "enTitle": "Echeveria 'Heimlich'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "杂交品种，叶厚呈蓝绿色。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/海姆里克.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRGkqEVOEycKvtFNN4gVtwJ7NWlOFA2tSAfDefZpAvQpkv2rc7gQ8XEQ/0?from=appmsg"
+    }
+  },
+  {
     "id": 143,
     "title": "海豹水泡",
     "enTitle": "Adromischus cristatus",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2965,6 +3504,7 @@
     "title": "滇石莲",
     "enTitle": "Sinocrassula yunnanensis",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型莲座状，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -2989,10 +3529,98 @@
     }
   },
   {
+    "id": 145,
+    "title": "火之鸟",
+    "enTitle": "Echeveria 'Fire Bird'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶色鲜红，莲座紧凑。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/火之鸟.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRJAVRP0VWAWkUpZDgJb9X6cV8HQxnM20a6EOQ5nGUBlGErxLN6PHGZQ/0?from=appmsg"
+    }
+  },
+  {
+    "id": 146,
+    "title": "火星兔子",
+    "enTitle": "Crassula 'Mars Rabbit'",
+    "category": "景天科",
+    "genus": "青锁龙属",
+    "articles": [],
+    "introduction": "小型丛生，叶形小巧似兔耳。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/火星兔子.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRwOePPNt4ics1oFuYsQsObsphBMzPJ7PibPQaBKlNrmbaUtHAOFNSf2Ug/0?from=appmsg"
+    }
+  },
+  {
+    "id": 147,
+    "title": "火焰",
+    "enTitle": "Echeveria 'Flame'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶边深红，整体似火焰。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/火焰.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRXlO75E3gaAvybuLMia5Hfj6zpsEbxicY6ffuujic8oDka1YhibxY1jNqgQ/0?from=appmsg"
+    }
+  },
+  {
     "id": 148,
     "title": "火祭",
     "enTitle": "Crassula capitella",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "一种比较适合做吊兰的多肉植物，只要不剪掉顶端，茎部会越长越长。日照过多会使叶片变软，春秋季节增加日照时间会全株变红，非常漂亮！冬季日照减少后会呈现全绿色。夏季亦可生长，不过应适当减少浇水量，夏季水分过多容易滋生白粉病。繁殖方式以扦插为主，也可叶插。",
     "morphology": [
@@ -3022,6 +3650,7 @@
     "title": "灯美人",
     "enTitle": "Echeveria Lamp Beauty",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3050,6 +3679,7 @@
     "title": "炼金术Sempervivum‘Alchemist",
     "enTitle": "Sempervivum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3079,6 +3709,7 @@
     "title": "熊童子",
     "enTitle": "Cotyledon tomentosa",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "元生长地在非洲的纳米比亚，同种类还有‘熊童子白锦’和‘熊童子黄锦’。较为喜欢阳光，不过夏季温度过高会休眠。对水的需求较少，水分过多会掉叶片，生长季节可十天至两周浇一次水。繁殖方式主要是扦插，叶插很少有成功，并且扦插也要选在春秋两季。",
     "morphology": [
@@ -3104,10 +3735,40 @@
     }
   },
   {
+    "id": 154,
+    "title": "爱可儿",
+    "enTitle": "Echeveria 'Aiko'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶色浅粉，莲座精致。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/爱可儿.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRoYGozcBaZ86nic5nnNubdED734hRWGnib3wIPmTqxric2Dn5G6HNhD86A/0?from=appmsg"
+    }
+  },
+  {
     "id": 155,
     "title": "爱斯诺",
     "enTitle": "Echeveria Isno",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3137,6 +3798,7 @@
     "title": "爱染锦",
     "enTitle": "Aeonium domesticum f. variegata",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "与‘清盛锦’类似，属于‘冬种型’，夏季休眠时底部叶片会脱落，属正常现象。冬季可持续生长。喜欢日照，缺光时间过长容易滋生病害及死亡。对水分需求不是太多，枝干特别容易木质化，极容易群生。繁殖方式以扦插为主，剪下一小棵插入土中即可生根。",
     "morphology": [
@@ -3165,6 +3827,7 @@
     "title": "特玉莲",
     "enTitle": "Echeveria runyonii",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型莲座状，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3189,10 +3852,69 @@
     }
   },
   {
+    "id": 158,
+    "title": "特里尔宝石",
+    "enTitle": "Echeveria 'Trier Jewel'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶尖带粉，质感通透。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/特里尔宝石.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRWmgSXsbm6mSCT0K8oickFodAXfU1ccvmicbIHA2lW30OPaK8To3eI1gA/0?from=appmsg"
+    }
+  },
+  {
+    "id": 159,
+    "title": "狂野男爵",
+    "enTitle": "Echeveria 'Wild Baron'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶片布满疣点，造型独特。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/狂野男爵.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR8SINhbaIQ5TSWBRiapibvTvAzic3Wdlb0gjDOgtBRnDKVzwLrmicnYCXYA/0?from=appmsg"
+    }
+  },
+  {
     "id": 161,
     "title": "玉珠东云",
     "enTitle": "Echeveria agavoides",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3221,6 +3943,7 @@
     "title": "玉缀",
     "enTitle": "Sedum morganianum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3250,6 +3973,7 @@
     "title": "玉蝶",
     "enTitle": "Echeveria secunda",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于墨西哥伊达尔戈州。也常被人称为：石莲花、莲花掌。较为喜欢全日照，非常适合纯露养。对水分需求不高，但频繁浇水容易烂根。夏季会有短暂的休眠时间。缺少日照水分稍多时叶片会往下塌，但不影响生长。繁殖方式叶插扦插都可，容易群生的石莲。",
     "morphology": [
@@ -3279,6 +4003,7 @@
     "title": "玛丽安水泡",
     "enTitle": "Adromischus marianae",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3308,6 +4033,7 @@
     "title": "白凤",
     "enTitle": "Echeveria White Phoenix",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "属于体型较大的石莲花，叶面最大直径可以超过20cm。可全日照，正常为绿色，日照时间增多后会变为红色。对水分需求不多，叶片中心有很薄一层白粉，浇水时应避开叶片中心，以免影响美观。开花时特别漂亮，花后可将花茎剪去，以免占用养分。繁殖方式主要是叶插，也可扦插。",
     "morphology": [
@@ -3337,6 +4063,7 @@
     "title": "白和锦",
     "enTitle": "Echeveria purpusorum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色丰富，观赏价值高",
     "morphology": [
@@ -3361,10 +4088,40 @@
     }
   },
   {
+    "id": 170,
+    "title": "白夜香槟",
+    "enTitle": "Echeveria 'White Night Champagne'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "香槟变种，叶色白绿透粉。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/白夜香槟.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRP8XkKlqbjSgRGdtDDicNbCDAaRebPhY5icbfDqlI8Jia05HvYic28SClXg/0?from=appmsg"
+    }
+  },
+  {
     "id": 171,
     "title": "白姬之舞",
     "enTitle": "Echeveria White Dance",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，小型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3393,6 +4150,7 @@
     "title": "白姬莲",
     "enTitle": "Echeveria White",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，小型品种，株型莲座状，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3422,6 +4180,7 @@
     "title": "白牡丹",
     "enTitle": "Graptopetalum paraguayense",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "最为常见的多肉植物之一，新手入门必选。平常为白色，日照增加后叶尖及叶边会变为粉红色。几乎全年都可生长，夏季同样要做好防晒与通风工作。一定要多见阳光，缺少阳光后会变得非常难看与不健康，同时容易滋生病害。繁殖方式叶插扦插都可，叶插容易成功的品种。",
     "morphology": [
@@ -3451,6 +4210,7 @@
     "title": "白银玛丽安水泡",
     "enTitle": "Adromischus marianae",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3480,6 +4240,7 @@
     "title": "白雪姬",
     "enTitle": "Echeveria Snow White",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，小型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3508,6 +4269,7 @@
     "title": "白霜",
     "enTitle": "Echeveria White Frost",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3537,6 +4299,7 @@
     "title": "百惠",
     "enTitle": "Echeveria Baohui",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3566,6 +4329,7 @@
     "title": "碧玉莲",
     "enTitle": "Crassula muscosa",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型莲座状，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3594,6 +4358,7 @@
     "title": "碰碰香",
     "enTitle": "Plectranthus tomentosa",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3623,6 +4388,7 @@
     "title": "神想曲",
     "enTitle": "Echeveria God",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "喜阳光充足，凉爽干燥的环境。几乎全年都在生长的品种。对日照需求不多，忌暴晒，可半阴养殖，散光养殖也能生长得很好。对水分需求不多，水分过多容易涝死。很容易群生，繁殖方式主要是叶插。",
     "morphology": [
@@ -3652,6 +4418,7 @@
     "title": "秀妍",
     "enTitle": "Echeveria Xiuyan",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3681,6 +4448,7 @@
     "title": "秋丽",
     "enTitle": "Graptopetalum paraguayense",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3710,6 +4478,7 @@
     "title": "粉山地玫瑰",
     "enTitle": "Greenovia",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3739,6 +4508,7 @@
     "title": "粉蓝鸟",
     "enTitle": "Echeveria Blue Bird",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3768,6 +4538,7 @@
     "title": "粉蔓",
     "enTitle": "Echeveria Pink",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3797,6 +4568,7 @@
     "title": "紫心",
     "enTitle": "Echeveria Purple Heart",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3826,6 +4598,7 @@
     "title": "紫梦",
     "enTitle": "Echeveria Purple Dream",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3855,6 +4628,7 @@
     "title": "紫牡丹 Sempervivum Stansfieldii",
     "enTitle": "Sempervivum Stansfieldii",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3884,6 +4658,7 @@
     "title": "紫珍珠",
     "enTitle": "Echeveria Purple Pearl",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "与‘初恋’十分相似，但叶片较前者更厚一些。喜欢日照，日常为绿色、深绿色。进入秋季后，增加日照时间，温差加大后会转变为紫色。对水分需求不多，喜欢通风良好的环境，空气流通不良容易滋生病害（介壳虫）。繁殖方式叶插扦插都可，叶插较容易成功的品种",
     "morphology": [
@@ -3913,6 +4688,7 @@
     "title": "紫米粒",
     "enTitle": "Alternanthera ficoidea",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3938,10 +4714,40 @@
     }
   },
   {
+    "id": 199,
+    "title": "紫红牡丹",
+    "enTitle": "Echeveria 'Purple Red Peony'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶色紫红，莲座似牡丹。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/紫红牡丹.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRl0ryIWQ8Xw61OzVSlgQyfGF8ROy0EW9FUux8Or6H79u2yd85pyoFdw/0?from=appmsg"
+    }
+  },
+  {
     "id": 200,
     "title": "紫罗兰女王",
     "enTitle": "Echeveria Violet Queen",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -3971,6 +4777,7 @@
     "title": "紫羊绒",
     "enTitle": "Aeonium arboreum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4000,6 +4807,7 @@
     "title": "红勋花 Sempervivum Gray Lady",
     "enTitle": "Sempervivum Gray Lady",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4029,6 +4837,7 @@
     "title": "红化妆",
     "enTitle": "Echeveria Red Makeup",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4058,6 +4867,7 @@
     "title": "红夕月beniyuugetu",
     "enTitle": "beniyuugetu",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4086,6 +4896,7 @@
     "title": "红宝石",
     "enTitle": "Sedum rubrotinctum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4115,6 +4926,7 @@
     "title": "红爪",
     "enTitle": "Echeveria cuspidata",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4144,6 +4956,7 @@
     "title": "红稚莲",
     "enTitle": "Echeveria Red",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "属于一种容易垂吊型的石莲花，随着时间增长茎部会慢慢变长，最后长成吊兰状。几乎全年都在生长，日照时间增加及温差增大时会整株变为红色。也可半阴养殖，阴养叶片始终保持绿色，并且株型较为松散难看，但整体状态健康。繁殖方式叶插扦插都可，生长较为迅速的品种。",
     "morphology": [
@@ -4172,6 +4985,7 @@
     "title": "红粉台阁",
     "enTitle": "Echeveria Red Pink",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "属于石莲花里体型较大的品种，随着时间的增长能长到非常巨大。喜欢日照，对水分需求不大，特别注意避开梅雨季节，水分过多容易腐烂。叶片有白粉，浇水时应避免直接浇到叶片的中心，影响美观。日照时间增加及温差加大后会变色。繁殖方式以叶插为主，也可扦插。",
     "morphology": [
@@ -4201,6 +5015,7 @@
     "title": "红色浆果",
     "enTitle": "Sedum rubrotinctum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4230,6 +5045,7 @@
     "title": "红蛋水泡",
     "enTitle": "Adromischus cristatus",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4259,6 +5075,7 @@
     "title": "红边月影",
     "enTitle": "Echeveria Red Edge",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4287,6 +5104,7 @@
     "title": "红边灵影",
     "enTitle": "Echeveria Red Edge",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4316,6 +5134,7 @@
     "title": "红霜",
     "enTitle": "Echeveria Red Frost",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4341,10 +5160,69 @@
     }
   },
   {
+    "id": 215,
+    "title": "约瑟琳",
+    "enTitle": "Echeveria 'Jocelyn'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶厚呈蓝紫，状态下偏红。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/约瑟琳.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRxKkOuc2svNDGcJU7fhJI8CIVgRkhCS1C4iaNEKmMM3ctLKUB5JQoiaYw/0?from=appmsg"
+    }
+  },
+  {
+    "id": 216,
+    "title": "纱维红",
+    "enTitle": "Echeveria 'Sahara Red'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶色深红，质感细腻。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/纱维红.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRtrFHJCfSs5mvSaNHfMTeZTwgsDZMJNcT7ibdBLIT5x6eASWPcXjSfcQ/0?from=appmsg"
+    }
+  },
+  {
     "id": 217,
     "title": "纸风车",
     "enTitle": "Echeveria Paper Windmill",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4374,6 +5252,7 @@
     "title": "织锦",
     "enTitle": "Echeveria Weaving",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色丰富，观赏价值高",
     "morphology": [
@@ -4398,10 +5277,40 @@
     }
   },
   {
+    "id": 219,
+    "title": "绿蔷薇",
+    "enTitle": "Echeveria 'Green Rose'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "莲座似蔷薇，叶色嫩绿。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/绿蔷薇.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRnW78GoSO7UQjj72MTJqCST0ENRsuqiauuofNhD0oQ8ibj0Nh313yQicaQ/0?from=appmsg"
+    }
+  },
+  {
     "id": 220,
     "title": "绿豆",
     "enTitle": "Echeveria Green Bean",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4427,10 +5336,69 @@
     }
   },
   {
+    "id": 221,
+    "title": "绿风",
+    "enTitle": "Echeveria 'Green Wind'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶形修长，叶色浅绿。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/绿风.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR9U8HibyAo9dNwwNtibDJ3okmOlst9xSHAbfFLiaZHY11XoUPUqZ0jxQhQ/0?from=appmsg"
+    }
+  },
+  {
+    "id": 222,
+    "title": "绿龟之卵",
+    "enTitle": "Sedum hernandezii",
+    "category": "景天科",
+    "genus": "景天属",
+    "articles": [],
+    "introduction": "叶形似龟卵，绿色带纹路。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/绿龟之卵.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRpTicocrJhhYbnkpQkw8HrZvu7Ah7FHxIXSCdBY2IickJ70fIibxLSs3Yw/0?from=appmsg"
+    }
+  },
+  {
     "id": 223,
     "title": "罗密欧",
     "enTitle": "Echeveria Romeo",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4460,6 +5428,7 @@
     "title": "罗琦",
     "enTitle": "Echeveria Roki",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4485,10 +5454,40 @@
     }
   },
   {
+    "id": 225,
+    "title": "胜利骑兵",
+    "enTitle": "Echeveria 'Victory Rider'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶边红边锐利，莲座周正。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/胜利骑兵.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRdL5gzXQHpFzBsRtL0iatibgNHS2X1WPA8luRWhMr4fWbre2hMLnFuShQ/0?from=appmsg"
+    }
+  },
+  {
     "id": 226,
     "title": "艳日辉",
     "enTitle": "Aeonium decorum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4518,6 +5517,7 @@
     "title": "艾伦",
     "enTitle": "Echeveria Allen",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4543,10 +5543,40 @@
     }
   },
   {
+    "id": 228,
+    "title": "艾格尼斯玫瑰",
+    "enTitle": "Echeveria 'Agnes Rose'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶形卷边，似包拢的玫瑰。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/艾格尼斯玫瑰.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRUVBedZw8Tmh5SoWqLVcia61VSyKz2uGhv8PyOXiaibl1yoVjxMIorHKyw/0?from=appmsg"
+    }
+  },
+  {
     "id": 229,
     "title": "芙蓉雪莲",
     "enTitle": "Echeveria Lotus Snow",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "由‘雪莲’杂交而来的品种，相对于雪莲来说，芙蓉雪莲的价格算是相当平民化了，大家购买时请注意。比较喜欢日照，根系生长健康后可以多给一点水，可以长得非常巨大。正常为白色，日照增多，温差增大后会整株转变为粉红色。繁殖方式以叶插为主，也可扦插。叶插成功率稍小。",
     "morphology": [
@@ -4575,6 +5605,7 @@
     "title": "花月夜",
     "enTitle": "Echeveria Flower Moon",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "容易与吉娃莲混淆，同种类还有厚叶花月夜等。特别喜欢日照，缺光后会完全变为绿色，且叶片往下翻。可以接受全日照（指日照时间）养殖，夏季紫外线强烈时要注意遮阴。叶片肥厚含有较多水分，浇水时间可适当延长。根系较少，浇水时应注意少量。繁殖方式以叶插为主。",
     "morphology": [
@@ -4603,6 +5634,7 @@
     "title": "若歌诗",
     "enTitle": "Crassula rogersii",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于非洲南部。喜欢温柔不强烈的日照，夏季注意遮阴，喜欢干燥。日常为绿色，当日照增多温差增大时会变为粉红色。对水分需求不多。不太耐低温，冬季应注意保暖。繁殖方式叶插扦插都可，是一种较容易繁殖的多肉植物。",
     "morphology": [
@@ -4632,6 +5664,7 @@
     "title": "苦瓜水泡",
     "enTitle": "Adromischus cristatus",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4661,6 +5694,7 @@
     "title": "苯巴蒂斯",
     "enTitle": "Echeveria Benbadis",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4690,6 +5724,7 @@
     "title": "茜之塔",
     "enTitle": "Crassula capitella",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "形似宝塔一样的多肉植物，正常为绿色，日照时间增加后会转变为深红色。极容易群生，对日照时间要求不是太多，但也不能完全无光。水分一定要少量，过多水分容易导致腐烂及病害。繁殖方式以扦插为主，直接剪下后插入土中即可。多年老株可做垂吊型生长。",
     "morphology": [
@@ -4719,6 +5754,7 @@
     "title": "草莓卷娟",
     "enTitle": "Sempervivum arachnoideum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4748,6 +5784,7 @@
     "title": "草莓蛋糕水泡",
     "enTitle": "Adromischus cristatus",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4773,10 +5810,40 @@
     }
   },
   {
+    "id": 239,
+    "title": "荷花",
+    "enTitle": "Echeveria 'Lotus'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "莲座似荷花，叶尖带红。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/荷花.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRHtpt1MQicnGLJ9bZONbCWxOs6wRqSibsG3q6RSn81pYAdXk9gZiaG6icibQ/0?from=appmsg"
+    }
+  },
+  {
     "id": 240,
     "title": "莎维娜",
     "enTitle": "Echeveria Savina",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4806,6 +5873,7 @@
     "title": "莎莎女王",
     "enTitle": "Echeveria Sasha Queen",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4831,10 +5899,69 @@
     }
   },
   {
+    "id": 242,
+    "title": "莫兰",
+    "enTitle": "Echeveria 'Maureen'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶色粉紫，状态下偏红。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/莫兰.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRyq85dkkJHMjl2ibkrpNDAN969fiaAORlKNnXTPcP9HAthOAAbr9cQuJQ/0?from=appmsg"
+    }
+  },
+  {
+    "id": 243,
+    "title": "莱恩小精灵",
+    "enTitle": "Echeveria 'Lane Elf'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "小型品种，叶色蓝绿。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/莱恩小精灵.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR4sibXViceVc2TdtuJUmo4fFdCCekKdgVibpdWay2RcibRic8hoc6vhcWF4Q/0?from=appmsg"
+    }
+  },
+  {
     "id": 246,
     "title": "葡萄",
     "enTitle": "Echeveria Grape",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4864,6 +5991,7 @@
     "title": "蒂亚",
     "enTitle": "Echeveria Tia",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4889,10 +6017,69 @@
     }
   },
   {
+    "id": 248,
+    "title": "蒂凡尼",
+    "enTitle": "Echeveria 'Tiffany'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶色浅粉，莲座圆润。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/蒂凡尼.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRDaGpcLuOHIgqwE33jasquMXKl6uI4366DC1PDywRMVLjqHx3odWsGw/0?from=appmsg"
+    }
+  },
+  {
+    "id": 249,
+    "title": "蓝光",
+    "enTitle": "Echeveria 'Blue Light'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "大型蓝色系，叶边透粉。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/蓝光.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRlHXh1iaKQsRiayQFxz4V5miaBucWgy0lDPD1WTpYuBWjxtEficnTRYmyHg/0?from=appmsg"
+    }
+  },
+  {
     "id": 251,
     "title": "蓝石莲",
     "enTitle": "Echeveria Blue Stone",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型莲座状，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4917,10 +6104,40 @@
     }
   },
   {
+    "id": 252,
+    "title": "蓝精灵",
+    "enTitle": "Echeveria 'Blue Elf'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "小型蓝色，叶尖带红。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/蓝精灵.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRGJBP2jICVTHSnQ04iaPpDuiajpIh8U5awo1FBtNXJCF1SzribUIMo7GEg/0?from=appmsg"
+    }
+  },
+  {
     "id": 253,
     "title": "蓝色惊喜",
     "enTitle": "Echeveria Blue Surprise",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4950,6 +6167,7 @@
     "title": "蓝苹果",
     "enTitle": "Echeveria Blue Apple",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -4979,6 +6197,7 @@
     "title": "蓝豆",
     "enTitle": "Sedum clavatum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5008,6 +6227,7 @@
     "title": "蓝黛莲",
     "enTitle": "Echeveria Blue",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型莲座状，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5036,6 +6256,7 @@
     "title": "薄叶蓝鸟",
     "enTitle": "Echeveria Blue Bird",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5065,6 +6286,7 @@
     "title": "薄雪万年草",
     "enTitle": "Sedum hispanicum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "分布于南欧至中亚地区，与其他多肉植物混搭种植首选，极易生长。平常以绿色为主，日照时间增加及温差巨大会整株变为粉红色，并且株型也会保持得很漂亮。缺光后徒长会很难看，长时间缺光容易引发病虫害。喜欢全日照环境，生长季节需要大量水分，繁殖以扦插为主。",
     "morphology": [
@@ -5094,6 +6316,7 @@
     "title": "虹之玉",
     "enTitle": "Sedum rubrotinctum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地墨西哥，对通风要求较高，使用红陶一类透气较强的花盆最好。较喜欢日照，并不需要太多水分，日照时间增加后会整株变成红色。植株往上生长，多年老株枝干化后，一定要注意浇水量，过多的水分会导致枝干腐烂。繁殖方式扦插叶插都可，也是一种极易繁殖的品种。",
     "morphology": [
@@ -5123,6 +6346,7 @@
     "title": "虹之玉锦",
     "enTitle": "Sedum rubrotinctum f. variegata",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "与‘虹之玉’大致相同，可全日照。对通风要求较高，不需要太多水分。日照时间增加后会整株变为粉红色（虹之玉是深红色）。叶片能看见白色锦斑。多年老株枝干化后需要注意浇水量，过多的水分会导致枝干腐烂。繁殖方式叶插扦插都可，是最易繁殖的多肉植物之一。",
     "morphology": [
@@ -5151,6 +6375,7 @@
     "title": "蛛丝卷绢",
     "enTitle": "Sempervivum arachnoideum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于中南欧，北非等地区高山环境。比较耐寒的品种，属于‘冬种型’，喜欢凉爽干燥，通风良好的环境。对高温敏感，夏季休眠时容易腐烂，应特别注意加强通风和减少浇水。浇水尽量避免植株中心，否则丝状物会消失。繁殖方式主要是分株扦插，分出小苗后剪下扦插即可。",
     "morphology": [
@@ -5176,10 +6401,40 @@
     }
   },
   {
+    "id": 263,
+    "title": "蜜糖",
+    "enTitle": "Echeveria 'Honey'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "叶色金黄，质感甜润。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/蜜糖.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRgdSX5T14kdVQKHlyEHxuTNRxLZ74h0HcVTLR9vGRhYA89WmBDW8kAA/0?from=appmsg"
+    }
+  },
+  {
     "id": 264,
     "title": "蜡牡丹",
     "enTitle": "Echeveria Wax Peony",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5209,6 +6464,7 @@
     "title": "观音莲",
     "enTitle": "Sempervivum tectorum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原产地位于西班牙、法国、意大利等欧洲国家的山区，喜阳光充足和凉爽干燥的环境，为高山多肉植物。可全日照。对水分需求不多，忌高温、闷热、涝水。容易被蚧壳虫寄生，特别是根粉蚧壳虫。新拿到一定要洗根晾干后再上盆，原土壤全部丢掉。繁殖方式主要是分株扦插。",
     "morphology": [
@@ -5237,6 +6493,7 @@
     "title": "诺曼Sempervivum Normann",
     "enTitle": "Sempervivum Normann",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5262,10 +6519,40 @@
     }
   },
   {
+    "id": 271,
+    "title": "贝飞达",
+    "enTitle": "Echeveria 'Befida'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "杂交品种，叶色浅绿透粉。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/贝飞达.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRFMZNRZZ4VylxibofZ7Ywo889rB3Bx4ImiamozhicLbVjibYaFUuKLnMFiag/0?from=appmsg"
+    }
+  },
+  {
     "id": 272,
     "title": "赤兔水泡",
     "enTitle": "Adromischus cristatus",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5291,10 +6578,40 @@
     }
   },
   {
+    "id": 274,
+    "title": "赤豆白石",
+    "enTitle": "Sedum 'Red Bean White Stone'",
+    "category": "景天科",
+    "genus": "景天属",
+    "articles": [],
+    "introduction": "叶小，红白相间似豆石。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/赤豆白石.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRTPsJATpXQ05y9yTagJ2hmfFLts4Ev2oseFpLexHk84pCTRHwTV2I1A/0?from=appmsg"
+    }
+  },
+  {
     "id": 275,
     "title": "赤鬼城",
     "enTitle": "Crassula capitella",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "与‘茜之塔’‘火祭’类似，对日照和水分需求都不是很多，喜欢温暖干燥的环境。切忌大湿大水，水分过多容易滋生病害（白粉病），会徒长得特别厉害。夏季短暂休眠，冬季生长。正常为绿色，增加日照时间后会变得非常红，特别容易群生。繁殖方式主要是扦插。",
     "morphology": [
@@ -5324,6 +6641,7 @@
     "title": "达摩福娘",
     "enTitle": "Cotyledon orbiculata",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5353,6 +6671,7 @@
     "title": "达摩绿塔",
     "enTitle": "Crassula pyramidalis",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5382,6 +6701,7 @@
     "title": "醉莲 Sempervivum Tipsy",
     "enTitle": "Sempervivum Tipsy",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型莲座状，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5406,10 +6726,69 @@
     }
   },
   {
+    "id": 279,
+    "title": "金枝玉叶",
+    "enTitle": "Portulacaria afra",
+    "category": "景天科",
+    "genus": "马齿苋属",
+    "articles": [],
+    "introduction": "灌木状，叶小呈翠绿色。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/金枝玉叶.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRYSl2YB81k0JCibpG3icron1Aaa3SB5L5lxE7LHRWcWOYvLmzKMS6baSg/0?from=appmsg"
+    }
+  },
+  {
+    "id": 280,
+    "title": "金蜡冬云",
+    "enTitle": "Echeveria 'Golden Wax Winter Cloud'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "冬云系，叶色金黄带蜡质感。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/金蜡冬云.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRb9qyklAIEGfwMeW31tzx9eY4qM3IlKicaaQYFtMDrTmJ2LcMd7DKZEg/0?from=appmsg"
+    }
+  },
+  {
     "id": 281,
     "title": "钱串",
     "enTitle": "Crassula perforata",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "常说的‘钱串’就是它了，枝条与个头较小，比较迷你。属于‘冬种型’。喜欢阳光充足，凉爽干燥的环境。可半阴养殖，缺光时间过长叶间距会拉得很长，株型松散。对水分需求较少，忌闷热潮湿。正常为绿色，日照时间增加叶边会慢慢变红。繁殖方式主要是扦插。",
     "morphology": [
@@ -5439,6 +6818,7 @@
     "title": "铭月",
     "enTitle": "Sedum adolphi",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于墨西哥。与‘黄丽’相似，容易被混淆，较黄丽叶片更细长一些。比较喜欢日照，对水分需求不大，几乎全年都在生长。增加日照时间后，整株会慢慢从绿色转变为金黄色。枝干很容易拔高，2年以上容易垂吊，可断水使枝干木质化。繁殖方式叶插扦插都可，比较容易繁殖。",
     "morphology": [
@@ -5467,6 +6847,7 @@
     "title": "银月",
     "enTitle": "Senecio haworthii",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5495,6 +6876,7 @@
     "title": "锦晃星",
     "enTitle": "Echeveria pulvinata",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "容易树状枝干化的石莲花，日常为绿色，日照充足会变为红色，开花特别好看。喜欢凉爽、干燥的环境，对水需求不大。耐半阴，阴养环境下，同样可以健康生长。叶片呈毛绒状，容易粘上脏物，可在浇水时用喷壶喷掉。繁殖方式叶插扦插都可，较为容易繁殖的品种。",
     "morphology": [
@@ -5519,10 +6901,40 @@
     }
   },
   {
+    "id": 286,
+    "title": "长绳串葫芦",
+    "enTitle": "Crassula rupestris",
+    "category": "景天科",
+    "genus": "青锁龙属",
+    "articles": [],
+    "introduction": "茎细长，叶片串状似葫芦。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/长绳串葫芦.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRfWcPCUl5sDqbr0XYXAcmKCY8fxkKuddpqlTPN44Q7vibIsRwJvmSPEA/0?from=appmsg"
+    }
+  },
+  {
     "id": 287,
     "title": "阿尔巴白月影",
     "enTitle": "Echeveria Alba",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5551,6 +6963,7 @@
     "title": "阿曼达Sempervivum Amanda",
     "enTitle": "Sempervivum Amanda",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5576,10 +6989,98 @@
     }
   },
   {
+    "id": 289,
+    "title": "雀扇",
+    "enTitle": "Kalanchoe rhombopilosa",
+    "category": "景天科",
+    "genus": "伽蓝菜属",
+    "articles": [],
+    "introduction": "叶形似雀扇，表面有斑点。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/雀扇.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRP40pRjF7EHjV9oZGprIWcD8uWrcQJV2TRFJWicN73MO9yJ6ZFLKZtNg/0?from=appmsg"
+    }
+  },
+  {
+    "id": 290,
+    "title": "雅乐之华",
+    "enTitle": "Portulacaria afra 'Variegata'",
+    "category": "景天科",
+    "genus": "马齿苋属",
+    "articles": [],
+    "introduction": "金枝玉叶全锦品种，叶带白/粉斑。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/雅乐之华.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR0PxMsOF2hUOpUwAdb6jHyo0ZMbwSj5jpMW4TauUwbRZZTEurwfA4Jg/0?from=appmsg"
+    }
+  },
+  {
+    "id": 291,
+    "title": "雅乐之舞",
+    "enTitle": "Portulacaria afra 'Foliis Variegatis'",
+    "category": "景天科",
+    "genus": "马齿苋属",
+    "articles": [],
+    "introduction": "金枝玉叶斑叶品种，绿/白/粉相间。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/雅乐之舞.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR7hHoGZgPnWRhTBE3GqR5I0iadSYdpopuhkyr7jNTUqvLoO3faSibIo3Q/0?from=appmsg"
+    }
+  },
+  {
     "id": 292,
     "title": "雨滴",
     "enTitle": "Echeveria Raindrops",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5609,6 +7110,7 @@
     "title": "雨燕座",
     "enTitle": "Echeveria Swallow",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5638,6 +7140,7 @@
     "title": "雪天使",
     "enTitle": "Echeveria Snow Angel",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5667,6 +7170,7 @@
     "title": "雪爪",
     "enTitle": "Echeveria Snow Claw",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5696,6 +7200,7 @@
     "title": "雪莲",
     "enTitle": "Echeveria laui",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型莲座状，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5724,6 +7229,7 @@
     "title": "霜之朝",
     "enTitle": "Echeveria Frost",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "喜欢日照，半阴养会慢慢转变为绿色，长时间缺光容易滋生病害及死亡。对水分需求不多，叶片上有厚厚的白粉，极容易抹掉，抹掉后不可再生，所以浇水时要注意避开叶片，可沿花盆边缘浇入。夏季短暂休眠，冬季可继续生长。繁殖方式叶插扦插都可，较容易繁殖。",
     "morphology": [
@@ -5753,6 +7259,7 @@
     "title": "露莲娜",
     "enTitle": "Echeveria Luliana",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型莲座状，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5781,6 +7288,7 @@
     "title": "青星美人",
     "enTitle": "Graptopetalum paraguayense",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "喜欢温暖干燥，通风良好的环境。较喜欢日照，夏季应注意适当遮阴避免灼伤。日照时间增多及温差增大后，叶尖会变为红色。对水分需求很少，过多水分容易腐烂。开花十分漂亮，花后可将花茎剪去，避免占用养分。繁殖方式主要是叶插，也可扦插。",
     "morphology": [
@@ -5809,6 +7317,7 @@
     "title": "静夜",
     "enTitle": "Echeveria derenbergii",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "石莲花属里体型较小的品种，不太会长大，但是容易群生。缺光时个头会拔高，变得十分难看，适当增加日照时间会让叶尖变得红红的，非常可爱。不耐热，夏季要注意遮阴。同其他石莲类一样，对水分要求并不多，生长季节可以5天至一周浇水一次。繁殖方式以叶插为主，也可扦插。",
     "morphology": [
@@ -5834,10 +7343,40 @@
     }
   },
   {
+    "id": 303,
+    "title": "香水",
+    "enTitle": "Echeveria 'Perfume'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "部分个体带淡淡香气，叶色浅紫。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/香水.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRib5LVE6LfYRwDDicwb1nIcT4cmic1A0ibiaUpF2aKfaia4kYaWfN2P3aPWug/0?from=appmsg"
+    }
+  },
+  {
     "id": 304,
     "title": "马丁水泡",
     "enTitle": "Adromischus marianae",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5867,6 +7406,7 @@
     "title": "马库斯",
     "enTitle": "Echeveria Marcus",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5896,6 +7436,7 @@
     "title": "骑士Sempervivum Pacific Knight",
     "enTitle": "Sempervivum Pacific Knight",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5925,6 +7466,7 @@
     "title": "魅惑之宵",
     "enTitle": "Echeveria Charming Night",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -5954,6 +7496,7 @@
     "title": "黄丽",
     "enTitle": "Sedum adolphi",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于墨西哥。喜欢日照，耐半阴，半阴养殖时间过长会徒长，叶片松散，呈绿色。喜欢干燥温暖的环境，对水需求不大，忌大湿大水。日照充足会从绿色变为黄色、红色。生长容易拔高，多年生长可当吊兰养殖。繁殖方式叶插扦插都可，非常容易繁殖的品种。",
     "morphology": [
@@ -5979,10 +7522,40 @@
     }
   },
   {
+    "id": 311,
+    "title": "黄色星",
+    "enTitle": "Sedum 'Yellow Star'",
+    "category": "景天科",
+    "genus": "景天属",
+    "articles": [],
+    "introduction": "叶形星状，整体呈黄色。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/黄色星.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloROSagv6qFgecpECJ7C7av9wmtPlGNEqrSzPNF0icVUZ8WCbdECBOb4Bw/0?from=appmsg"
+    }
+  },
+  {
     "id": 312,
     "title": "黄金万年草",
     "enTitle": "Sedum japonicum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -6008,10 +7581,40 @@
     }
   },
   {
+    "id": 313,
+    "title": "黄金玉杯",
+    "enTitle": "Echeveria 'Golden Jade Cup'",
+    "category": "景天科",
+    "genus": "拟石莲花属",
+    "articles": [],
+    "introduction": "杯状莲座，叶色金黄。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/景天科/黄金玉杯.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR0jzVaYbLpn5y4TkQpqJFNE60kVNib5mNLVDlmXz07jzKTaSVnrrf8Xg/0?from=appmsg"
+    }
+  },
+  {
     "id": 314,
     "title": "黑法师",
     "enTitle": "Aeonium arboreum",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于非洲西北部的加那利群岛。日照不需要太多，因叶片本身容易变成黑色，所以在吸收热量上要强于其他多肉植物，日照过多会导致叶片变软。属于多肉植物中的‘冬种型’，夏季休眠时底部叶片会掉落，属于正常新陈代谢。繁殖主要靠扦插。会自己从枝干上长出多头。",
     "morphology": [
@@ -6041,6 +7644,7 @@
     "title": "黑爪",
     "enTitle": "Echeveria Black Claw",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -6070,6 +7674,7 @@
     "title": "黑王子",
     "enTitle": "Echeveria Black Prince",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "仅有的几种黑色多肉植物之一，较喜欢日照，日照增多会慢慢变红，最后变为黑色，日照不足为绿色。通风不好容易滋生介壳虫，对水分需求不多。喜欢松软土质，介质里颗粒太多，底部叶片容易干枯脱落。夏季短暂休眠，冬季持续生长。繁殖方式以叶插为主，也可扦插。",
     "morphology": [
@@ -6099,6 +7704,7 @@
     "title": "黛比",
     "enTitle": "Echeveria Debbie",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -6128,6 +7734,7 @@
     "title": "鼓槌水泡",
     "enTitle": "Adromischus cristatus",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
@@ -6157,6 +7764,7 @@
     "title": "鲁氏石莲花",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于墨西哥。非常喜欢日照，缺少光线会生长的很不健康，可全日照。叶片常年为白色，叶边不会因为日照而变色。对水分需求不多，叶片上有一层薄薄的白粉，浇水应注意避开叶片中心。生长较为迅速，枝干很容易木质化。繁殖方式叶插扦插都可。",
     "morphology": [],
@@ -6178,6 +7786,7 @@
     "title": "特利尔宝石",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "像宝石一样的石莲花，属于石莲类体格较小的品种，特别容易群生。日照时间过长会整株变为红色，夏季要避开强烈日照，放在北面是不错的选择。生长速度较快，容易垂吊的品种。繁殖方式叶插扦插均可。",
     "morphology": [],
@@ -6199,6 +7808,7 @@
     "title": "灿烂缀化",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "‘灿烂’的缀化品种，主体枝干完全木质化，呈树状。对高温敏感，属于‘冬种型’，夏季高温休眠时会掉落部分叶片，属于正常现象。根系十分强大，对水需求稍多，但不可积水。繁殖方式主要是扦插。剪下一棵插入土中即可生根，扦插的小苗长大后不一定是缀化，大部分是灿烂。",
     "morphology": [],
@@ -6220,6 +7830,7 @@
     "title": "灿烂",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "属于‘冬种型’，夏季温度升高后开始掉叶，进入休眠状态。叶面直径可以生长至30cm以上，属于较大型的莲花掌。喜欢日照，缺光后会特别不健康，长期阴养容易滋生病害甚至死亡。对水分需求不是太多。与‘黑法师’大致相同，枝干非常容易长高。繁殖方式主要是扦插。",
     "morphology": [],
@@ -6241,6 +7852,7 @@
     "title": "莲花掌",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于地中海地区，叶面直径最大可超过50cm，属于大型莲花掌。枝干非常容易长高，并且木质化。对日照和水的需求并不是太大，常年为绿色。2年以上老株根系非常发达，浇水量可以适当增加。夏季温度过高时进入休眠状态，冬季可持续生长。繁殖方式主要是扦插。",
     "morphology": [],
@@ -6262,6 +7874,7 @@
     "title": "清盛锦",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生于大西洋加那利群岛，喜欢日照，颜色变化巨大，缺光时为绿色，光照时间过长及温差较大时会整株变为红色或橘红色。较喜水，生长季节要多给水。夏季温度过高会掉叶休眠，注意控制浇水，秋季来临时叶片会重新生长。繁殖方式叶插扦插都可，容易群生及木质化。",
     "morphology": [],
@@ -6283,6 +7896,7 @@
     "title": "日本小松",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "日常为绿色，日照时间增加及温差增大后整株颜色会变深绿，在一些气候独特的地区甚至会变为红色。夏季温度过高会休眠，休眠时类似包菜，全部叶片紧包在一起。生长期对水需求较大。叶片表面有点粘手，很容易粘住小飞虫，可在浇水时用喷壶将脏物喷掉。繁殖方式以扦插为主。",
     "morphology": [],
@@ -6304,6 +7918,7 @@
     "title": "红稚儿",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "非常抢眼的一种多肉植物。正常为绿色，日照时间增加及大温差会整株变为红色，并且能开出很长花茎的白色小花。较喜欢日照，对水分需求较多。夏季要注意适当遮阴，避免灼伤。繁殖方式以扦插为主，很容易成功。",
     "morphology": [],
@@ -6325,6 +7940,7 @@
     "title": "黄金花月",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于南非。属于‘玉树’的变种。喜欢温暖干燥、日照充足的环境，也耐半阴。日常为绿色，增加日照后，叶边会变红。夏季休眠，冬季生长。夏季注意遮阴以免晒伤，冬季要增加日照时间，叶边变为红色后非常漂亮。繁殖方式主要是扦插。",
     "morphology": [],
@@ -6346,6 +7962,7 @@
     "title": "绒针",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "较喜欢日照，日常为绿色，日照时间增加及温差增大后会慢慢变色。可全日照，喜欢干燥温暖的环境。对水分需求不多，过多水分容易滋生病害（白粉病）及涝死。夏季高温休眠，注意减少浇水，冬季可持续生长。非常容易群生，繁殖方式以扦插为主，也可叶插。",
     "morphology": [],
@@ -6367,6 +7984,7 @@
     "title": "神童",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "属于较大体型的青锁龙。对日照要求不高，可半阴养，长期缺光叶间距会拉高，容易滋生霉菌。开粉色花朵，开花十分壮观，想多开花要增加日照时间。冬季休眠，不抗冻，注意保暖。繁殖方式主要是扦插。剪下一条直接插入土中即可生根，较容易繁殖。",
     "morphology": [],
@@ -6388,6 +8006,7 @@
     "title": "十字星锦",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "属于‘冬种型’。较喜欢日照，喜欢干燥凉爽的气候，夏季高温完全休眠。对水分需求不大，过多水分会导致底部茎秆腐烂。也可半阴养殖，阴养环境下叶片间距会拉长，冰保持绿/白色。增加日照时间和温差会让叶片变得十分紧凑，并且整株颜色会变红。繁殖方式主要是扦插。",
     "morphology": [],
@@ -6409,6 +8028,7 @@
     "title": "筒叶花月",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于南非纳塔尔省。喜欢温暖干燥的环境，较喜欢日照。特别容易枝干化，多年老株呈‘树’状，群生后会长得非常大。老株对水分需求较多。大部分时间为绿色，增加日照时间及增大温差会使其转变为粉红色。繁殖方式主要是扦插，也可叶插，较容易繁殖。",
     "morphology": [],
@@ -6430,6 +8050,7 @@
     "title": "星王子",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "常被叫做‘钱串’，实际个头要比钱串大很多。属于‘冬型’多肉植物，即冬季生长，夏季高温休眠。缺光徒长时会非常难看，想保持株型紧凑要多晒。浇水一定要少量，夏季温度高时要注意断水。采取扦插方式繁殖，用剪刀剪下一小段，直接插入土中即可生根。",
     "morphology": [],
@@ -6451,6 +8072,7 @@
     "title": "紫牡丹",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "喜通风良好，日照充足的环境。通风不好特别容易滋生虫害（蚧壳虫）。缺少日照呈绿色，叶片往下翻，时间过长容易死亡。日照时间增加会转变为紫红色，叶片紧凑，对水分需求不大，夏季休眠，一定要严格控水。繁殖方式以分株为主，幼苗会从主体分枝出来，剪下扦插即可。",
     "morphology": [],
@@ -6472,6 +8094,7 @@
     "title": "熊童子白锦",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "‘熊童子’的变异品种，另还有‘熊童子黄锦’，区别在于锦斑位置，中斑为白锦。除夏季高温时短暂休眠外，其他时间一直生长。喜欢全日照，对水分需求不多。日照时间增多，温差增大，叶尖会变红，像抹上指甲油一样，十分可爱。繁殖方式主要是扦插，较难繁殖的品种。",
     "morphology": [],
@@ -6493,6 +8116,7 @@
     "title": "福娘",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于非洲西南部的纳米比亚。对日照需求不多，喜凉爽通风的环境。春秋生长季节对水分需求较多，夏季与冬季都有休眠，应减少浇水。过于缺光会使枝干和叶片细长难看，但不影响生长。日照时间增多叶尖会变红。繁殖方式主要是扦插。",
     "morphology": [],
@@ -6514,6 +8138,7 @@
     "title": "瓦松",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "中国大部分地区都有生长，广泛分布在深山向阳坡面，岩石隙间，老屋房顶瓦缝。可全日照，耐寒耐旱，对水分需求不多，开花后整株死亡，花朵里含种子。野外地区冬季温度过低也会枯死，来年春天依靠开花后结下的种子重新自播生长。繁殖方式主要是播种，生长迅速，极易群生。",
     "morphology": [],
@@ -6535,6 +8160,7 @@
     "title": "银星",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "喜欢温暖干燥的环境，对日照与水分的需求不多。夏季温度过高会进入休眠状态，注意避开烈日与大湿大水，水分过多会导致整株糜烂。春季会从叶片中心开花，开花后整株死亡，发现花苞要立即剪掉。繁殖方式主要是分株。",
     "morphology": [],
@@ -6554,10 +8180,11 @@
   {
     "id": 1765808267507,
     "title": "白花小松",
-    "enTitle": "",
+    "enTitle": "Sedum pachyphyllum 'Album'",
     "category": "景天科",
+    "genus": "景天属",
     "articles": [],
-    "introduction": "一种比较迷你的多肉植物，很适合与其他多肉植物混搭组合。常年为绿色，日照时间增多及温差巨大的情况下会整株变为粉红色。夏季会缓慢升长，所需水分较少。极易繁殖和群生，繁殖方式以扦插为主，亦可叶插。",
+    "introduction": "一种比较迷你的多肉植物，很适合与其他多肉植物混搭组合。常年为绿色，日照时间增多及温差巨大的情况下会整株变为粉红色。夏季会缓慢升长，所需水分较少。极易繁殖和群生，繁殖方式以扦插为主，亦可叶插。 核心特征：叶尖白边，小花白色。",
     "morphology": [],
     "carePoints": [],
     "careInfo": {
@@ -6577,6 +8204,7 @@
     "title": "魔南景天",
     "enTitle": "",
     "category": "景天科",
+    "genus": "",
     "articles": [],
     "introduction": "原生地位于亚热带地区。极容易群生的品种。喜欢日照，但夏季应注意做好防晒措施，叶片极容易晒伤。生长季节对水分需求较多，通风良好的情况下可经常浇水。几乎一年四季都可生长。冬季低温应注意保温，容易冻伤。繁殖方式以扦插为主，也可播种。",
     "morphology": [],
