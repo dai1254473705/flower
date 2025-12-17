@@ -645,6 +645,37 @@
   background-color: #43a047;
 }
 
+.toast {
+  position: fixed;
+  left: 50%;
+  top: 18px;
+  transform: translateX(-50%);
+  z-index: 2000;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  color: #fff;
+  background: rgba(33, 33, 33, 0.92);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  max-width: calc(100vw - 32px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.toast-success {
+  background: rgba(46, 125, 50, 0.92);
+}
+
+.toast-error {
+  background: rgba(198, 40, 40, 0.92);
+}
+
+.toast-info {
+  background: rgba(33, 33, 33, 0.92);
+}
+
 .wechat-button.small {
   position: absolute;
   right: 8px;

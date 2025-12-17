@@ -3476,34 +3476,6 @@
     }
   },
   {
-    "id": 177,
-    "title": "白雪姬",
-    "enTitle": "Echeveria Snow White",
-    "category": "景天科",
-    "articles": [],
-    "introduction": "景天科多肉植物，小型品种，株型紧凑，叶色鲜艳，观赏价值高",
-    "morphology": [
-      "株型小巧紧凑"
-    ],
-    "carePoints": [
-      "耐旱怕涝，浇水见干见湿",
-      "夏季需遮阴，避免强光直射",
-      "冬季温度不低于5°C",
-      "盆土需疏松透气，忌积水"
-    ],
-    "careInfo": {
-      "wateringFrequency": "每周1-2次",
-      "lightRequirement": "充足阳光（夏季遮阴）",
-      "suitableTemperature": "15-25°C",
-      "soilRequirement": "泥炭+珍珠岩+颗粒土=3:2:1"
-    },
-    "srcList": [],
-    "srcIcon": {
-      "local": "public/images/icon/景天科/白雪姬.jpg",
-      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR7sruApQWSvG8icW8OAHQ1l3tPEga94briaxWmqYohYia6MTklSmbS4UHg/0?from=appmsg"
-    }
-  },
-  {
     "id": 178,
     "title": "白霜",
     "enTitle": "Echeveria White Frost",

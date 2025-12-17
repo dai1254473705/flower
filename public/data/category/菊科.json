@@ -95,7 +95,7 @@
     "enTitle": "Senecio serpens",
     "category": "菊科",
     "articles": [],
-    "introduction": "菊科多肉植物，形态独特品种，观赏价值高，适合盆栽观赏",
+    "introduction": "原产于南非海角，几乎一致呈现蓝色，非常适合与其他多肉植物混植搭配。根系特别强大，生长也非常迅速，可以从一小棵群生成为一大丛。栽种时应选择较深的花盆，配上松软的泥炭土。夏季亦可持续生长，繁殖方式以扦插为主，也可叶插。几乎不用太多管理就能自己长出一大盆。",
     "morphology": [
       "形态独特",
       "叶片肥厚",
@@ -116,7 +116,7 @@
     "srcList": [],
     "srcIcon": {
       "local": "public/images/icon/菊科/蓝松.jpg",
-      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloR8d9cRC20ptKNOsmt3aInO73MBWHUZNVxJ5ENBFIFyLErw1DPU7OfJQ/0?from=appmsg"
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWp4VOIBzW325nseJZBGZU0a5vzRKL7yLib8deuo3LBa6iaGt3TLFfML82g/0?wx_fmt=jpeg"
     }
   },
   {
@@ -147,6 +147,48 @@
     "srcIcon": {
       "local": "public/images/icon/菊科/锦上珠.jpg",
       "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRIxib25O9DJicYaeU1ynOs7Hh2XkW9AEkibHnI4fDcO9aAbCFF3jOMC7Kw/0?from=appmsg"
+    }
+  },
+  {
+    "id": 1765808267525,
+    "title": "紫弦月",
+    "enTitle": "",
+    "category": "菊科",
+    "articles": [],
+    "introduction": "平时都会呈现绿色，随着日照时间的增加及温差变大，会逐渐变为紫色，所以被成为紫弦月。春秋季节会开出黄色花朵。繁殖方式主要是扦插，也可叶插。繁殖速度极快，生长期需要大量的水分。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/菊科/紫弦月.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWp0Ysme3OlqQfjj1htl9SRLM1l79SficHsT1zSUXLfVibiadRicqqnsrPENw/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267526,
+    "title": "珍珠吊兰",
+    "enTitle": "",
+    "category": "菊科",
+    "articles": [],
+    "introduction": "喜明亮光线，通风良好的环境，可全年生长。对日照需求不多，散光环境就能生长得非常好。初期种植对水分需求不多，当枝条增多，根系发达后对水分需求极大。夏季高温应减少浇水，容易涝死。繁殖方式以扦插为主，将枝条深埋土中即可生根。也可将枝条平铺再覆盖一层薄土。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/菊科/珍珠吊兰.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWp23UzkSD4Rtaqvz1Z4tyc6cdyaE4Xb6UOJvez7IGbbhgygFicxe4iatfA/0?wx_fmt=jpeg"
     }
   }
 ]

@@ -1,0 +1,233 @@
+[
+  {
+    "id": 1765808267514,
+    "title": "玉扇",
+    "enTitle": "",
+    "category": "百合科",
+    "articles": [],
+    "introduction": "原生地位于非洲南部。喜温暖干燥，日照充足的环境。耐干旱和半阴，忌潮湿、寒冷、高温和强光直射。根系十分庞大，喜欢透气的砂质土壤和较深的花器。夏季休眠，冬季生长，但一定要放在光线较好的位置。可经常喷雾增加周围空气湿度。繁殖方式主要是分株扦插。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/百合科/玉扇.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpqJTqNPXeaicjKF6THDhCQP1VyBb6Dk6x1nmkMFWjPCrY3FKl98PTVrQ/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267515,
+    "title": "白斑玉露",
+    "enTitle": "",
+    "category": "百合科",
+    "articles": [],
+    "introduction": "与其他玉露养护方法大致相同，喜欢凉爽，通风良好，半阴的环境。对日照需求不多，忌暴晒，日照过多叶片会呈灰色。也不能过于荫蔽，光线过少容易造成株型松散，叶片瘦长。对水分需求不多，可经常喷雾增加周围空气湿度，这样叶片看起来会非常饱满。繁殖方式以分株扦插为主。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/百合科/白斑玉露.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpMtyNQjevCGXCb3nyIiaU68ZjByDQ7yRnMhJNRLkibicDISoalov1qfU0w/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267516,
+    "title": "草玉露",
+    "enTitle": "",
+    "category": "百合科",
+    "articles": [],
+    "introduction": "个头较小，但特别能群生的玉露。喜欢明亮的光线，对直射阳光较敏感，日照过多会变为灰色，最好放在玻璃后接受日照。可半阴养殖，对水分需求不多，长时间积水容易糜烂，可经常喷雾保持空气中的湿度。喜欢松软的土质，繁殖方式主要是分株。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/百合科/草玉露.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWp81K59I6vWfoiaGZ6E9YDiaTuhmfLo0MlYLVHqUg9SOPhCQsZmXJUiaffw/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267517,
+    "title": "大型玉露",
+    "enTitle": "",
+    "category": "百合科",
+    "articles": [],
+    "introduction": "原生地位于南非，喜欢凉爽，通风良好，半阴的环境。对日照需求不大，切忌暴晒，日照过于强烈叶片会生长不良，呈灰褐色。但过于荫蔽会造成株型松散，叶片瘦长。对水分需求不大，可经常喷雾增加空气湿度。根系强大，可选用较深的花器。繁殖方式以分株扦插为主。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/百合科/大型玉露.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpKjUpqrOLcWo8PlSbHRLjczfeRnetal0QujDiadBN8Sl6UlIaKldxovA/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267518,
+    "title": "姬玉露",
+    "enTitle": "",
+    "category": "百合科",
+    "articles": [],
+    "introduction": "体型较小的玉露，生长比较缓慢，喜欢松软透气的土壤。对阳光需求不多，可半阴养，日照过多会变为灰色，不可直接暴晒，可隔着玻璃接受日照。每个叶片内全是水分，所以对水需求不多。切忌大湿大水，容易涝死。可经常喷雾增加空气湿度。容易群生，繁殖方式以分株为主。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/百合科/姬玉露.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpsSr6QYhuXgEKlSU8GH5Z3MZ1fe9eiaWibwmCIl75TV9KVkCW1icysQicGw/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267519,
+    "title": "琉璃殿",
+    "enTitle": "",
+    "category": "百合科",
+    "articles": [],
+    "introduction": "原生地位于南非德兰士瓦省。对日照需求不大，可半阴养，切忌暴晒。可放在玻璃后接受日照。日照时间增多会渐变为红色。小苗对水分需求不多，根系生长健壮的成株可多浇水。可经常喷雾增加空气湿度。夏季生长缓慢，不过几乎全年都可持续生长。繁殖方式主要是分株扦插。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/百合科/琉璃殿.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpDbKzFTPNgmWcfn1tcnia4uBZwNGF4H22psoo8gHRd3Eyx0O36RyV9hA/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267520,
+    "title": "三角琉璃莲",
+    "enTitle": "",
+    "category": "百合科",
+    "articles": [],
+    "introduction": "特别容易群生的品种，对日照需求很少。切忌放在烈日下暴晒，很容易晒伤，可放在玻璃后接受日照。日照时间增多可变为红色。可半阴养，散光环境下就能生长的非常好。根系非常强大，生长季节对水分需求较多，夏季高温休眠，繁殖方式主要是分株扦插。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/百合科/三角琉璃莲.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWp8Xice5Z5zFbvqGF4fDq8Sic2eFZflR3qZbDsrtzS4tvvYicR96AicoutgQ/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267521,
+    "title": "条纹十二卷",
+    "enTitle": "",
+    "category": "百合科",
+    "articles": [],
+    "introduction": "原生地位于非洲南部热带干旱地区。喜欢温暖干燥，阳光充足的环境。较耐干旱，对日照需求稍多，日照增多会从绿色渐变为红色。对水分需求不大，夏季与冬季都会短暂休眠，应注意减少浇水。非常容易群生，根系强大，可选用较深的花器栽培。繁殖方式主要是分株扦插。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/百合科/条纹十二卷.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWp4oLbZjzicAOKyMhHKYEjq1lc1victqbc2zvsdOwUD3ZmsicicC4GFpkBwQ/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267522,
+    "title": "子宝",
+    "enTitle": "",
+    "category": "百合科",
+    "articles": [],
+    "introduction": "喜欢通风良好，半阴的环境。忌暴晒，日照过多会变为灰色。对水分需求不多，但是喜欢空气湿润的环境，可经常喷水保持空气湿度。喜欢松软的沙质土壤。生长比较缓慢，但容易群生，较适合半阴环境的造景。叶片中间出现白色花纹为白色锦斑化。繁殖方式以分株扦插为主。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/百合科/子宝.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpB5GHnnib6t96PLk0eLHnlffwBC5aJ8Dtbxps0Q4icNs0pejrfy1ArWNQ/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267523,
+    "title": "不夜城芦荟",
+    "enTitle": "",
+    "category": "百合科",
+    "articles": [],
+    "introduction": "原生地位于南非的大卡卢高原和小卡卢高原。喜温暖、干燥、阳光柔和而充足的环境。耐半阴和干旱，忌暴晒、积水。喜欢空气湿润的环境，可适当喷雾增加空气湿度。过于荫蔽，植株会比较松散，叶片瘦长。根系十分强大，喜欢松软的沙质土壤和较深花器。繁殖方式主要是分株扦插。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/百合科/不夜城芦荟.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpR7pWvTqEfQrVVWYHfDoZNVaLyVbga6UlibkjZOmd7d6NicscmXn2h3tQ/0?wx_fmt=jpeg"
+    }
+  },
+  {
+    "id": 1765808267524,
+    "title": "卧牛",
+    "enTitle": "",
+    "category": "百合科",
+    "articles": [],
+    "introduction": "原生地位于南非开普省。外形看起来像牛舌，生长非常缓慢，可用于一些半阴环境的造景。喜欢温暖干燥、光线充足的地方，充足的光线会让叶片短而肥厚，叶色更加深绿。也可阴养，散光养殖也能生长得很好。对水分需求不多，耐旱耐寒。繁殖方式主要是分株扦插。",
+    "morphology": [],
+    "carePoints": [],
+    "careInfo": {
+      "wateringFrequency": "",
+      "lightRequirement": "",
+      "suitableTemperature": "",
+      "soilRequirement": ""
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/百合科/卧牛.jpg",
+      "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpic84LLM261tVc7cHZEOxKAibicdCWTTHzia36JfHAJWlMtTEGiaHuG6CKeA/0?wx_fmt=jpeg"
+    }
+  }
+]

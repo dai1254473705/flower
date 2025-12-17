@@ -15,6 +15,7 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   const [filterMode, setFilterMode] = useState(FILTER_MODES.ALL);
+  const [toast, setToast] = useState(null); // { message, type }
 
   // Modal 状态
   const [isUploadModalOpen, setIsUploadModalOpen] = useState(false);
@@ -33,6 +34,12 @@ function App() {
     setImages,
     selectedCategory
   );
+
+  const showToast = (message, type = 'info') => {
+    setToast({ message, type });
+    window.clearTimeout(showToast._t);
+    showToast._t = window.setTimeout(() => setToast(null), 2200);
+  };
 
   // 初始化选中分类
   useEffect(() => {
@@ -131,7 +138,7 @@ function App() {
         srcList: image.srcList || []
       };
       setImages((prev) => prev.map((i) => (i.id === image.id ? updatedItem : i)));
-      alert('上传微信成功');
+      showToast('上传微信成功', 'success');
     } catch (err) {
       console.error(err);
       alert(err.message || '上传微信失败');
@@ -165,7 +172,7 @@ function App() {
           })
         );
       }
-      alert('上传微信成功');
+      showToast('上传微信成功', 'success');
     } catch (err) {
       console.error(err);
       alert(err.message || '上传微信失败');
@@ -227,6 +234,11 @@ function App() {
 
   return (
     <div className="app">
+      {toast && (
+        <div className={`toast toast-${toast.type}`} role="status" aria-live="polite">
+          {toast.message}
+        </div>
+      )}
       <Header
         searchTerm={searchTerm}
         onSearchChange={setSearchTerm}
