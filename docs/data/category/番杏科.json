@@ -23,7 +23,28 @@
       "suitableTemperature": "18-28°C",
       "soilRequirement": "颗粒土为主（赤玉土+鹿沼土+河沙=4:3:2）"
     },
-    "srcList": [],
+    "srcList": [
+      {
+        "local": "public/images/detail/番杏科/五十铃玉detail1766118301758.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSYEbibH9mOuyXgOdm8BVvInEYoYtJkyRePLNsCkIibfhpMIHWn9114AhX8VaOjoptECLRbOyVzC1iaA/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/五十铃玉detail1766118301769.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSYEbibH9mOuyXgOdm8BVvInBpB7mBcFdeVVOa0DHMakF5TicEIVsm4ia0CtQvgKuvKCeevYN7FITy1Q/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/五十铃玉detail1766118301778.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSYEbibH9mOuyXgOdm8BVvInbMvk8JyaEudiauCuQdMjlXIuocZg4IXQCaIWJsw3DAVD72q9voWicCoQ/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/五十铃玉detail1766118301784.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSYEbibH9mOuyXgOdm8BVvInZ5Ylv9ZE434XOVEAJ0weJe018oicv8yum6u6jR6lfJUTZHCn5gIRyNQ/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/五十铃玉detail1766118301787.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSYEbibH9mOuyXgOdm8BVvInt6P7y80teJ7zznllXzGOFsbA96GUuubZ0NcvSxN1vXLFz7fEAIzI1Q/0?wx_fmt=jpeg"
+      }
+    ],
     "srcIcon": {
       "local": "public/images/icon/番杏科/五十铃玉.jpg",
       "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpEcUYhPRjJ0t121fViau24mZRsMs5ehamU51AXeTTUf5bRNticON7x2Wg/0?wx_fmt=jpeg"
