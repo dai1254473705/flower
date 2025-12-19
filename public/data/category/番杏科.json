@@ -74,7 +74,24 @@
       "suitableTemperature": "18-28°C",
       "soilRequirement": "颗粒土为主（赤玉土+鹿沼土+河沙=5:3:2）"
     },
-    "srcList": [],
+    "srcList": [
+      {
+        "local": "public/images/detail/番杏科/口笛detail1766119868700.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSYEbibH9mOuyXgOdm8BVvInVce0yeCOTlR3yxy6A7DttUEor7bjc76cepJTFFSJ3uZNfrjz5VYhVg/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/口笛detail1766119868717.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSYEbibH9mOuyXgOdm8BVvIn56oH4BuCeoSdB3BkNRPVgIa2Xxa02wkr5dbIvkv9YT9BWic9AG1HwJw/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/口笛detail1766119868722.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSYEbibH9mOuyXgOdm8BVvInW0ZMjMcFwWxJD2NPMYoal6cSVcRzHJCSw1gOxkVGzAWoHK13jPPoFw/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/口笛detail1766119868732.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSYEbibH9mOuyXgOdm8BVvInF2n2IOJ4WnHhUlVia6wtiaGvggVbg3YT2uLPKyXpamTibmtdkEkZRHdSA/0?wx_fmt=jpeg"
+      }
+    ],
     "srcIcon": {
       "local": "public/images/icon/番杏科/口笛.jpg",
       "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRv77h5cJfgncoqXDYibwtU84RUuxtRQkcUNave04w3NsibUOZyLpticWkA/0?from=appmsg"
@@ -304,15 +321,58 @@
   {
     "id": 1765808267487,
     "title": "蜜橘糖球",
-    "enTitle": "",
+    "enTitle": "Mesembryanthemum cordifolium ‘Orange Ball’",
     "category": "番杏科",
-    "genus": "",
+    "genus": "银杯玉属",
     "articles": [],
-    "introduction": "",
-    "morphology": [],
-    "carePoints": [],
-    "careInfo": {},
-    "srcList": [],
+    "introduction": "蜜橘糖球是番杏科银杯玉属的多肉植物，也有观点认为属于枝干番杏属，又名“可爱多”。原产于南非地区，因叶片圆润饱满，颜色如蜜橘般鲜艳而得名，是近年来多肉植物市场中的新秀。",
+    "morphology": [
+      "叶片肉质饱满、晶莹剔透，形状圆润似糖球，表面有透明颗粒，还覆盖着一层糖霜般的白粉",
+      "叶片颜色会随光照和季节变化，通常为黄绿至橙红色，在充足阳光下，会透出从橙黄至玫红的渐变光泽",
+      "植株小巧玲珑，状态良好时株型紧凑，叶片紧密排列成串，整体呈莲座状"
+    ],
+    "carePoints": [
+      "喜温暖、光照充足的环境，夏季超过30℃应加强通风并适当遮阳，冬季5℃以下注意保暖",
+      "耐旱性强，浇水遵循“干透浇透”原则，避免积水导致烂根，干燥环境中可适当向周围喷雾增加湿度，但不要直接喷在叶片上",
+      "适合用疏松透气、透水性好的土壤，如将营养土、蛭石、珍珠岩按4:6:1比例混合",
+      "春秋季生长期，可每隔一个月施一次稀释腐熟的饼肥水或多肉专用肥，休眠期停止施肥"
+    ],
+    "careInfo": {
+      "wateringFrequency": "遵循“干透浇透”原则，春秋季一般7-10天浇一次水，夏季可15-20天浇一次，冬季每月浇一次水左右，具体需根据实际情况调整",
+      "lightRequirement": "除夏季高温时段需适当遮荫外，其他时候给予充足光照，每日光照时长可保持在5-7小时左右",
+      "suitableTemperature": "适宜生长温度在15-25℃，夏季高于35℃生长受影响，冬季低于5℃需做好保暖措施",
+      "soilRequirement": "可用泥炭土、珍珠岩和粗沙混合，比例可参考3:2:1，也可将营养土、蛭石、珍珠岩按4:6:1比例混合，保证土壤疏松透气"
+    },
+    "srcList": [
+      {
+        "local": "public/images/detail/番杏科/蜜橘糖球detail1766120907837.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSYEbibH9mOuyXgOdm8BVvInW8TvOalPYclurmDkHdLsXpRLC4JsYnjBSVsoxaItXccickAY0Gxy2sw/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/蜜橘糖球detail1766120907848.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSYEbibH9mOuyXgOdm8BVvIn7ScQNqZ3ThR1L08aslj6icEsBV84jSFWibwGG61d2U6ETiaLggBnJLfhw/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/蜜橘糖球detail1766120907855.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSYEbibH9mOuyXgOdm8BVvInghF4dxT0EzAM9GWjwQvIiaBZF203YiavorTrQ0lGKvwpQqjjKPngwOYA/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/蜜橘糖球detail1766120907863.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSYEbibH9mOuyXgOdm8BVvInD5tNAUic7Sp9d4cY5eJeNMPzga6Ria5OKxAZvL4Q1icibbmibQRwwvr4Xzg/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/蜜橘糖球detail1766120907868.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSYEbibH9mOuyXgOdm8BVvInPUIJjL5x3FAta24pmLfheic5Bh20WOFUF3y22D5jhIibQV0oX5mxTeVQ/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/蜜橘糖球detail1766120907873.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSYEbibH9mOuyXgOdm8BVvInvsArXOUtjlegeG1gpo4RN8F2BJ6EiaAhcw60njGpFKemswwmnE9zG8A/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/蜜橘糖球detail1766120907879.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSYEbibH9mOuyXgOdm8BVvIn5iaBXmcsNRbyvgdMJ3Zjaoib1hn93zGqXfA59kLl1wZ4BLGIPsz4icj6w/0?wx_fmt=jpeg"
+      }
+    ],
     "srcIcon": {
       "local": "public/images/icon/番杏科/蜜橘糖球icon1765808267478.jpg",
       "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svS4RMCPp1NbibXRn0YniaR9fJczMkansbU3gBVIGFQHnHcRKb14VopFo9W1QYUbpXkDl57roqPUIr7g/0?wx_fmt=jpeg"
