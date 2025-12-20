@@ -1,31 +1,47 @@
 [
   {
     "id": 109,
-    "title": "星球",
+    "title": "星兜",
     "enTitle": "Astrophytum asterias",
     "category": "仙人掌科",
     "genus": "",
     "articles": [],
-    "introduction": "仙人掌科多肉植物，星球属品种，球体规整，是仙人掌科中的精品",
+    "introduction": "星兜是仙人掌科星球属的多肉植物，原产于美国南部、墨西哥北部等地。因其球体圆润，表面有清晰的棱和银白色绒毛，形似迷你星球而得名，是一种常见且受欢迎的仙人球品种。",
     "morphology": [
-      "球体或柱状",
-      "具刺座",
-      "耐旱性强",
-      "生长缓慢"
+      "球体呈扁球形，直径一般在5-8厘米，成熟植株可达10厘米左右，表面有8条左右明显的棱，棱上长有细密的白色绒毛",
+      "叶片退化，无刺，整体呈绿色或蓝绿色，在阳光下有迷人光泽",
+      "花期通常在春季至夏季，花朵从球体顶部生出，呈漏斗状，直径约3-4厘米，花色多为黄色，花心红色，形似小雏菊"
     ],
     "carePoints": [
-      "极耐旱，浇水要少",
-      "喜充足阳光",
-      "夏季适当遮阴",
-      "冬季控水保暖"
+      "喜阳光充足的环境，每天至少需6小时光照，光照不足易徒长，但夏季高温时需适当遮荫，避免暴晒",
+      "耐旱性强，浇水遵循“干透浇透”原则，夏季10天左右浇一次水，冬季20天左右浇一次水",
+      "适宜生长在疏松透气、排水良好的土壤中，可用腐叶土、粗沙、珍珠岩按2:2:1的比例混合配制",
+      "生长适温为15-25℃，冬季应保持在5℃以上，低于此温度需注意保暖，避免冻伤"
     ],
     "careInfo": {
-      "wateringFrequency": "每2周1次",
-      "lightRequirement": "充足阳光",
-      "suitableTemperature": "20-30°C",
-      "soilRequirement": "沙质土壤，排水性极好"
+      "wateringFrequency": "夏季约10天浇一次水，冬季约20天浇一次水，春秋季可根据土壤干湿情况，7-12天浇一次水",
+      "lightRequirement": "除夏季高温需适当遮荫外，其他季节应给予充足光照，每日光照时长不少于6小时",
+      "suitableTemperature": "适宜生长温度为15-25℃，冬季最低温度不低于5℃",
+      "soilRequirement": "用腐叶土、粗沙、珍珠岩按2:2:1混合，也可添加少量骨粉等作为基肥，保证土壤疏松透气、排水良好且有一定肥力"
     },
-    "srcList": [],
+    "srcList": [
+      {
+        "local": "public/images/detail/仙人掌科/星兜detail1766213062371.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svRbibKPiaumXibQb2rOiciaJicLiasib0z34xgDKX0jS6IM87xLU1jgNWicxeYpicwb9jE5NwdDCc6m8o9mJR8Q/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/仙人掌科/星兜detail1766213062388.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svRbibKPiaumXibQb2rOiciaJicLiasQrHAkOlolvJHkDMNwBMN4lAogNjfibKQW5pgQZhsI15EMkQqvqxg6tw/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/仙人掌科/星兜detail1766213062394.png",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_png/venVgYic7svRbibKPiaumXibQb2rOiciaJicLiasPlNkSu3JJhfVWFfSgMBUKjNicQFau3Bs1F7ybwWBohXX9cBGgk5icpKQ/0?wx_fmt=png"
+      },
+      {
+        "local": "public/images/detail/仙人掌科/星兜detail1766213062405.png",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_png/venVgYic7svRbibKPiaumXibQb2rOiciaJicLias51HTW2KVk6AiaVt19HvGwCXxBGVSKeibL60UPQQ4v4rHEWvr8zuRCysg/0?wx_fmt=png"
+      }
+    ],
     "srcIcon": {
       "local": "public/images/icon/仙人掌科/星球.jpg",
       "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRDSAXz1zmYXiarmFCXER96D8AHVwWN4H9Tztiaib6ict6YEwO7en0dTx7kQ/0?from=appmsg"
