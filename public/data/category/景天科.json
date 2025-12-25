@@ -7872,20 +7872,50 @@
   {
     "id": 1765808267493,
     "title": "清盛锦",
-    "enTitle": "",
+    "enTitle": "Aeonium decorum f.variegata",
     "category": "景天科",
     "genus": "",
     "articles": [],
-    "introduction": "原生于大西洋加那利群岛，喜欢日照，颜色变化巨大，缺光时为绿色，光照时间过长及温差较大时会整株变为红色或橘红色。较喜水，生长季节要多给水。夏季温度过高会掉叶休眠，注意控制浇水，秋季来临时叶片会重新生长。繁殖方式叶插扦插都可，容易群生及木质化。",
-    "morphology": [],
-    "carePoints": [],
+    "introduction": "清盛锦，又名艳日辉，为景天科莲花掌属的多肉植物 ，是莲花掌的变种。它色彩绚丽，在不同光照环境下呈现出不同色彩，极具观赏价值，常被用于室内外盆栽观赏。",
+    "morphology": [
+      "植株呈多分枝的灌木状，茎部粗壮，会随着生长逐渐木质化",
+      "叶片倒卵形，边缘有锯齿，叶长约5 - 7厘米，宽2 - 4厘米，肉质较薄",
+      "在阳光充足且温差较大的环境中，叶片会呈现出黄、绿、红等多种色彩交织的斑斓状态；光照不足时，叶片多为绿色"
+    ],
+    "carePoints": [
+      "喜温暖、干燥和阳光充足的环境，耐干旱，不耐寒",
+      "夏季高温时会进入休眠期，此时要控制浇水并加强通风，避免烈日暴晒",
+      "春秋季是生长旺季，可充分浇水，但需避免积水，防止根部腐烂",
+      "冬季温度需保持在5°C以上，温度过低会导致植株冻伤"
+    ],
     "careInfo": {
-      "wateringFrequency": "",
-      "lightRequirement": "",
-      "suitableTemperature": "",
-      "soilRequirement": ""
+      "wateringFrequency": "春秋生长季，每周浇水1 - 2次；夏季休眠期，每月浇水1 - 2次；冬季每月浇水1次",
+      "lightRequirement": "每日保证5 - 7小时光照，夏季高温时需遮阴50% - 70%，避免强光直射；冬季可给予全日照",
+      "suitableTemperature": "15 - 25°C（生长季），冬季不低于5°C",
+      "soilRequirement": "可用泥炭土、蛭石、珍珠岩按照1:1:1的比例混合配制，确保土壤疏松透气、排水良好"
     },
-    "srcList": [],
+    "srcList": [
+      {
+        "local": "public/images/detail/景天科/清盛锦detail1766638661761.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svR7VXB4CdfX8yiaDLzCFYdjtT3FLvx2iaLszANcPBTFHr20JNZjYxibaUhEkVUeODwm7tRBOEdobNib1g/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/清盛锦detail1766638661767.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svR7VXB4CdfX8yiaDLzCFYdjttMyPdbJsrRKwCG7ZPMxMomwHjQ9u1xSYWoLUaY96qLbhm4iaasZGPVw/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/清盛锦detail1766638661770.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svR7VXB4CdfX8yiaDLzCFYdjtgRq5TKf0hqE0iclyzTVE0ricX7Bfr5r6DMBibMCYLibGibCZQshg3sAJgJg/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/清盛锦detail1766638661773.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svR7VXB4CdfX8yiaDLzCFYdjtYtm1ZnnHLUfLeMzVPgygud9fibE4qQokRWn6LCCmLgMHBcX6aCZcdkw/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/清盛锦detail1766638661777.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svR7VXB4CdfX8yiaDLzCFYdjtB4VibG9at8iaOawQDuWAGlUjMuia0HMMKoh0pfzeIJw3yiaCAdDbEGd5MA/0?wx_fmt=jpeg"
+      }
+    ],
     "srcIcon": {
       "local": "public/images/icon/景天科/清盛锦.jpg",
       "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWpyPbyAZ1VuyzPQsS07HGwXQpicE9Jo1zWpgROKTANaO4S2vr10m2h2icQ/0?wx_fmt=jpeg"
