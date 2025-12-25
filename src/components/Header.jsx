@@ -39,6 +39,7 @@ export const Header = ({
           value={selectedCategory}
           onChange={(e) => onCategoryChange(e.target.value)}
         >
+          <option value="all">全部</option>
           {categories.map((category, index) => (
             <option key={index} value={category}>{category}</option>
           ))}

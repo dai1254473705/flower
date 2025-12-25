@@ -3,7 +3,8 @@ import { API_BASE, IMAGE_TYPES } from '../config';
 export const useImageOperations = (images, setImages, selectedCategory) => {
   // 单条更新/插入
   const upsertImage = async (item, prevCategory = null) => {
-    const cat = item.category || selectedCategory || '未分类';
+    let cat = item.category || selectedCategory || '未分类';
+    if (cat === 'all') cat = '未分类'; // 防止 'all' 作为分类名
     const catName = cat === '__uncategorized__' ? '未分类' : cat;
     try {
       const res = await fetch(`${API_BASE}/data/${encodeURIComponent(catName)}/item`, {
@@ -13,8 +14,8 @@ export const useImageOperations = (images, setImages, selectedCategory) => {
       });
       if (!res.ok) throw new Error('Upsert failed');
       const data = await res.json();
-      // 如果分类变了，从当前列表移除
-      if (prevCategory && prevCategory !== cat) {
+      // 如果分类变了，从当前列表移除 (除非当前是在查看全部)
+      if (selectedCategory !== 'all' && prevCategory && prevCategory !== cat) {
         setImages(prev => prev.filter(i => i.id !== item.id));
       } else {
         setImages(prev => {

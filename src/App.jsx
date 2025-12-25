@@ -28,7 +28,7 @@ function App() {
   // Hooks
   const debouncedSearchTerm = useDebounce(searchTerm);
   const { categories } = useCategories();
-  const { images, setImages } = useImages(selectedCategory);
+  const { images, setImages } = useImages(selectedCategory, categories);
   const { upsertImage, deleteImage, uploadImage, uploadToWeChat } = useImageOperations(
     images,
     setImages,
@@ -44,7 +44,7 @@ function App() {
   // 初始化选中分类
   useEffect(() => {
     if (categories.length > 0 && !selectedCategory) {
-      setSelectedCategory(categories[0]);
+      setSelectedCategory('all');
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [categories]);
@@ -63,7 +63,9 @@ function App() {
   const openUploadModal = () => {
     setUploadName('');
     setUploadFile(null);
-    setUploadCategory(selectedCategory || categories[0]);
+    // 如果选中的是 'all'，则默认上传到第一个分类
+    const defaultCat = (selectedCategory && selectedCategory !== 'all') ? selectedCategory : categories[0];
+    setUploadCategory(defaultCat);
     setIsUploadModalOpen(true);
   };
 
@@ -162,7 +164,9 @@ function App() {
         return next;
       });
       const cat = image.category || '未分类';
-      if (cat === (selectedCategory === '__uncategorized__' ? '未分类' : selectedCategory)) {
+      const isCurrentCategory = (selectedCategory === '__uncategorized__' ? '未分类' : selectedCategory);
+      
+      if (selectedCategory === 'all' || cat === isCurrentCategory) {
         setImages((prev) =>
           prev.map((img) => {
             if (img.id !== image.id) return img;

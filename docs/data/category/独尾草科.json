@@ -672,5 +672,34 @@
       "local": "public/images/icon/独尾草科/青鸟寿逆斑.jpg",
       "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRhytJLR8t71SNl90Rgls7qCbQ4sFQK20gvqh8Cv7uWE0475HvfTwhKw/0?from=appmsg"
     }
+  },
+  {
+    "id": 245,
+    "title": "菊纹玉扇",
+    "enTitle": "Haworthia truncata 'Kikukaishi'",
+    "category": "独尾草科",
+    "genus": "十二卷属",
+    "articles": [],
+    "introduction": "玉扇变种，叶窗纹路似菊花。",
+    "morphology": [
+      "形态优美",
+      "观赏价值高"
+    ],
+    "carePoints": [
+      "喜充足阳光",
+      "耐旱，浇水见干见湿",
+      "盆土需疏松透气"
+    ],
+    "careInfo": {
+      "wateringFrequency": "每周1-2次",
+      "lightRequirement": "充足阳光（夏季遮阴）",
+      "suitableTemperature": "15-25°C",
+      "soilRequirement": "疏松透气的多肉专用土"
+    },
+    "srcList": [],
+    "srcIcon": {
+      "local": "public/images/icon/百合科/菊化石.jpg",
+      "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRuyEvxKWosgXIB2EibEeXzERxm3ib1K91k6Vm0SZQkDrkCcYFok4O9qEg/0?from=appmsg"
+    }
   }
 ]
