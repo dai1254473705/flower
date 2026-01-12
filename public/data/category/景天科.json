@@ -3056,7 +3056,7 @@
   },
   {
     "id": 125,
-    "title": "桃之卵",
+    "title": "桃蛋",
     "enTitle": "Graptopetalum amethystinum",
     "category": "景天科",
     "genus": "",
@@ -3078,7 +3078,32 @@
       "suitableTemperature": "15-25°C",
       "soilRequirement": "疏松透气的多肉专用土"
     },
-    "srcList": [],
+    "srcList": [
+      {
+        "local": "public/images/detail/景天科/桃蛋detail1768193927994.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSPMdEAKs4aokdYt9weW0gfiaxeicOiauEmsQmSgsCTayJApAiaXk1xPHOd4KsXdoMKEYvK3rtzxL6csA/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/桃蛋detail1768193928002.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSPMdEAKs4aokdYt9weW0gfgDviaWUl1FonQm75PnsUCRWoYxiaT3CpugsmG4JaZLcTib1okhibly436g/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/桃蛋detail1768193928007.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSPMdEAKs4aokdYt9weW0gfqibx4TrkzBkozYKOnJamRZc79UG2Thz2N0vxodAwX1ZxbyibYDXewMcA/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/桃蛋detail1768193928011.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSPMdEAKs4aokdYt9weW0gf9GH368XR674MmE0zbPF6dibCic754u30Kiav8kCGH41Lp5TmNvMuL8LpQ/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/桃蛋detail1768193928015.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSPMdEAKs4aokdYt9weW0gfW7C22PK5tLlOtwqHIFA9ib81hfFXa3DMTMd6BBbbrX8BbP4T79ls3lg/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/桃蛋detail1768193928018.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSPMdEAKs4aokdYt9weW0gfOOSs5Ljz01x9Rne8fkibXMajjvztNURLvYcwT23J91ib2CuuVgEib3icEw/0?wx_fmt=jpeg"
+      }
+    ],
     "srcIcon": {
       "local": "public/images/icon/景天科/桃之卵.jpg",
       "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRuptNy6liawia1dCQ8ic92UanjEbyrwvTzplPQpa0V24kRGLiaCcDFV0ic7A/0?from=appmsg"
@@ -7875,7 +7900,12 @@
     "enTitle": "Aeonium decorum f.variegata",
     "category": "景天科",
     "genus": "",
-    "articles": [],
+    "articles": [
+      {
+        "title": "多肉界的“移动调色盘”清盛锦（艳日辉）凭斑斓颜值封神，老桩像小树，新手也能养出彩虹色！",
+        "url": "https://mp.weixin.qq.com/s/Xjlo_9JSFIo9bcoRuv-NFw"
+      }
+    ],
     "introduction": "清盛锦，又名艳日辉，为景天科莲花掌属的多肉植物 ，是莲花掌的变种。它色彩绚丽，在不同光照环境下呈现出不同色彩，极具观赏价值，常被用于室内外盆栽观赏。",
     "morphology": [
       "植株呈多分枝的灌木状，茎部粗壮，会随着生长逐渐木质化",
