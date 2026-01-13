@@ -6360,7 +6360,32 @@
       "suitableTemperature": "15-25°C",
       "soilRequirement": "疏松透气的多肉专用土"
     },
-    "srcList": [],
+    "srcList": [
+      {
+        "local": "public/images/detail/景天科/虹之玉detail1768277498734.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svRXV5AvgBJyWT2OlPDhp4qVJmOVFdubguh0RKgpYjxEiaM50WCibEia2IibRuf2SeuYmZAJsja7E4xfaA/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/虹之玉detail1768277498746.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svRXV5AvgBJyWT2OlPDhp4qVygZhQVLOqTkLBcNwJjNJH2lYY1fZUP7xcyZGWgC4H8z32FAaclhPXg/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/虹之玉detail1768277498749.jpg",
+        "remote": ""
+      },
+      {
+        "local": "public/images/detail/景天科/虹之玉detail1768277498753.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svRXV5AvgBJyWT2OlPDhp4qVTnQSJGC2lOKQIUO14WLtADzKlbvpDickghKb0lYL7O3GIv6HWmykoyQ/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/虹之玉detail1768277498758.jpg",
+        "remote": ""
+      },
+      {
+        "local": "public/images/detail/景天科/虹之玉detail1768277498766.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svRXV5AvgBJyWT2OlPDhp4qV9jFXTRxibqfBp6bSUJePcanGM8bgWJmYeM1UjfgPw45Az06AOp3hMpg/0?wx_fmt=jpeg"
+      }
+    ],
     "srcIcon": {
       "local": "public/images/icon/景天科/虹之玉.jpg",
       "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWprSduENIC0sBu05NavoIcIlTzEIZ6rwIIJrS6mVdmzM6RIc4Y6iat5FQ/0?wx_fmt=jpeg"
