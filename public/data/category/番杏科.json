@@ -239,26 +239,46 @@
     "category": "番杏科",
     "genus": "",
     "articles": [],
-    "introduction": "番杏科多肉植物，形态独特，观赏价值高，是多肉植物中的特色品种",
+    "introduction": "碧光环是番杏科碧光环属的多年生肉质草本植物，原产于南非。它具枝干，易群生，叶片表面有半透明颗粒感，因生长初期叶片形似兔耳而深受喜爱。2017年，其因可爱外形和耐旱特性在日本Twitter上备受欢迎。",
     "morphology": [
-      "形态独特",
-      "叶片肥厚",
-      "耐旱性强",
-      "观赏价值高"
+      "根较粗壮，植株易群生",
+      "叶片为圆柱形，生长初期像兔耳，随着植株生长会逐渐变长变粗，缺水时叶片易耷拉下来",
+      "叶表面有半透明颗粒感，在光照下显得晶莹剔透"
     ],
     "carePoints": [
-      "耐旱性强，浇水要少",
-      "喜充足阳光",
-      "夏季适当遮阴",
-      "盆土需疏松透气"
+      "喜温暖和充足散射光，耐寒，忌强光暴晒",
+      "生长适温为15 - 25摄氏度，夏季超过30度会进入休眠，叶片慢慢枯萎，此时应减少浇水；冬季低于5度生长缓慢，需注意保暖",
+      "浇水遵循“见干见湿”原则，休眠期要严格控水",
+      "宜种植在疏松透气、排水良好的土壤中，可用泥炭土、蛭石、珍珠岩等混合配制"
     ],
     "careInfo": {
-      "wateringFrequency": "每10-15天1次",
-      "lightRequirement": "充足阳光",
-      "suitableTemperature": "18-28°C",
-      "soilRequirement": "颗粒土为主"
+      "wateringFrequency": "生长季可每周浇水1 - 2次，夏季休眠期每2 - 3周浇一次水，冬季每月浇一次水或更少",
+      "lightRequirement": "每日需提供4 - 6小时散射光，夏季需遮阴，避免强光直射，冬季可适当增加光照",
+      "suitableTemperature": "15 - 25℃为生长适宜温度，夏季不超过30℃，冬季不低于5℃",
+      "soilRequirement": "用泥炭土、蛭石、珍珠岩按3:2:1的比例混合，可添加少量有机肥，保证土壤疏松透气、排水良好"
     },
-    "srcList": [],
+    "srcList": [
+      {
+        "local": "public/images/detail/番杏科/碧光环detail1768279173249.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svRXV5AvgBJyWT2OlPDhp4qV2mib0sSb7sV7gBk9PSu2ZD5PoJVO4vWuEkHra0ePbPxWOibk5INVCzJA/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/碧光环detail1768279173258.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svRXV5AvgBJyWT2OlPDhp4qVDjUGCVYBAiaxEmmawgBIgoNLazlAAY6v1JW8lGTQ19ibo4fI8pdVekWA/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/碧光环detail1768279173263.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svRXV5AvgBJyWT2OlPDhp4qVItIKLXbERk9SlrlaU3sbMX8qIy2Jo2aBdSmEqHYqsiaicjvpAzKdm77g/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/碧光环detail1768279173267.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svRXV5AvgBJyWT2OlPDhp4qVVToOYdvzLyfVQCSSgMbME4ZUbg6CcmlAXkexQa75bhwZhnFbKd0bibQ/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/番杏科/碧光环detail1768279173271.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svRXV5AvgBJyWT2OlPDhp4qVFbFIS4keSQ6eWr0OezpVzotFEiborzuAticsCP2lTR2SiaUvnYa5DicCpw/0?wx_fmt=jpeg"
+      }
+    ],
     "srcIcon": {
       "local": "public/images/icon/番杏科/碧光环.jpg",
       "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRehg7kY4m4XaGGagYzrJesOWSrlgbyHVKowQuRx6APu5vAJ9zKxRnrg/0?from=appmsg"
