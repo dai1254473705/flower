@@ -2319,24 +2319,46 @@
     "category": "景天科",
     "genus": "",
     "articles": [],
-    "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
+    "introduction": "山地玫瑰是景天科山地玫瑰属多肉植物的统称，原产于加那利群岛等地。因其休眠期株型酷似玫瑰，极具观赏价值，深受多肉爱好者喜爱。",
     "morphology": [
-      "叶片肥厚多汁",
-      "株型紧凑美观"
+      "植株呈莲座状，叶片肉质，不同品种叶片形状、颜色有所差异，有绿色、蓝绿色、粉色等",
+      "在生长季，叶片展开，呈倒卵形或匙形；进入休眠期，叶片紧紧包裹，形似玫瑰",
+      "植株大小因品种而异，小型品种莲座直径2 - 4厘米，大型品种可达30厘米左右"
     ],
     "carePoints": [
-      "耐旱怕涝，浇水见干见湿",
-      "喜充足阳光，夏季适当遮阴",
-      "冬季温度不低于0°C",
-      "盆土需疏松透气，忌积水"
+      "喜凉爽、干燥、阳光充足的环境，耐干旱，怕积水",
+      "夏季高温时进入休眠状态，需遮阴、控水并加强通风；冬季温度需保持在5°C以上",
+      "生长季浇水遵循“见干见湿”原则，避免长期淋雨",
+      "给予充足光照，但夏季烈日需适当遮荫，防止叶片晒伤"
     ],
     "careInfo": {
-      "wateringFrequency": "每周1-2次",
-      "lightRequirement": "充足阳光（夏季遮阴）",
-      "suitableTemperature": "15-25°C",
-      "soilRequirement": "泥炭+珍珠岩+颗粒土=3:2:1"
+      "wateringFrequency": "春秋生长季，7 - 10天浇一次水；夏季休眠期，每月浇1 - 2次水；冬季视温度情况，10 - 15天浇一次水",
+      "lightRequirement": "每日保证5 - 7小时光照，夏季高温时遮荫50% - 70%，其他季节可充足光照",
+      "suitableTemperature": "10 - 25°C（生长季），冬季不低于5°C",
+      "soilRequirement": "用泥炭土、颗粒土按照1:2的比例混合，保证土壤疏松透气、排水良好"
     },
-    "srcList": [],
+    "srcList": [
+      {
+        "local": "public/images/detail/景天科/山地玫瑰detail1768450620174.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svR4DpA4JEJ71H3pEdnlmcxiaR7LOke5oxrgCRZJZ71yjhILNNdTVCaPUMNic9hiarwP6os48A7tvx0aw/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/山地玫瑰detail1768450620184.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svR4DpA4JEJ71H3pEdnlmcxia0cBIDNBHOTQqRyXy7HcrlleUmfsJUHdz2yjTQeqdyFlF1N9OojjSicQ/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/山地玫瑰detail1768450620190.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svR4DpA4JEJ71H3pEdnlmcxias8ae1ckPyMaBR0CHia2qbXfyicEibYkt6uWx6k6bw4Ikg8v5TbKyUZkAw/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/山地玫瑰detail1768450620197.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svR4DpA4JEJ71H3pEdnlmcxiaoEZPibcu2iaT9KeNVaLgXQbjStTwRTjiaUVoLx6M0bibFpdibiaPthEaB3kw/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/山地玫瑰detail1768450620200.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svR4DpA4JEJ71H3pEdnlmcxiakRbkdXWFkxGGqcEyfDdY8CIzh3cO4Eyx79zicZULshVfh0MSluw90fw/0?wx_fmt=jpeg"
+      }
+    ],
     "srcIcon": {
       "local": "public/images/icon/景天科/山地玫瑰.jpg",
       "remote": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svSmSgiaN806tNPsiaThgqWloRiaQTQwwAZmicAMH6Hnr0icjLujNAF0jku6JSwAwdSvickbyHTpcQhIcMdA/0?from=appmsg"
@@ -3060,7 +3082,12 @@
     "enTitle": "Graptopetalum amethystinum",
     "category": "景天科",
     "genus": "",
-    "articles": [],
+    "articles": [
+      {
+        "title": "多肉界的“软萌天花板”——桃蛋养护全攻略，轻松养出粉嫩果冻感",
+        "url": "https://mp.weixin.qq.com/s/34_k1L0dd-_8Oa838uPbdw"
+      }
+    ],
     "introduction": "景天科多肉植物，中型品种，株型紧凑，叶色鲜艳，观赏价值高",
     "morphology": [
       "叶片肥厚多汁",
@@ -6342,7 +6369,12 @@
     "enTitle": "Sedum rubrotinctum",
     "category": "景天科",
     "genus": "",
-    "articles": [],
+    "articles": [
+      {
+        "title": "多肉界的「行走红宝石」虹之玉凭超强变色力圈粉，阳光越足越红，新手也能养爆盆！",
+        "url": "https://mp.weixin.qq.com/s/4svA9vGMjGa4fomzQLmE6A"
+      }
+    ],
     "introduction": "原生地墨西哥，对通风要求较高，使用红陶一类透气较强的花盆最好。较喜欢日照，并不需要太多水分，日照时间增加后会整株变成红色。植株往上生长，多年老株枝干化后，一定要注意浇水量，过多的水分会导致枝干腐烂。繁殖方式扦插叶插都可，也是一种极易繁殖的品种。",
     "morphology": [
       "叶片肥厚多汁",
@@ -6360,7 +6392,32 @@
       "suitableTemperature": "15-25°C",
       "soilRequirement": "疏松透气的多肉专用土"
     },
-    "srcList": [],
+    "srcList": [
+      {
+        "local": "public/images/detail/景天科/虹之玉detail1768277498734.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svRXV5AvgBJyWT2OlPDhp4qVJmOVFdubguh0RKgpYjxEiaM50WCibEia2IibRuf2SeuYmZAJsja7E4xfaA/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/虹之玉detail1768277498746.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svRXV5AvgBJyWT2OlPDhp4qVygZhQVLOqTkLBcNwJjNJH2lYY1fZUP7xcyZGWgC4H8z32FAaclhPXg/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/虹之玉detail1768277498749.jpg",
+        "remote": ""
+      },
+      {
+        "local": "public/images/detail/景天科/虹之玉detail1768277498753.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svRXV5AvgBJyWT2OlPDhp4qVTnQSJGC2lOKQIUO14WLtADzKlbvpDickghKb0lYL7O3GIv6HWmykoyQ/0?wx_fmt=jpeg"
+      },
+      {
+        "local": "public/images/detail/景天科/虹之玉detail1768277498758.jpg",
+        "remote": ""
+      },
+      {
+        "local": "public/images/detail/景天科/虹之玉detail1768277498766.jpg",
+        "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svRXV5AvgBJyWT2OlPDhp4qV9jFXTRxibqfBp6bSUJePcanGM8bgWJmYeM1UjfgPw45Az06AOp3hMpg/0?wx_fmt=jpeg"
+      }
+    ],
     "srcIcon": {
       "local": "public/images/icon/景天科/虹之玉.jpg",
       "remote": "http://mmbiz.qpic.cn/sz_mmbiz_jpg/venVgYic7svQmKKY8sRqJhV2vcfeHCxWprSduENIC0sBu05NavoIcIlTzEIZ6rwIIJrS6mVdmzM6RIc4Y6iat5FQ/0?wx_fmt=jpeg"
